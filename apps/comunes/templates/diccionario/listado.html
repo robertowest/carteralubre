@@ -1,0 +1,21 @@
+{% extends "layout/base-list.html" %}
+{% load static %}
+
+{% block breadcrumbs %}
+    <a class="active" href="{% url 'comunes:dicc_listado' %}">Diccionarios</a>
+{% endblock %}
+
+{% block main-content %}
+    <div class="card-content">
+        <table id="table" class="table bordered" data-form-control="datatable" style="width:100%">
+            <tbody>
+                <tr style="display:none"><td></td></tr>
+                {% for object in object_list %}
+                <tr>
+                    <td><a href="#">{{object.texto}}</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

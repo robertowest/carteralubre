@@ -1,0 +1,37 @@
+{% extends "layout/base-detail.html" %}
+{% load static %}
+
+{% block breadcrumbs %}
+    <a class="nav-wrapper" href="{% url 'comunes:domi_listado' %}">Domicilios</a>
+    <a class="active">Detalle</a>
+{% endblock %}
+
+{% block left-panel %}
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">
+                {% if not object.active %}*** {% endif %}
+                {{object}}
+                {% if not object.active %}(eliminado){% endif %}
+            </div>
+            <table class="table bordered">
+                <tr><th>Tipo</th><td>{{object.tipo}}</td></tr>
+                <tr><th>Calle</th><td>{{object.calle}}</td></tr>
+                <tr><th>Nro.</th><td>{{object.numero}}</td></tr>
+                <tr><th>Piso/Puerta</th><td>{{object.piso}} / {{object.puerta}}</td></tr>
+                <tr><th>Ciudad</th><td>{{object.ciudad}}</td></tr>
+                <tr><th>Localidad</th><td>{{object.localidad}}</td></tr>
+            </table>
+        </div>
+        <div class="card-action">
+            <div class="right-align">
+                {% if object.active %}
+                <a class="waves-effect waves-light btn red white-text" href="{{object.get_delete_url}}">Eliminar</a>
+                {% endif %}
+                <a class="waves-effect waves-light btn white-text" href="{{object.get_update_url}}">Modificar</a>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "layout/base-list.html" %}
+{% load static %}
+
+{% block breadcrumbs %}
+    <a class="active" href="{% url 'comunes:domi_listado' %}">Domicilios</a>
+{% endblock %}
+
+{% block main-content %}
+    <div class="card-content">
+        {% comment %}
+        <a class="btn btn-primary" href="{% url 'comunes:domi_nuevo' %}">
+            Nueva domicilio
+        </a>
+        {% endcomment %}
+        <table id="table" class="table bordered" data-form-control="datatable" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="sorting_disabled">Id</th>
+                    <th class="sorting_disabled">Calle</th>
+                    <th class="sorting_disabled">Nro</th>
+                    <th class="sorting_disabled">Localidad</th>
+                    <th class="sorting_disabled">Ciudad</th>
+                    <th class="sorting_disabled">Activo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="display:none"><td></td></tr>
+                {% for object in object_list %}
+                <tr>
+                    <td><a href="{{object.get_absolute_url}}">{{object.pk}}</a></td>
+                    <td>{{object.calle}}</td>
+                    <td>{{object.numero}}</td>
+                    <td>{{object.localidad.nombre}}</td>
+                    <td>{{object.ciudad.nombre}}</td>
+                    <td>{{object.active|yesno:"Sí,No"}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {# paginación #}
+        {% include 'pagination.html' %}
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect waves-light green z-depth-2" href="{% url 'comunes:domi_nuevo' %}">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+{% endblock %}
+
+{% block fields-filter %}
+    <div class="input-field col s12" id="id_busqueda_container">
+        <input id="id_busqueda" name="busqueda" type="text">
+        <label for="id_busqueda">Nombre</label>
+    </div>
+{% endblock %}
+
+

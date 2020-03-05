@@ -1,0 +1,44 @@
+{# https://blackrockdigital.github.io/startbootstrap-sb-admin-2/ #}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lubre SRL</title>
+
+        {% include 'includes/_style_sheet.html' %}
+        {% block style %}{% endblock %}
+    </head>
+
+    <body id="page-top">
+
+        <div id="wrapper">
+            {% include 'includes/_sidebar.html' %}
+    
+            <div id="content-wrapper" class="d-flex flex-column">
+                <div id="content">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                
+                {% include 'includes/_footer.html' %}
+            </div>
+        </div>
+
+        {% include 'includes/_scroll_top_button.html' %}
+
+        {% include 'includes/_modal.html' %}
+
+        {% include 'includes/_java_script.html' %}
+
+        {% block js %}{% endblock %}
+    </body>
+
+</html>
