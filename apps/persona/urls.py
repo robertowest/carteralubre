@@ -14,4 +14,8 @@ urlpatterns = [
     path('<int:pk>/', views.PersonaDetailView.as_view(), name='detail'),
     path('<int:pk>/modificar/', views.PersonaUpdateView.as_view(), name='update'),
     path('<int:pk>/eliminar/', views.PersonaDeleteView.as_view(), name='delete'),
+
+
+
+    path('ejemplo/', views.home, name='home'),
 ]

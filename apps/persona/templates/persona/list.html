@@ -1,64 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'persona/base.html' %}
 {% load static %}
+{% load mis_tags %}
 
-{% block style %}
+
+{% block estilos %}
     <link href="{% static 'vendor/datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
-
-    <style>
-        .fixed-action-btn {
-            position: fixed;
-            right: 23px;
-            bottom: 23px;
-            padding-top: 15px;
-            margin-bottom: 0;
-            z-index: 997;
-            background-color: green;
-        }
-
-        .btn-floating.btn-large {
-            width: 56px;
-            height: 56px;
-            padding: 0;
-        }
-
-        .waves-effect {
-            position: relative;
-            cursor: pointer;
-            display: inline-block;
-            overflow: hidden;
-            -webkit-user-select: none;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            vertical-align: middle;
-            z-index: 1;
-            transition: .3s ease-out;
-        }
-
-        .btn-floating i {
-            width: inherit;
-            display: inline-block;
-            text-align: center;
-            color: #fff;
-            font-size: 1.6rem;
-            line-height: 40px;
-        }        
-    </style>
+    <link href="{% static 'css/floating-button-action.css' %}" rel="stylesheet">
 {% endblock %}
 
-{% block content %}
 
-    {% include 'includes/_navbar.html' %}
+{% block contenido %}
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de {{object_list|verbose_name_plural}}</h6>
+        </div>
+        <div class="card-body">
 
-    <div class="container-fluid">
-        {% comment %}
-        <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-        <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
-        {% endcomment %}
-
-        <div class="card shadow mb-4">
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Listado de {{model_name}}</h6>
-            </div>
+            <!-- contenido -->
             <div class="card-body">
                 <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -85,19 +43,22 @@
                 </table>
                 </div>
             </div>
+
         </div>
-
     </div>
-
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large waves-effect waves-light green z-depth-2" href="{% url 'persona:create' %}">
-            <i class="fas fa-fw fa-plus"></i>
-        </a>
-    </div>            
 
 {% endblock %}
 
-{% block js %}
+
+{% block boton-accion %}
+    <!-- botón de acción -->
+    <button class="fixed-button-add wobble" type="button">
+        <a href="{% url 'persona:create' %}"><i class="fas fa-plus"></i></a>        
+    </button>
+{% endblock %}
+
+
+{% block jscript %}
     <!-- Page level plugins -->
     <script src="{% static 'vendor/datatables/jquery.dataTables.min.js' %}"></script>
     <script src="{% static 'vendor/datatables/dataTables.bootstrap4.min.js' %}"></script>

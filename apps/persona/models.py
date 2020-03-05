@@ -30,5 +30,6 @@ class Persona(AudtoriaMixin):
 
     @property
     def edad(self):
-        import datetime
-        return int((datetime.now().date() - self.fecha_nacimiento).days / 365.25)
+        from datetime import date 
+        age = date.today().year - self.fecha_nacimiento.year - ((date.today().month, date.today().day) < (self.fecha_nacimiento.month, self.fecha_nacimiento.day)) 
+        return age 

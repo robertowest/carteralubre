@@ -1,10 +1,14 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views import generic
+
 from . import models
 
 # Create your views here.
 def home(request):
-    return render(request, 'base.html', context={},)
+    # return render(request, 'base.html', context={},)
+    return render(request, 'ejemplos/register.html', context={},)
 
 
 class PersonaTemplateView(generic.TemplateView):
@@ -28,8 +32,14 @@ class PersonaDetailView(generic.DetailView):
     pass
 
 
-class PersonaCreateView(generic.CreateView):
-    pass
+class PersonaCreateView(LoginRequiredMixin, generic.CreateView):
+    model = models.Persona
+    fields = ['nombre', 'apellido', 'documento', 'fecha_nacimiento', 'active']
+    # template_name = '{app}/create.html'.format(app=__package__.split('.')[1])
+    template_name = '{app}/create.html'.format(app=model._meta.verbose_name.lower())
+
+    def get_success_url(self):
+        return reverse_lazy('persona:index')    
 
 
 class PersonaUpdateView(generic.UpdateView):
