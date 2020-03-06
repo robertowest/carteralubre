@@ -1,0 +1,2000 @@
+- model: comunes.domicilio
+  pk: 1
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: La Ramada  De Abajo
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 7
+- model: comunes.domicilio
+  pk: 2
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Pje Benito Lynch 4600 (oficina)
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 3
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ayacucho 34- 1 Piso "a"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 4
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Bernabe Araoz 107
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 5
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Las Piedras 707
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 6
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: La Rioja 142
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 7
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 9 Km 1285 - Zona Franca
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 15
+- model: comunes.domicilio
+  pk: 8
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "San Jose De Buena Vista-b\xBA La Pinto"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 23
+- model: comunes.domicilio
+  pk: 9
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Autopista J D Peron Km 2
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 16
+- model: comunes.domicilio
+  pk: 11
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Pasaje Ibatin 167
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 15
+- model: comunes.domicilio
+  pk: 12
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Las Piedras 1285
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 13
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Juan 313
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 14
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Las Tuquitas 0
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 56
+- model: comunes.domicilio
+  pk: 15
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Ejercito Del Norte 651
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 17
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Mendoza 1953
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 18
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 302 Km. 8
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 53
+- model: comunes.domicilio
+  pk: 19
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Ruta Nac. 305(b\xBA Experimental)"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 20
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Prospero Garcia 34 Piso 2 Dpto B
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 21
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Juan 2060 Piso 1
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 22
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Don Bosco 3381
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 23
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Belgrano 2020
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 24
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Lorenzo 502 L 3
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 25
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Catamarca 2603
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 26
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Av De Las Industriasy Cervi\xF1o-el Corte"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 16
+- model: comunes.domicilio
+  pk: 27
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Sarmiento 473
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 2
+- model: comunes.domicilio
+  pk: 28
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Jos\xE9 Colombres 490"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 29
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 317 Km 21,5-colonia Virginia
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 7
+- model: comunes.domicilio
+  pk: 30
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Jos\xE9 Gorriti 61(alt Mate De Luna 3400)"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 31
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Jose Colombres 369
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 32
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Lavalle 4007
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 33
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Pje A Nougues 1719
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 34
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Roca 3450
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 35
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Padre Roque Correa 1348
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 36
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Asuncion 633/av Roca 23/av Roca 2807
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 37
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Crisostomo Alvarez 397 Piso 1 Of C
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 38
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Lamadrid 377. 1\xBA Piso"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 39
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Catamarca 1056
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 40
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Maipu 70
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 41
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Dentro Predio Ing. Leales
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 6
+- model: comunes.domicilio
+  pk: 42
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Lamadrid 2285 1\xBA A - Ciudadela"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 43
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 325 Capitan Caceres Yacuchina
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 19
+- model: comunes.domicilio
+  pk: 44
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Roca 2575
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 45
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Juan 2388
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 46
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Lavalle 941
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 47
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "B Villafa\xF1e 2755"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 48
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Martin 573-2 Piso Of. 14
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 49
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 317 Km 7,5
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 65
+- model: comunes.domicilio
+  pk: 50
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Finca Mayo O. Burruyacu
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 7
+- model: comunes.domicilio
+  pk: 51
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Belgrano 739
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 15
+- model: comunes.domicilio
+  pk: 52
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 38 Alt Km 758
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 19
+- model: comunes.domicilio
+  pk: 53
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Martin 950
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 54
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: 9 De Julio 46
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 8
+- model: comunes.domicilio
+  pk: 55
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Las Piedras 1284
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 56
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Pje Bertres 230
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 57
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Martin 839-piso 2 Dpto D
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 58
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Thames 546
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 59
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Silvano Bores 730
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 60
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Crisostomo Alvarez 1028 Dpto 2
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 61
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Roca 1198
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 62
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: 20 De Junio 100
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 16
+- model: comunes.domicilio
+  pk: 63
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Lucas Cordoba 664
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 64
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Miguel Lillo 139
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 65
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Ejercito Del Norte 94
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 66
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Independencia 2513
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 67
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Junin 510 - Estancia El Azul
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 68
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Diego De Villarroel 97-villa 9 De Julio
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 69
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Independencia 2601
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 70
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 38 Km 735 - Los Guchea
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 17
+- model: comunes.domicilio
+  pk: 71
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Martin 173
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 72
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Juan 269
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 73
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Colombia 187
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 18
+- model: comunes.domicilio
+  pk: 74
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Anta Muerta 2120
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 18
+- model: comunes.domicilio
+  pk: 75
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Martin 1145
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 76
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Av.brigido Ter\xE1n 250. Bolet.3"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 77
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Juan 3560
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 78
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta Nac9 Y 306-acceso Sud
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 79
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Miguel 1235
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 80
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Autopista Tuc-famailla Km 803
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 81
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Lucas Cordoba 1205
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 82
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: La Rioja 518
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 83
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Celedonio Gutierrez 225
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 84
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 301 Km 23.5
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 200
+- model: comunes.domicilio
+  pk: 85
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Antartida Argentina 80
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 16
+- model: comunes.domicilio
+  pk: 86
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Frias Silva 400
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 87
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Colon 738/pje Becker 2262
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 88
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Corrientes 1453/junin 334
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 89
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: A Jacques 1150/pje Rio De Janeiro 55
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 90
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Sarmiento 400
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 12
+- model: comunes.domicilio
+  pk: 91
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Rivadavia 1024
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 16
+- model: comunes.domicilio
+  pk: 92
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Mexico 3898
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 93
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Rivadavia 1651
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 95
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av 2 De Abril 337
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 96
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Av Sarmiento 785 - 1\xBA Piso A"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 97
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Marcos Paz 563 - 5 Piso A
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 98
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: La Rioja Al 100
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 99
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Buenos Aires 414
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 100
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Heredia 630
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 17
+- model: comunes.domicilio
+  pk: 101
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: A Alsina 3450
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 102
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Italia 1231
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 17
+- model: comunes.domicilio
+  pk: 103
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Coronel Zelaya 802
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 104
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Alfonsina Storni 97
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 105
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av J B Teran 252
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 106
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Campo De Las Carreras 1536
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 107
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Calle Principal
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 26
+- model: comunes.domicilio
+  pk: 108
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Congreso N\xBA 800-hosteria Ex-bco.pcia."
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 20
+- model: comunes.domicilio
+  pk: 109
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Ruta 9 Km 1904
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 110
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Rioja 330
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 111
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Belgrano 265
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 23
+- model: comunes.domicilio
+  pk: 112
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Lorenzo 310
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 18
+- model: comunes.domicilio
+  pk: 113
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Av Mitre 733
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 114
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Lorenzo 1453
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 115
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Amador Lucero 279
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 117
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Lorenzo 562-piso Ep Dpto B
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 118
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Jujuy N\xBA 5015"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 83
+- model: comunes.domicilio
+  pk: 119
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "B\xBA Cc La Loma Lote 18"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 120
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Venezuela 134
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 121
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Mario Bravo 42
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 122
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Monteagudo 1577
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 124
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: San Lorenzo 562-piso Ep Dpto B
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 125
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "Jujuy N\xBA 5015"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 83
+- model: comunes.domicilio
+  pk: 126
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: "B\xBA Cc La Loma Lote 18"
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 127
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Venezuela 134
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 128
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Mario Bravo 42
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 129
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Monteagudo 1577
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14
+- model: comunes.domicilio
+  pk: 131
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    tipo: Calle
+    calle: Monteagudo 1577
+    numero: null
+    piso: null
+    puerta: null
+    pais: 1
+    ciudad: 1
+    localidad: 14

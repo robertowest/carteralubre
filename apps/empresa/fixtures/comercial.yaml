@@ -1,0 +1,79 @@
+- model: empresa.comercial
+  pk: 1
+  fields:
+    active: true
+    created: 2019-07-30 15:09:11.323339+00:00
+    created_by: null
+    modified: 2019-07-30 15:16:51.905535+00:00
+    modified_by: null
+    persona: 1
+    domicilios: []
+    comunicaciones:
+    - 1
+    - 2
+- model: empresa.comercial
+  pk: 2
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    persona: 30
+    domicilios: []
+    comunicaciones: []
+- model: empresa.comercial
+  pk: 3
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    persona: 32
+    domicilios: []
+    comunicaciones: []
+- model: empresa.comercial
+  pk: 4
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    persona: 42
+    domicilios: []
+    comunicaciones: []
+- model: empresa.comercial
+  pk: 5
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    persona: 63
+    domicilios: []
+    comunicaciones: []
+- model: empresa.comercial
+  pk: 6
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    persona: 99
+    domicilios: []
+    comunicaciones: []
+- model: empresa.comercial
+  pk: 7
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    persona: 93
+    domicilios: []
+    comunicaciones: []

@@ -1,0 +1,10 @@
+#!/bin/bash
+find apps -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find apps -path "*/migrations/*.pyc"  -delete
+
+rm db.sqlite3
+
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser

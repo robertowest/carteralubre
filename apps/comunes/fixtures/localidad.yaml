@@ -1,0 +1,2904 @@
+# - model: comunes.localidad
+#   pk: 0
+#   fields:
+#     active: true
+#     created: null
+#     created_by: null
+#     modified: null
+#     modified_by: null
+#     ciudad: 0
+#     nombre: No se detalla
+#     cod_postal: null
+- model: comunes.localidad
+  pk: 1
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "San Miguel de Tucum\xE1n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 2
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Cruz Alta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 3
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Taf\xED Viejo"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 4
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Chicligasta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 5
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Yerba Buena
+    cod_postal: null
+- model: comunes.localidad
+  pk: 6
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Lules
+    cod_postal: null
+- model: comunes.localidad
+  pk: 7
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Monteros
+    cod_postal: null
+- model: comunes.localidad
+  pk: 8
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "R\xEDo Chico"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 9
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Leales
+    cod_postal: null
+- model: comunes.localidad
+  pk: 10
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Burruyac\xFA"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 11
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Famaill\xE1"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 12
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Simoca
+    cod_postal: null
+- model: comunes.localidad
+  pk: 13
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Juan B. Alberdi
+    cod_postal: null
+- model: comunes.localidad
+  pk: 14
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: La Cocha
+    cod_postal: null
+- model: comunes.localidad
+  pk: 15
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Trancas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 16
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Taf\xED del Valle"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 17
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Graneros
+    cod_postal: null
+- model: comunes.localidad
+  pk: 18
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 19
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Ancasti
+    cod_postal: null
+- model: comunes.localidad
+  pk: 20
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 21
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: "R\xEDo Hondo"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 22
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 23
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 9
+    nombre: Dr. Manuel Belgrano
+    cod_postal: null
+- model: comunes.localidad
+  pk: 24
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Santa Rosa
+    cod_postal: null
+- model: comunes.localidad
+  pk: 25
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: "Or\xE1n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 26
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Tercero Arriba
+    cod_postal: null
+- model: comunes.localidad
+  pk: 47
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 48
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 49
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 50
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 12
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 51
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 17
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 52
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 18
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 53
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 13
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 54
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 11
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 55
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 5
+    nombre: San Fernando
+    cod_postal: null
+- model: comunes.localidad
+  pk: 56
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 4
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 57
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 10
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 58
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: 9 De Julio
+    cod_postal: null
+- model: comunes.localidad
+  pk: 60
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Florentino Ameghino
+    cod_postal: null
+- model: comunes.localidad
+  pk: 61
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: "General L\xF3pez"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 62
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Anta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 63
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Caseros
+    cod_postal: null
+- model: comunes.localidad
+  pk: 64
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: General Taboada
+    cod_postal: null
+- model: comunes.localidad
+  pk: 65
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Balcarce
+    cod_postal: null
+- model: comunes.localidad
+  pk: 66
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: "Bel\xE9n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 67
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Carlos Casares
+    cod_postal: null
+- model: comunes.localidad
+  pk: 68
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 12
+    nombre: "Luj\xE1n De Cuyo"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 69
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Iriondo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 70
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: "Col\xF3n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 71
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: "La Vi\xF1a"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 72
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 5
+    nombre: Luis Jorge Fontana
+    cod_postal: null
+- model: comunes.localidad
+  pk: 73
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Tigre
+    cod_postal: null
+- model: comunes.localidad
+  pk: 74
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: La Candelaria
+    cod_postal: null
+- model: comunes.localidad
+  pk: 75
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: "San Mart\xEDn"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 76
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: "Gral. Jos\xE9 De San Mart\xEDn"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 77
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: "San Jer\xF3nimo"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 78
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 9
+    nombre: Ledesma
+    cod_postal: null
+- model: comunes.localidad
+  pk: 79
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: "R\xEDo Cuarto"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 80
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Rosario De La Frontera
+    cod_postal: null
+- model: comunes.localidad
+  pk: 81
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Gral. Roca
+    cod_postal: null
+- model: comunes.localidad
+  pk: 82
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: La Banda
+    cod_postal: null
+- model: comunes.localidad
+  pk: 83
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: "Gral. San Mart\xEDn"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 84
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: Pellegrini
+    cod_postal: null
+- model: comunes.localidad
+  pk: 85
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: "R\xEDo Segundo"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 86
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 9
+    nombre: "Palpal\xE1"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 87
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: "Constituci\xF3n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 88
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Castellanos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 89
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Rojas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 90
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Rosario
+    cod_postal: null
+- model: comunes.localidad
+  pk: 91
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: "Salliquel\xF3"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 92
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: San Cristobal
+    cod_postal: null
+- model: comunes.localidad
+  pk: 93
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: San Isidro
+    cod_postal: null
+- model: comunes.localidad
+  pk: 94
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: San Lorenzo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 95
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Las Colonias
+    cod_postal: null
+- model: comunes.localidad
+  pk: 96
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: "Santa Mar\xEDa"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 97
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: "Pom\xE1n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 98
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: San Nicolas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 99
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Marcos Juarez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 100
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 10
+    nombre: "Marac\xF3"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 101
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 9
+    nombre: Javi
+    cod_postal: null
+- model: comunes.localidad
+  pk: 102
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: "Santa Mar\xEDa"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 103
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: "General Pueyrred\xF3n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 104
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: San Antonio De Areco
+    cod_postal: null
+- model: comunes.localidad
+  pk: 106
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Tinogasta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 107
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Valle Viejo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 108
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 18
+    nombre: Gral. Pedernera
+    cod_postal: null
+- model: comunes.localidad
+  pk: 109
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Juarez Celman
+    cod_postal: null
+- model: comunes.localidad
+  pk: 110
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Vallistos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 111
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Pacar\xE1 Pintado"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 112
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Buenos Aires
+    cod_postal: null
+- model: comunes.localidad
+  pk: 113
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "La Reducci\xF3n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 114
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Estaci\xF3n Araoz"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 115
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Concepci\xF3n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 116
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Chicligasta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 117
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Ranchillos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 118
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: El Empalme
+    cod_postal: null
+- model: comunes.localidad
+  pk: 119
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Capital
+    cod_postal: null
+- model: comunes.localidad
+  pk: 120
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: El Tala
+    cod_postal: null
+- model: comunes.localidad
+  pk: 121
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Ingenio Santa Anta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 122
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: La Virginia
+    cod_postal: null
+- model: comunes.localidad
+  pk: 123
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Gobernador Piedrabuena
+    cod_postal: null
+- model: comunes.localidad
+  pk: 124
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Alderetes
+    cod_postal: null
+- model: comunes.localidad
+  pk: 125
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: La Invernada
+    cod_postal: null
+- model: comunes.localidad
+  pk: 126
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Timb\xF3 Viejo"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 127
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Bella Vista
+    cod_postal: null
+- model: comunes.localidad
+  pk: 128
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Cruz Alta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 129
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Tafi Viejo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 130
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Granadero Baigorria
+    cod_postal: null
+- model: comunes.localidad
+  pk: 131
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Rio Colorado
+    cod_postal: null
+- model: comunes.localidad
+  pk: 132
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Colombres
+    cod_postal: null
+- model: comunes.localidad
+  pk: 133
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Nogales
+    cod_postal: null
+- model: comunes.localidad
+  pk: 134
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Cafayate
+    cod_postal: null
+- model: comunes.localidad
+  pk: 135
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Banda Rio Sal\xED"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 136
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Juan B. Alberdi
+    cod_postal: null
+- model: comunes.localidad
+  pk: 137
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Viclos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 138
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Las Cejas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 139
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Las Talitas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 140
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Cevil Pozo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 141
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Santa Fe
+    cod_postal: null
+- model: comunes.localidad
+  pk: 142
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Andino
+    cod_postal: null
+- model: comunes.localidad
+  pk: 143
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Guemes
+    cod_postal: null
+- model: comunes.localidad
+  pk: 144
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Manatial De Ovanta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 145
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Salta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 146
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Salta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 147
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 9
+    nombre: San Pedro De Jujuy
+    cod_postal: null
+- model: comunes.localidad
+  pk: 148
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Los Altos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 149
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Arcadia
+    cod_postal: null
+- model: comunes.localidad
+  pk: 150
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Aguilares
+    cod_postal: null
+- model: comunes.localidad
+  pk: 151
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 5
+    nombre: "Presidencia Roque Saenz Pe\xF1a"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 152
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: San Andres
+    cod_postal: null
+- model: comunes.localidad
+  pk: 153
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Salsipuedes
+    cod_postal: null
+- model: comunes.localidad
+  pk: 154
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Lastenia
+    cod_postal: null
+- model: comunes.localidad
+  pk: 155
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Manuel Garcia Fernandez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 156
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Acheral
+    cod_postal: null
+- model: comunes.localidad
+  pk: 157
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Snan Pablo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 158
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Raco
+    cod_postal: null
+- model: comunes.localidad
+  pk: 159
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Villa Fiad
+    cod_postal: null
+- model: comunes.localidad
+  pk: 160
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Le\xF3n Rougu\xE9s"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 161
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Rio Primero
+    cod_postal: null
+- model: comunes.localidad
+  pk: 162
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: San Antonio De Areco
+    cod_postal: null
+- model: comunes.localidad
+  pk: 163
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: San Fernando Del Valle Catamarca
+    cod_postal: null
+- model: comunes.localidad
+  pk: 164
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Metan
+    cod_postal: null
+- model: comunes.localidad
+  pk: 165
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Aldao
+    cod_postal: null
+- model: comunes.localidad
+  pk: 166
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: "Ca\xF1ada De Gomez"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 167
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Martinez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 168
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Gutierrez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 169
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Tartagal
+    cod_postal: null
+- model: comunes.localidad
+  pk: 170
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Cordoba
+    cod_postal: null
+- model: comunes.localidad
+  pk: 171
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: La Cruz
+    cod_postal: null
+- model: comunes.localidad
+  pk: 172
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Piedrabuena
+    cod_postal: null
+- model: comunes.localidad
+  pk: 173
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Puestos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 174
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Puestos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 175
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Estaci\xF3n Araoz"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 176
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Agua Dulce
+    cod_postal: null
+- model: comunes.localidad
+  pk: 177
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Tusca Pozo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 178
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Estaci\xF3n Araoz"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 179
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Timb\xF3 Nuevo"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 180
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Vedia
+    cod_postal: null
+- model: comunes.localidad
+  pk: 181
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Amaicha Del Valle
+    cod_postal: null
+- model: comunes.localidad
+  pk: 182
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Joaquin V. Gonzalez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 183
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Campo Santo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 184
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Santa Rosa De Leales
+    cod_postal: null
+- model: comunes.localidad
+  pk: 185
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Garmendia
+    cod_postal: null
+- model: comunes.localidad
+  pk: 186
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Barrio Carola Lorenzin
+    cod_postal: null
+- model: comunes.localidad
+  pk: 187
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: San Pedro De Colalao
+    cod_postal: null
+- model: comunes.localidad
+  pk: 188
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Vega
+    cod_postal: null
+- model: comunes.localidad
+  pk: 189
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Villa Quinteros
+    cod_postal: null
+- model: comunes.localidad
+  pk: 190
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Aguirre
+    cod_postal: null
+- model: comunes.localidad
+  pk: 191
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: "Ca\xF1uelas"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 192
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Pizarros
+    cod_postal: null
+- model: comunes.localidad
+  pk: 193
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Cevil Redondo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 194
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Delfin Gallo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 195
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Boca Del Tigre
+    cod_postal: null
+- model: comunes.localidad
+  pk: 196
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Rafaela
+    cod_postal: null
+- model: comunes.localidad
+  pk: 197
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Ramada De Abajo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 198
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Tucum\xE1n"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 199
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: San Andres
+    cod_postal: null
+- model: comunes.localidad
+  pk: 200
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Ingenio Nueva Baviera
+    cod_postal: null
+- model: comunes.localidad
+  pk: 201
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: "Estaci\xF3n Vipos"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 202
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: La Ramada De Abajo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 203
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Rio Seco
+    cod_postal: null
+- model: comunes.localidad
+  pk: 204
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Benjamin Paz
+    cod_postal: null
+- model: comunes.localidad
+  pk: 205
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Oncativo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 206
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: San Miguel
+    cod_postal: null
+- model: comunes.localidad
+  pk: 207
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Huasa Pampa
+    cod_postal: null
+- model: comunes.localidad
+  pk: 208
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Porceles
+    cod_postal: null
+- model: comunes.localidad
+  pk: 209
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Las Vertientes
+    cod_postal: null
+- model: comunes.localidad
+  pk: 210
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Ralos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 211
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: El Cortaderal
+    cod_postal: null
+- model: comunes.localidad
+  pk: 212
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Justiniano Posse
+    cod_postal: null
+- model: comunes.localidad
+  pk: 213
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Vallistos
+    cod_postal: null
+- model: comunes.localidad
+  pk: 214
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: Jimenez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 215
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: Copo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 216
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Sauce Huacho
+    cod_postal: null
+- model: comunes.localidad
+  pk: 217
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Las Rosas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 218
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Villa Mariano Moreno
+    cod_postal: null
+- model: comunes.localidad
+  pk: 219
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: La Florida
+    cod_postal: null
+- model: comunes.localidad
+  pk: 220
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Teniente Berdina
+    cod_postal: null
+- model: comunes.localidad
+  pk: 221
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Ingenio La Florida
+    cod_postal: null
+- model: comunes.localidad
+  pk: 222
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: El Quemado
+    cod_postal: null
+- model: comunes.localidad
+  pk: 223
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Carlos Pellegrini
+    cod_postal: null
+- model: comunes.localidad
+  pk: 224
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 16
+    nombre: Rosario De La Frontera
+    cod_postal: null
+- model: comunes.localidad
+  pk: 225
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Andalgala
+    cod_postal: null
+- model: comunes.localidad
+  pk: 226
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Andalgala
+    cod_postal: null
+- model: comunes.localidad
+  pk: 227
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Las Estancias
+    cod_postal: null
+- model: comunes.localidad
+  pk: 228
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Rivas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 229
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Galvez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 230
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Galvez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 231
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Arequito
+    cod_postal: null
+- model: comunes.localidad
+  pk: 232
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Barrio Las Vertientes
+    cod_postal: null
+- model: comunes.localidad
+  pk: 233
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Cruz Alta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 234
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Luque
+    cod_postal: null
+- model: comunes.localidad
+  pk: 235
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Luisiana
+    cod_postal: null
+- model: comunes.localidad
+  pk: 236
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Araoz
+    cod_postal: null
+- model: comunes.localidad
+  pk: 237
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Zarate Norte
+    cod_postal: null
+- model: comunes.localidad
+  pk: 238
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Pavon Arriba
+    cod_postal: null
+- model: comunes.localidad
+  pk: 239
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: "Villa Ca\xF1as"
+    cod_postal: null
+- model: comunes.localidad
+  pk: 240
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Florida
+    cod_postal: null
+- model: comunes.localidad
+  pk: 241
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Guatimozin
+    cod_postal: null
+- model: comunes.localidad
+  pk: 242
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Leales
+    cod_postal: null
+- model: comunes.localidad
+  pk: 243
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: Nueva Esperanza
+    cod_postal: null
+- model: comunes.localidad
+  pk: 244
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Venado Tuerto
+    cod_postal: null
+- model: comunes.localidad
+  pk: 245
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Venado Tuerto
+    cod_postal: null
+- model: comunes.localidad
+  pk: 246
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: San Pablo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 247
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Lozada
+    cod_postal: null
+- model: comunes.localidad
+  pk: 248
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Lozada
+    cod_postal: null
+- model: comunes.localidad
+  pk: 249
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Cruz Alta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 250
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Villa Eloisa
+    cod_postal: null
+- model: comunes.localidad
+  pk: 251
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: Tacural
+    cod_postal: null
+- model: comunes.localidad
+  pk: 252
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Los Gutierrez
+    cod_postal: null
+- model: comunes.localidad
+  pk: 253
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Alderetes
+    cod_postal: null
+- model: comunes.localidad
+  pk: 254
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 5
+    nombre: Resistencai
+    cod_postal: null
+- model: comunes.localidad
+  pk: 255
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Tafi Viejo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 256
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Yerba Buena
+    cod_postal: null
+- model: comunes.localidad
+  pk: 257
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Yerba Buena
+    cod_postal: null
+- model: comunes.localidad
+  pk: 258
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Del Viso
+    cod_postal: null
+- model: comunes.localidad
+  pk: 259
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Dean Funes
+    cod_postal: null
+- model: comunes.localidad
+  pk: 260
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 2
+    nombre: Recreo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 261
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Ramos Mejia
+    cod_postal: null
+- model: comunes.localidad
+  pk: 262
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Sinsacate
+    cod_postal: null
+- model: comunes.localidad
+  pk: 263
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Almafuerte
+    cod_postal: null
+- model: comunes.localidad
+  pk: 264
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Lomas De Tafi
+    cod_postal: null
+- model: comunes.localidad
+  pk: 265
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Manantial De Ovanta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 266
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Villa Benjamin Araoz
+    cod_postal: null
+- model: comunes.localidad
+  pk: 267
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Villa Benjamin Araoz
+    cod_postal: null
+- model: comunes.localidad
+  pk: 268
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: La Ramada
+    cod_postal: null
+- model: comunes.localidad
+  pk: 269
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Lanus
+    cod_postal: null
+- model: comunes.localidad
+  pk: 270
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 21
+    nombre: Frias
+    cod_postal: null
+- model: comunes.localidad
+  pk: 271
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: San Andres
+    cod_postal: null
+- model: comunes.localidad
+  pk: 272
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Piquillin
+    cod_postal: null
+- model: comunes.localidad
+  pk: 273
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Rios Seco
+    cod_postal: null
+- model: comunes.localidad
+  pk: 274
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 23
+    nombre: Lomas Del Mirador
+    cod_postal: null
+- model: comunes.localidad
+  pk: 275
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Villa Carmela
+    cod_postal: null
+- model: comunes.localidad
+  pk: 276
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Las Cejas
+    cod_postal: null
+- model: comunes.localidad
+  pk: 277
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 9
+    nombre: Perico
+    cod_postal: null
+- model: comunes.localidad
+  pk: 278
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 11
+    nombre: Aimogasta
+    cod_postal: null
+- model: comunes.localidad
+  pk: 279
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Marcos Paz
+    cod_postal: null
+- model: comunes.localidad
+  pk: 280
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 3
+    nombre: Pilar
+    cod_postal: null
+- model: comunes.localidad
+  pk: 281
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Choromoro
+    cod_postal: null
+- model: comunes.localidad
+  pk: 282
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Tafi Viejo
+    cod_postal: null
+- model: comunes.localidad
+  pk: 283
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Tapia
+    cod_postal: null
+- model: comunes.localidad
+  pk: 284
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 1
+    nombre: Rio Chico
+    cod_postal: null
+- model: comunes.localidad
+  pk: 285
+  fields:
+    active: true
+    created: null
+    created_by: null
+    modified: null
+    modified_by: null
+    ciudad: 20
+    nombre: San Vicente
+    cod_postal: null

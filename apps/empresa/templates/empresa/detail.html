@@ -1,0 +1,189 @@
+{% extends 'empresa/base.html' %}
+{% load static %}
+
+{% block estilos %}
+    <style>
+        dl {
+            /*
+            border: 3px double #ccc;
+            padding: 0.5em;
+            */
+            border-bottom: 1px solid #ccc;
+        }
+        dt {
+            clear: left;
+            font-weight: bold;
+            /* 
+            float: left;
+            width: 120px;
+            text-align: right;
+            color: green; 
+            */
+        }
+        dt::after {
+            content: " : ";
+        }
+        dd {
+            margin: 0 0 0 0px;
+            padding: 0 0 0.5em 0;
+        }
+    </style>
+{% endblock %}
+
+
+{% block contenido %}
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Formulario</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-header">Acciones:</div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{object.get_update_url}}">Modificar</a>
+                            <a class="dropdown-item" href="{{object.get_delete_url}}">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    {% include 'empresa/_detail.html' %}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card shadow mb-4">
+                        <a href="#domicilioCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="domicilioCard">
+                            <h6 class="m-0 font-weight-bold text-primary">Domicilios</h6>
+                        </a>
+                        <div class="collapse show" id="domicilioCard">
+                            <div class="card-body">
+
+                                {% if domicilios  %}
+                                
+                                <table class="table" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Domicilio</th>
+                                            <th>Localidad</th>
+                                            <th>Ciudad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for registro in domicilios %}
+                                        <tr>
+                                            <td><a href="{{contacto.get_absolute_url}}">{{registro}}</a></td>
+                                            <td>{{registro.localidad}}</td>
+                                            <td>{{registro.ciudad}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+
+                                {% endif  %}
+
+                                <!-- asociar domicilio -->
+                                <a href="#" class="btn btn-primary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                      <i class="fas fa-check"></i>
+                                    </span>
+                                    <span class="text">Asociar</span>
+                                </a>
+                                <!-- agregar nuevo y domicilio -->
+                                <a href="#" class="btn btn-success btn-icon-split">
+                                    <span class="icon text-white-50">
+                                      <i class="fas fa-plus"></i>
+                                    </span>
+                                    <span class="text">Crear y asociar</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card shadow mb-4">
+                        <a href="#comunicacionCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="comunicacionCard">
+                            <h6 class="m-0 font-weight-bold text-primary">Comunicaciones</h6>
+                        </a>
+                        <div class="collapse show" id="comunicacionCard">
+                            <div class="card-body">
+
+                                {% if comunicaciones  %}
+
+                                <table class="table" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Tipo</th>
+                                            <th>Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for registro in comunicaciones %}
+                                        <tr>
+                                            <td>{{registro.get_tipo_display}}</td>
+                                            <td><a href="{{contacto.get_absolute_url}}">{{registro.texto}}</a></td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+
+                                {% endif  %}
+
+                                <!-- asociar domicilio -->
+                                <a href="#" class="btn btn-primary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                      <i class="fas fa-check"></i>
+                                    </span>
+                                    <span class="text">Asociar</span>
+                                </a>
+                                <!-- agregar nuevo y domicilio -->
+                                <a href="#" class="btn btn-success btn-icon-split">
+                                    <span class="icon text-white-50">
+                                      <i class="fas fa-plus"></i>
+                                    </span>
+                                    <span class="text">Crear y asociar</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block emergente %}
+<!-- modal -->
+<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Título</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                contenido
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" form="SubmitForm">Grabar</button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

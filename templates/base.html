@@ -37,7 +37,9 @@
 
         {% include 'includes/_scroll_top_button.html' %}
 
-        {% include 'includes/_modal.html' %}
+        {% block modal %}
+            {% include 'includes/_modal.html' %}
+        {% endblock %}
 
         {% include 'includes/_java_script.html' %}
 

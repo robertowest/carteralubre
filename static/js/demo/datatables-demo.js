@@ -7,6 +7,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('#dataTable').DataTable( {
+      "searching": true,
+      "lengthChange": false,
       "language": {
         "decimal":        "",
         "emptyTable":     "No hay datos disponibles en la tabla",

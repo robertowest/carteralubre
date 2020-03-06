@@ -1,0 +1,20 @@
+- model: comunes.comunicacion
+  pk: 1
+  fields:
+    active: true
+    created: 2019-07-30 15:15:03.049070+00:00
+    created_by: null
+    modified: 2019-07-30 15:15:03.049170+00:00
+    modified_by: null
+    tipo: wa
+    texto: '+5493816410439'
+- model: comunes.comunicacion
+  pk: 2
+  fields:
+    active: true
+    created: 2019-07-30 15:16:33.820533+00:00
+    created_by: null
+    modified: 2019-07-30 15:16:33.820636+00:00
+    modified_by: null
+    tipo: movil
+    texto: 381-641-0439

@@ -1,4 +1,4 @@
-{% extends 'persona/base.html' %}
+{% extends 'empresa/base.html' %}
 {% load static %}
 {% load mis_tags %}
 
@@ -18,7 +18,7 @@
                     <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="{% url 'persona:create' %}">Nuevo</a>
+                    <a class="dropdown-item" href="{% url 'empresa:create' %}">Nuevo</a>
                 </div>
             </div>
         </div>
@@ -31,19 +31,19 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Nombre</th>
-                                <th>Documento</th>
-                                <th>Nacimiento</th>
-                                <th>Edad</th>
+                                <th>Razon Social</th>
+                                <th>Actividad</th>
+                                <th>CUIT</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for object in object_list %}
                             <tr>
-                                <td>{{object.nombre_completo}}</td>
-                                <td>{{object.documento}}</td>
-                                <td>{{object.fecha_nacimiento}}</td>
-                                <td>{{object.edad}}</td>
+                                <td>
+                                    <a href="{{object.get_absolute_url}}">{{object.razon_social}}</a>
+                                </td>
+                                <td>{{object.actividad}}</td>
+                                <td>{{object.cuit}}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -63,9 +63,9 @@
         <!-- botón de acción -->
         <button class="fixed-button-add wobble" type="button">
             <!--
-            <a href="{% url 'persona:create' %}"><i class="fas fa-plus"></i></a>
+            <a href="{% url 'empresa:create' %}"><i class="fas fa-plus"></i></a>
             -->
-            <a href="{% url 'persona:create' %}" data-toggle="modal" data-target="#createModal">
+            <a href="{% url 'empresa:create' %}" data-toggle="modal" data-target="#createModal">
                 <i class="fas fa-plus"></i>
             </a>
         </button>
@@ -84,7 +84,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        {% include 'persona/form.html' %}
+                        {% include 'empresa/form.html' %}
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-primary" type="submit" form="SubmitForm">Grabar</button>

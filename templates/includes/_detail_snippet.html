@@ -1,0 +1,6 @@
+{% for field in form %}
+<dl>
+    <dt>{{ field.label_tag }}</dt>
+    <dd>{{ field }}</dd>
+</dl>
+{% endfor %}

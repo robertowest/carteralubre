@@ -1,0 +1,30 @@
+- model: comunes.diccionario
+  pk: 1
+  fields:
+    active: true
+    created: 2019-07-30 16:01:45.009321+00:00
+    created_by: null
+    modified: 2019-07-30 16:01:45.009404+00:00
+    modified_by: null
+    texto: Agro
+    tabla: actividad
+- model: comunes.diccionario
+  pk: 2
+  fields:
+    active: true
+    created: 2019-07-30 16:01:52.684074+00:00
+    created_by: null
+    modified: 2019-07-30 16:01:52.684155+00:00
+    modified_by: null
+    texto: Transporte
+    tabla: actividad
+- model: comunes.diccionario
+  pk: 3
+  fields:
+    active: true
+    created: 2019-07-30 16:02:14.603392+00:00
+    created_by: null
+    modified: 2019-07-30 16:02:14.603477+00:00
+    modified_by: null
+    texto: Lubricentro
+    tabla: actividad

@@ -1,0 +1,40 @@
+#
+# Extraer datos de la tabla
+#
+
+# comunes
+./manage.py dumpdata --format yaml -o apps/comunes/models/diccionario.yaml  apps/comunes/fixtures/comunes.diccionario
+./manage.py dumpdata --format yaml -o apps/comunes/models/comunicacion.yaml apps/comunes/fixtures/comunes.comunicacion
+./manage.py dumpdata --format yaml -o apps/comunes/models/pais.yaml         apps/comunes/fixtures/comunes.pais
+./manage.py dumpdata --format yaml -o apps/comunes/models/ciudad.yaml       apps/comunes/fixtures/comunes.ciudad
+./manage.py dumpdata --format yaml -o apps/comunes/models/localidad.yaml    apps/comunes/fixtures/comunes.localidad
+./manage.py dumpdata --format yaml -o apps/comunes/models/domicilio.yaml    apps/comunes/fixtures/comunes.domicilio
+
+# personas
+./manage.py dumpdata --format yaml -o apps/persona/persona.yaml apps/persona/fixtures/persona.persona
+
+# terceros
+./manage.py dumpdata --format yaml -o apps/tercero/models/comercial.yaml    apps/tercero/fixtures/tercero.comercial
+./manage.py dumpdata --format yaml -o apps/tercero/models/empresa.yaml      apps/tercero/fixtures/tercero.empresa
+
+
+#
+# Cargar datos a la tabla
+#
+./manage.py loaddata diccionario
+./manage.py loaddata comunicacion
+./manage.py loaddata pais
+./manage.py loaddata ciudad
+./manage.py loaddata localidad
+./manage.py loaddata domicilio
+./manage.py loaddata persona
+./manage.py loaddata comercial
+./manage.py loaddata empresa
+
+
+# local
+./manage.py loaddata equivalencia --settings=config.settings.local
+
+# produccion
+heroku run python manage.py loaddata equivalencia --settings=config.settings.heroku
+

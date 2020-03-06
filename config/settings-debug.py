@@ -11,6 +11,7 @@ from config.settings import *
 # -------------------------
 INSTALLED_APPS += [
     'apps.comunes',
+    'apps.empresa',
     'apps.persona',
 ]
 
@@ -18,16 +19,16 @@ INSTALLED_APPS += [
 # -------------
 # base de datos
 # -------------
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'lubre_dev',
-#         'USER': 'roberto',
-#         'PASSWORD': 'roberto',
-#         'HOST': '192.168.1.2',
-#         'PORT': '3306',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'clientes_dev',
+        'USER': 'roberto',
+        'PASSWORD': 'roberto',
+        'HOST': '192.168.1.2',
+        'PORT': '3306',
+    }
+}
 
 
 # ---------------

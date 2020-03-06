@@ -39,7 +39,11 @@ class PersonaCreateView(LoginRequiredMixin, generic.CreateView):
     template_name = '{app}/create.html'.format(app=model._meta.verbose_name.lower())
 
     def get_success_url(self):
-        return reverse_lazy('persona:index')    
+        return reverse_lazy('persona:index')
+        
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        return response
 
 
 class PersonaUpdateView(generic.UpdateView):

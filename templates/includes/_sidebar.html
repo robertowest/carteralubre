@@ -15,6 +15,16 @@
     <hr class="sidebar-divider my-0">
 
     <li class="nav-item active">
+        <a class="nav-link" href="{% url 'empresa:index' %}">
+            <i class="fas fa-fw fa-building"></i>
+            <span>Empresas</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <li class="nav-item active">
         <a class="nav-link" href="{% url 'persona:index' %}">
             <i class="fas fa-fw fa-users"></i>
             <span>Personas</span>
@@ -22,8 +32,8 @@
     </li>
 
     <!-- Divider -->
-    <hr class="sidebar-divider">
-   
+    <hr class="sidebar-divider d-none d-md-block">
+    
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>

@@ -8,24 +8,24 @@ PAGINATION = 15
 
 class ListView(ListView):
     model = Comunicacion
-    template_name = 'comunicacion/listado.html'
+    template_name = '{app}/list.html'.format(app=model._meta.verbose_name.lower())
     paginate_by = PAGINATION
 
 
-class NewView(CreateView):
+class CreateView(CreateView):
     model = Comunicacion
-    template_name = 'comunicacion/formulario.html'
+    template_name = '{app}/create.html'.format(app=model._meta.verbose_name.lower())
     form_class = ComunicacionForm
 
 
 class DetailView(DetailView):
     model = Comunicacion
-    template_name = 'comunicacion/info.html'
+    template_name = '{app}/detail.html'.format(app=model._meta.verbose_name.lower())
 
 
 class UpdateView(UpdateView):
     model = Comunicacion
-    template_name = 'comunicacion/formulario.html'
+    template_name = '{app}/update.html'.format(app=model._meta.verbose_name.lower())
     form_class = ComunicacionForm
 
 
@@ -36,4 +36,4 @@ class DeleteView(DeleteView):
         return self.post(request, *args, **kwargs)
 
     def get_success_url(self):
-        return reverse_lazy('comunes:comu_listado')
+        return reverse_lazy('comunes:comunicacion_list')
