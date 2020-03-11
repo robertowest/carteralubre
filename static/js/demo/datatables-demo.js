@@ -7,7 +7,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('#dataTable').DataTable( {
-      "searching": true,
       "lengthChange": false,
       "language": {
         "decimal":        "",
@@ -32,6 +31,8 @@ $(document).ready(function() {
             "sortAscending":  ": activar para ordenar la columna ascendente",
             "sortDescending": ": activar para ordenar la columna descendente"
         }
-      }
+      },
+      "searching": true,
+      "order": [[ 1, "asc" ]],
   } );
 });

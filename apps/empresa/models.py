@@ -13,7 +13,6 @@ class Comercial(CommonStruct):
     class Meta:
         verbose_name = 'Comercial'
         verbose_name_plural = 'Comerciales'
-        ordering = ['persona__nombre', 'persona__apellido']
         
     def __str__(self):
         if self.persona.apellido is None:
@@ -53,7 +52,6 @@ class Empresa(CommonStruct):
     class Meta:
         verbose_name = 'Empresa'
         verbose_name_plural = 'Empresas'
-        ordering = ['razon_social']
 
     def __str__(self):
         return self.razon_social

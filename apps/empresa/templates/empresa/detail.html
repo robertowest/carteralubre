@@ -1,5 +1,7 @@
 {% extends 'empresa/base.html' %}
+
 {% load static %}
+{% load mis_tags %}
 
 {% block estilos %}
     <style>
@@ -52,6 +54,13 @@
                 </div>
                 <div class="card-body">
                     {% include 'empresa/_detail.html' %}
+
+                    <a href="{% url object|url_action:'update' object.pk %}" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                          <i class="fas fa-pen"></i>
+                        </span>
+                        <span class="text">Modificar</span>
+                    </a>
                 </div>
             </div>
 

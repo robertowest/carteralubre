@@ -1,4 +1,5 @@
 {% extends 'empresa/base.html' %}
+
 {% load static %}
 {% load mis_tags %}
 
@@ -12,11 +13,11 @@
 {% block contenido %}
     <div class="card shadow mb-4">
         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-            <h6 class="m-0 font-weight-bold text-primary">Listado de {{object_list|verbose_name_plural}}</h6>
-                <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de {{object_list|verbose_name_plural}}</h6> ({{filtro}})
+            <div class="dropdown no-arrow">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
+                </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="{% url 'empresa:create' %}">Nuevo</a>
                 </div>
@@ -31,6 +32,7 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>#</th>
                                 <th>Razon Social</th>
                                 <th>Actividad</th>
                                 <th>CUIT</th>
@@ -39,9 +41,8 @@
                         <tbody>
                             {% for object in object_list %}
                             <tr>
-                                <td>
-                                    <a href="{{object.get_absolute_url}}">{{object.razon_social}}</a>
-                                </td>
+                                <td><a href="{{object.get_absolute_url}}">{{object.pk}}</a></td>
+                                <td>{{object.razon_social}}</td>
                                 <td>{{object.actividad}}</td>
                                 <td>{{object.cuit}}</td>
                             </tr>
