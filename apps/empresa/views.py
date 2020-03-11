@@ -44,12 +44,11 @@ class EmpresaDetailView(generic.DetailView):
 class EmpresaCreateView(generic.CreateView):
     model = models.Empresa
     # fields = '__all__'
-    fields = ['razon_social', 'cuit', 'domicilios', 'comunicaciones', 'comercial', 'actividad', 'active']
-    template_name = '{app}/create.html'.format(app=model._meta.verbose_name.lower())
+    fields = ['nombre', 'razon_social', 'cuit', 'comercial', 'actividad', 'active']
+    template_name = '{app}/form.html'.format(app=model._meta.verbose_name.lower())
 
     def get_success_url(self):
-
-        return reverse_lazy('empresa:index')
+        return reverse_lazy('empresa:list')
         
     def form_valid(self, form):
         response = super().form_valid(form)
@@ -58,8 +57,7 @@ class EmpresaCreateView(generic.CreateView):
 
 class EmpresaUpdateView(generic.UpdateView):
     model = models.Empresa
-    # fields = '__all__'
-    fields = ['razon_social', 'cuit', 'domicilios', 'comunicaciones', 'comercial', 'actividad', 'active']
+    fields = ['nombre', 'razon_social', 'cuit', 'comercial', 'actividad', 'active']
     template_name = '{app}/form.html'.format(app=model._meta.verbose_name.lower())
 
 
