@@ -12,9 +12,18 @@ class EmpresaTemplateView(generic.TemplateView):
     template_name = '{app}/index.html'.format(app=model._meta.verbose_name.lower())
 
     def get_context_data(self, *args, **kwargs):
+        model = self.model
         context = super().get_context_data()
-        context['actividades'] = self.model.objects.values('actividad', 'actividad__texto').annotate(contador=Count(id))
-        context['comerciales'] = self.model.objects.values('comercial', 'comercial__persona__apellido').annotate(contador=Count(id))
+        if model.objects.count() > 0:
+            context['actividades'] = model.objects.values('actividad', 'actividad__texto').annotate(contador=Count(id))
+        else:
+            context['actividades'] = None
+
+        if model.objects.count() > 0:
+            context['comerciales'] = model.objects.values('comercial', 'comercial__persona__apellido').annotate(contador=Count(id))
+        else:
+            context['comerciales'] = None
+
         return context
 
 
