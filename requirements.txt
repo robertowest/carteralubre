@@ -1,6 +1,6 @@
 django
 django-adminlte3
-# django-crispy-forms
+django-crispy-forms
 django-debug-toolbar
 
 # mysqlclient

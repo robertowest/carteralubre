@@ -10,8 +10,8 @@ from apps.comunes.functions import get_app_name, get_model_name
 class Persona(CommonStruct):
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
-    documento = models.CharField("D.N.I.", max_length=12, null=True, blank=True)
-    fecha_nacimiento = models.DateField(blank=True, null=True)
+    documento = models.CharField('DNI', max_length=12, null=True, blank=True)
+    fecha_nacimiento = models.DateField('Fecha de Nacimiento', blank=True, null=True)
 
     class Meta:
         verbose_name = 'Persona'
@@ -42,3 +42,19 @@ class Persona(CommonStruct):
     @property
     def nombre_completo(self):
         return "%s %s" % (self.nombre, self.apellido)
+
+    @property
+    def get_fields(self):
+        """Devuelve una lista con los nombres de todos los campos"""
+        fields = []
+        for f in self._meta.fields:
+            fname = f.name
+            try:
+                value = getattr(self, fname)
+            except:
+                value = None
+
+            # solo muestra campos con valores y que no sean campos especiales
+            if f.editable and value and f.name not in ('id', 'active'):
+                fields.append({'name':fname, 'value':value,})
+        return fields

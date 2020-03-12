@@ -31,6 +31,7 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>#</th>
                                 <th>Nombre</th>
                                 <th>Documento</th>
                                 <th>Nacimiento</th>
@@ -40,6 +41,7 @@
                         <tbody>
                             {% for object in object_list %}
                             <tr>
+                                <td><a href="{{object.get_absolute_url}}">{{object.pk}}</a></td>
                                 <td>{{object.nombre_completo}}</td>
                                 <td>{{object.documento}}</td>
                                 <td>{{object.fecha_nacimiento}}</td>

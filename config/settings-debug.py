@@ -19,16 +19,16 @@ INSTALLED_APPS += [
 # -------------
 # base de datos
 # -------------
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'clientes_dev',
-        'USER': 'roberto',
-        'PASSWORD': 'roberto',
-        'HOST': '192.168.1.2',
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'clientes_dev',
+#         'USER': 'roberto',
+#         'PASSWORD': 'roberto',
+#         'HOST': '192.168.1.2',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # ---------------
@@ -96,6 +96,11 @@ MIDDLEWARE += [
 ]
 
 INTERNAL_IPS = ['localhost', '127.0.0.1', '172.19.0.1', '172.20.0.1']  # debug (gateway del docker)
+
+
+# django-crispy-forms
+INSTALLED_APPS += ['crispy_forms',]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 # ---------------------------------------------

@@ -38,7 +38,7 @@ class Empresa(CommonStruct):
     domicilios = models.ManyToManyField(Domicilio, related_name='empresa_domicilios', blank=True)
     comunicaciones = models.ManyToManyField(Comunicacion, related_name='empresa_comunicaciones', blank=True)
     comercial = models.ForeignKey(Comercial, on_delete=models.CASCADE, null=True, blank=True)
-    actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True)
+    actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True, limit_choices_to = {'active': True})
     referencia_id = models.IntegerField('Referencia Externa', null=True, unique=True)
 
     # configuración para admin

@@ -1,9 +1,10 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
-from . import models
+from . import forms, models
 
 # Create your views here.
 def home(request):
@@ -12,7 +13,9 @@ def home(request):
 
 
 class PersonaTemplateView(generic.TemplateView):
-    pass
+    # si no existe página index llamamos a otra función
+    def get(self, request, *args, **kwargs):
+        return PersonasListView.as_view()(request)
 
 
 class PersonasListView(generic.ListView):
@@ -28,26 +31,32 @@ class PersonasListView(generic.ListView):
         return context
 
 
-class PersonaDetailView(generic.DetailView):
-    pass
-
-
-class PersonaCreateView(LoginRequiredMixin, generic.CreateView):
+class PersonaCreateView(generic.CreateView):  # LoginRequiredMixin
     model = models.Persona
-    fields = ['nombre', 'apellido', 'documento', 'fecha_nacimiento', 'active']
-    # template_name = '{app}/create.html'.format(app=__package__.split('.')[1])
-    template_name = '{app}/create.html'.format(app=model._meta.verbose_name.lower())
+    form_class = forms.PersonaForm
+    # template_name = '{app}/form.html'.format(app=__package__.split('.')[1])
+    template_name = '{app}/form.html'.format(app=model._meta.verbose_name.lower())
 
     def get_success_url(self):
-        return reverse_lazy('persona:index')
+        return reverse_lazy('{app}:list'.format(app=self.model._meta.verbose_name.lower()))
         
     def form_valid(self, form):
         response = super().form_valid(form)
         return response
 
 
+class PersonaDetailView(generic.DetailView):
+    model = models.Persona
+    template_name = '{app}/detail.html'.format(app=model._meta.verbose_name.lower())
+
+
 class PersonaUpdateView(generic.UpdateView):
-    pass
+    model = models.Persona
+    form_class = forms.PersonaForm
+    template_name = '{app}/form.html'.format(app=model._meta.verbose_name.lower())
+
+    def get_success_url(self):
+        return reverse_lazy('{app}:list'.format(app=self.model._meta.verbose_name.lower()))
 
 
 class PersonaDeleteView(generic.DeleteView):
