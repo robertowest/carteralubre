@@ -1,0 +1,27 @@
+{% extends 'comunes/base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% load mis_tags %}
+
+
+{% block contenido %}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    {% if object %}Modifica Datos de 
+                    {% else %}Nuevo Registro de 
+                    {% endif %}{{app_name|title}}
+                </h6>
+            </div>
+            <div class="card-body">
+                {% crispy form %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

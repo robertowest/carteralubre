@@ -1,4 +1,4 @@
-{% extends 'empresa/base.html' %}
+{% extends 'comunes/base.html' %}
 
 {% load static %}
 {% load mis_tags %}
@@ -13,46 +13,25 @@
 {% block contenido %}
     <div class="card shadow mb-4">
         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-            <h6 class="m-0 font-weight-bold text-primary">
-                Listado de {{object_list|verbose_name_plural}}
-                {% if filtro %}
-                <span style="font-size: smaller;font-weight: normal;">({{filtro}})</span>
-                {% endif %}
-            </h6> 
-            <div class="dropdown no-arrow">
-                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de {{object_list|verbose_name_plural}}</h6>
+                <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                </a>
+                    </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="{% url 'empresa:create' %}">Nuevo</a>
+                    <a class="dropdown-item" href="{% url app_name|add:':create' %}">Nuevo</a>
                 </div>
             </div>
         </div>
         <div class="card-body">
+            {# https://datatables.net #}
 
-            <!-- contenido -->
+            <!-- tabla de contenido -->
             <div class="card-body">
-                {# https://datatables.net #}
+                
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Razon Social</th>
-                                <th>Actividad</th>
-                                <th>CUIT</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for object in object_list %}
-                            <tr>
-                                <td><a href="{{object.get_absolute_url}}">{{object.pk}}</a></td>
-                                <td>{{object.razon_social}}</td>
-                                <td>{{object.actividad}}</td>
-                                <td>{{object.cuit}}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
+                        {% include app_name|add:'/_tabla.html' %}
                     </table>
                 </div>
             </div>
@@ -69,9 +48,9 @@
         <!-- botón de acción -->
         <button class="fixed-button-add wobble" type="button">
             <!--
-            <a href="{% url 'empresa:create' %}"><i class="fas fa-plus"></i></a>
+            <a href="{% url 'persona:create' %}"><i class="fas fa-plus"></i></a>
             -->
-            <a href="{% url 'empresa:create' %}" data-toggle="modal" data-target="#createModal">
+            <a href="{% url 'persona:create' %}" data-toggle="modal" data-target="#createModal">
                 <i class="fas fa-plus"></i>
             </a>
         </button>
@@ -90,7 +69,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        {% include 'empresa/form.html' %}
+                        {% include 'persona/form.html' %}
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-primary" type="submit" form="SubmitForm">Grabar</button>

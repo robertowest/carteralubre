@@ -7,8 +7,10 @@ from apps.persona.models import Persona
 
 class Comercial(CommonStruct):
     persona = models.ForeignKey(Persona, on_delete=models.CASCADE)
-    domicilios = models.ManyToManyField(Domicilio, related_name='comercial_domicilios', blank=True)
-    comunicaciones = models.ManyToManyField(Comunicacion, related_name='comercial_comunicaciones', blank=True)
+    domicilios = models.ManyToManyField(Domicilio, related_name='comercial_domicilios', 
+                                        blank=True, limit_choices_to = {'active': True})
+    comunicaciones = models.ManyToManyField(Comunicacion, related_name='comercial_comunicaciones',
+                                            blank=True, limit_choices_to = {'active': True})
 
     class Meta:
         verbose_name = 'Comercial'
@@ -34,12 +36,16 @@ class Comercial(CommonStruct):
 class Empresa(CommonStruct):
     nombre = models.CharField(max_length=60)
     razon_social = models.CharField('Razón Social', max_length=60, unique=True)
-    cuit = models.CharField(max_length=13, unique=True)
-    domicilios = models.ManyToManyField(Domicilio, related_name='empresa_domicilios', blank=True)
-    comunicaciones = models.ManyToManyField(Comunicacion, related_name='empresa_comunicaciones', blank=True)
-    comercial = models.ForeignKey(Comercial, on_delete=models.CASCADE, null=True, blank=True)
-    actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True, limit_choices_to = {'active': True})
-    referencia_id = models.IntegerField('Referencia Externa', null=True, unique=True)
+    cuit = models.CharField('CUIT/CUIL', max_length=13, unique=True)
+    domicilios = models.ManyToManyField(Domicilio, related_name='empresa_domicilios',
+                                        blank=True, limit_choices_to = {'active': True})
+    comunicaciones = models.ManyToManyField(Comunicacion, related_name='empresa_comunicaciones', 
+                                            blank=True, limit_choices_to = {'active': True})
+    comercial = models.ForeignKey(Comercial, on_delete=models.CASCADE, null=True, blank=True,
+                                  limit_choices_to = {'active': True})
+    actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True, 
+                                  limit_choices_to = {'tabla': 'actividad', 'active': True})
+    referencia_id = models.IntegerField('Referencia Externa', null=True, blank=True, unique=True)
 
     # configuración para admin
     list_display = ['razon_social', 'cuit', 'nombre', 'active']

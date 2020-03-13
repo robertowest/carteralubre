@@ -1,0 +1,103 @@
+{% extends 'empresa/base.html' %}
+
+{% load static %}
+{% load mis_tags %}
+
+{% block estilos %}
+    <style>
+        dl {
+            /*
+            border: 3px double #ccc;
+            padding: 0.5em;
+            */
+            border-bottom: 1px solid #ccc;
+        }
+        dt {
+            clear: left;
+            font-weight: bold;
+            /* 
+            float: left;
+            width: 120px;
+            text-align: right;
+            color: green; 
+            */
+        }
+        dt::after {
+            content: " : ";
+        }
+        dd {
+            margin: 0 0 0 0px;
+            padding: 0 0 0.5em 0;
+        }
+    </style>
+{% endblock %}
+
+
+{% block contenido %}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Formulario</h6>
+                <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="{{object.get_update_url}}">Modificar</a>
+                        <a class="dropdown-item" href="{{object.get_delete_url}}">Eliminar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                {% for fld in object.get_fields %}
+                <dl>
+                    <dt>{{fld.name|capfirst}}</dt>
+                    <dd>{{fld.value|escape|urlize}}</dd>
+                </dl>
+                {% endfor %}
+                
+                <a href="{{object.get_delete_url}}" class="btn btn-danger btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-trash"></i>
+                    </span>
+                    <span class="text">Eliminar</span>
+                </a>
+
+                <a href="{{object.get_update_url}}" class="btn btn-primary btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-pen"></i>
+                    </span>
+                    <span class="text">Modificar</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% comment %}
+<!-- modal block emergente -->
+<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Título</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                contenido
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" form="SubmitForm">Grabar</button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcomment %}

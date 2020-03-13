@@ -1,0 +1,19 @@
+
+<thead>
+    <tr>
+        <th>#</th>
+        <th>Razon Social</th>
+        <th>Actividad</th>
+        <th>CUIT</th>
+    </tr>
+</thead>
+<tbody>
+    {% for object in object_list %}
+    <tr>
+        <td><a href="{{object.get_absolute_url}}">{{object.pk}}</a></td>
+        <td>{{object.razon_social}}</td>
+        <td>{{object.actividad}}</td>
+        <td>{{object.cuit}}</td>
+    </tr>
+    {% endfor %}
+</tbody>

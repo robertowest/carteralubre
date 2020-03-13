@@ -21,12 +21,13 @@ class EmpresaTemplateView(generic.TemplateView):
 
 class EmpresaListView(generic.ListView):
     model = models.Empresa
-    template_name = '{app}/list.html'.format(app=model._meta.verbose_name.lower())
+    template_name = 'comunes/tabla.html'.format(app=__package__.split('.')[1])
     paginate_by = 15
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['object_list'] = models.Empresa.objects.filter(active=True)
+        context['app_name'] = __package__.split('.')[1]
+        # context['object_list'] = models.Empresa.objects.filter(active=True)
         return context
 
 
@@ -34,13 +35,15 @@ class EmpresaListView(generic.ListView):
 class EmpresaCreateView(generic.CreateView):
     model = models.Empresa
     form_class = forms.EmpresaForm
-    # fields = '__all__'
-    # fields = ['nombre', 'razon_social', 'cuit', 'comercial', 'actividad', 'active']
-    template_name = '{app}/form.html'.format(app=model._meta.verbose_name.lower())
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['app_name'] = __package__.split('.')[1]
+        return context
 
     def get_success_url(self):
-        # return reverse_lazy('empresa:list')
-        return reverse_lazy('{app}:list'.format(app=self.model._meta.verbose_name.lower()))
+        return reverse_lazy('{app}:list'.format(app=__package__.split('.')[1]))
         
     def form_valid(self, form):
         response = super().form_valid(form)
