@@ -8,8 +8,10 @@ from . import forms, models
 
 
 class EmpresaTemplateView(generic.TemplateView):
+    # app=__package__.split('.')[1]     --> lo obtiene de urls.py
+    # model._meta.verbose_name.lower()  --> lo obtiene de models.py
     model = models.Empresa
-    template_name = '{app}/index.html'.format(app=model._meta.verbose_name.lower())
+    template_name = '{app}/index.html'.format(app=__package__.split('.')[1])
 
     def get_context_data(self, *args, **kwargs):
         model = self.model
@@ -52,7 +54,7 @@ class EmpresaCreateView(generic.CreateView):
 
 class EmpresaDetailView(generic.DetailView):
     model = models.Empresa
-    template_name = '{app}/detail.html'.format(app=model._meta.verbose_name.lower())
+    template_name = 'comunes/detalle.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -63,8 +65,8 @@ class EmpresaDetailView(generic.DetailView):
 
 class EmpresaUpdateView(generic.UpdateView):
     model = models.Empresa
-    fields = ['nombre', 'razon_social', 'cuit', 'comercial', 'actividad', 'active']
-    template_name = '{app}/form.html'.format(app=model._meta.verbose_name.lower())
+    form_class = forms.EmpresaForm
+    template_name = 'comunes/formulario.html'
 
     def get_success_url(self):
         return reverse_lazy('{app}:list'.format(app=self.model._meta.verbose_name.lower()))

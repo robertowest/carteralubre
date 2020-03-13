@@ -1,4 +1,4 @@
-{% extends 'empresa/base.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 {% load mis_tags %}
@@ -51,6 +51,8 @@
                 </div>
             </div>
             <div class="card-body">
+                ok:{{ object.get_fields }}
+
                 {% for fld in object.get_fields %}
                 <dl>
                     <dt>{{fld.name|capfirst}}</dt>

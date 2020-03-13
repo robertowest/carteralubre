@@ -14,3 +14,17 @@ urlpatterns = [
     path('filtro_actividad/<int:filtro>', views.FilterListView.as_view(), name='filtro_actividad'),
     path('filtro_comercial/<int:filtro>', views.FilterListView.as_view(), name='filtro_comercial'),
 ]
+
+
+
+
+
+
+
+from django.shortcuts import render
+def muestra(request):
+    return render(request, 'base.html', context={},)
+
+urlpatterns += [
+    path('base/', muestra, name='base'),
+]

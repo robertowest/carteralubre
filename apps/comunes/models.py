@@ -24,6 +24,20 @@ class CommonStruct(models.Model):
     def hard_delete(self):
         super(CommonStruct, self).delete()
 
+    def get_fields(self):
+        """Devuelve una lista con los nombres de todos los campos"""
+        fields = []
+        for f in self._meta.fields:
+            # comprobamos que el campo sea del tipo que queremos visualizar
+            if f.editable and f.name not in ('id', 'active'):
+                try:
+                    value = getattr(self, f.name)
+                    if value:
+                        fields.append({'name':f.verbose_name, 'value':value,})
+                except:
+                    value = None
+        return fields
+
 
 class Pais(CommonStruct):
     nombre = models.CharField(max_length=40)

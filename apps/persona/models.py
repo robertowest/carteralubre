@@ -42,19 +42,3 @@ class Persona(CommonStruct):
     @property
     def nombre_completo(self):
         return "%s %s" % (self.nombre, self.apellido)
-
-    @property
-    def get_fields(self):
-        """Devuelve una lista con los nombres de todos los campos"""
-        fields = []
-        for f in self._meta.fields:
-            fname = f.name
-            try:
-                value = getattr(self, fname)
-            except:
-                value = None
-
-            # solo muestra campos con valores y que no sean campos especiales
-            if f.editable and value and f.name not in ('id', 'active'):
-                fields.append({'name':fname, 'value':value,})
-        return fields

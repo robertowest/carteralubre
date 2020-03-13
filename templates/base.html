@@ -5,7 +5,6 @@
 
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,18 +19,26 @@
     </head>
 
     <body id="page-top">
-
         <div id="wrapper">
             {% include 'includes/_sidebar.html' %}
     
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
-                    {% block content %}
-                    {% endblock %}
+                    {% include 'includes/_navbar.html' %}
+
+                    <div class="container-fluid">
+                        {% block content %}
+                        <h1 class="h3 mb-4 text-gray-800">/proyecto/templates/base.html</h1>
+                        {% endblock %}
+
+                    </div>
+
                 </div>
                 
                 {% include 'includes/_footer.html' %}
+                
             </div>
+
         </div>
 
         <!-- botón flotante de acción -->
@@ -46,6 +53,7 @@
         {% include 'includes/_java_script.html' %}
 
         {% block js %}{% endblock %}
+
     </body>
 
 </html>

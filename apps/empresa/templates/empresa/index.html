@@ -1,14 +1,14 @@
-{% extends 'empresa/base.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 
 
-{% block estilos %}
+{% block style %}
     <link href="{% static 'css/floating-button-action.css' %}" rel="stylesheet">
 {% endblock %}
 
 
-{% block contenido %}
+{% block content %}
 
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Panel de Control</h1>
@@ -68,7 +68,7 @@
 {% endblock %}
 
 
-{% block boton-accion %}
+{% block floating-button-action %}
 
     <button class="fixed-button-add wobble" type="button">
         <a href="{% url 'empresa:create' %}"
