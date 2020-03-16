@@ -53,9 +53,9 @@ AUTH_PASSWORD_VALIDATORS = []
 # -----------------------------------
 # ubicación de los templates públicos
 # -----------------------------------
-# TEMPLATES[0]['DIRS'] = [
-#     os.path.join(BASE_DIR, "templates"),
-# ]
+TEMPLATES[0]['DIRS'] = [
+    os.path.join(BASE_DIR, "templates"),
+]
 
 
 # ------------------

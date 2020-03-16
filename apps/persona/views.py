@@ -51,7 +51,13 @@ class PersonaCreateView(generic.CreateView):  # LoginRequiredMixin
 
 class PersonaDetailView(generic.DetailView):
     model = models.Persona
-    template_name = 'comunes/detalle.html'.format(app=model._meta.verbose_name.lower())
+    # template_name = 'comunes/detalle.html'
+    template_name = '{app}/detalle.html'.format(app=model._meta.verbose_name.lower())
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['comunicaciones'] = context['persona'].comunicaciones.filter(active=True)
+        return context
 
 
 class PersonaUpdateView(generic.UpdateView):

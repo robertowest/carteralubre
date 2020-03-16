@@ -4,22 +4,24 @@
 {% load mis_tags %}
 
 
-{% block estilos %}
+{% block style %}
     <link href="{% static 'vendor/datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/floating-button-action.css' %}" rel="stylesheet">
 {% endblock %}
 
 
-{% block contenido %}
+{% block content %}
     <div class="card shadow mb-4">
         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
             <h6 class="m-0 font-weight-bold text-primary">Listado de {{object_list|verbose_name_plural}}</h6>
                 <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="{% url app_name|add:':create' %}">Nuevo</a>
+                    {% with object_list|verbose_name|lower|add:':create' as button_add %}
+                    <a class="dropdown-item" href="{% url button_add %}">Nuevo</a>
+                    {% endwith %}
                 </div>
             </div>
         </div>
@@ -31,7 +33,7 @@
                 
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        {% include app_name|add:'/_tabla.html' %}
+                        {% include object_list|verbose_name|lower|add:'/includes/_tabla.html' %}
                     </table>
                 </div>
             </div>
@@ -41,6 +43,16 @@
 
 {% endblock %}
 
+
+{% block floating-button-action %}
+<button class="fixed-button-add wobble" type="button">
+    {% with object_list|verbose_name|lower|add:':create' as button_add %}
+    <a href="{% url button_add %}">
+        <i class="fas fa-plus"></i>
+    </a>
+    {% endwith %}
+</button>
+{% endblock %}
 
 {# boton de accion flotante y ventana modal #}
 {% comment %}
@@ -82,7 +94,7 @@
 {% endcomment %}
 
 
-{% block jscript %}
+{% block js %}
     <!-- Page level plugins -->
     <script src="{% static 'vendor/datatables/jquery.dataTables.min.js' %}"></script>
     <script src="{% static 'vendor/datatables/dataTables.bootstrap4.min.js' %}"></script>

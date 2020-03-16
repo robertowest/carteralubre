@@ -3,7 +3,7 @@
 {% load static %}
 {% load mis_tags %}
 
-{% block estilos %}
+{% block style %}
     <style>
         dl {
             /*
@@ -33,7 +33,7 @@
 {% endblock %}
 
 
-{% block contenido %}
+{% block content %}
 
 <div class="row">
     <div class="col-lg-6">
@@ -51,8 +51,6 @@
                 </div>
             </div>
             <div class="card-body">
-                ok:{{ object.get_fields }}
-
                 {% for fld in object.get_fields %}
                 <dl>
                     <dt>{{fld.name|capfirst}}</dt>
@@ -60,12 +58,14 @@
                 </dl>
                 {% endfor %}
                 
+                {% comment %}
                 <a href="{{object.get_delete_url}}" class="btn btn-danger btn-icon-split">
                     <span class="icon text-white-50">
                         <i class="fas fa-trash"></i>
                     </span>
                     <span class="text">Eliminar</span>
                 </a>
+                {% endcomment %}
 
                 <a href="{{object.get_update_url}}" class="btn btn-primary btn-icon-split">
                     <span class="icon text-white-50">
@@ -79,27 +79,3 @@
 </div>
 
 {% endblock %}
-
-
-{% comment %}
-<!-- modal block emergente -->
-<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Título</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                contenido
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" type="submit" form="SubmitForm">Grabar</button>
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-            </div>
-        </div>
-    </div>
-</div>
-{% endcomment %}

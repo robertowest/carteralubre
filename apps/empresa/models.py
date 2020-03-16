@@ -61,12 +61,3 @@ class Empresa(CommonStruct):
 
     def __str__(self):
         return self.razon_social
-
-    def get_absolute_url(self):
-        return reverse('empresa:detail', args=(self.pk,))
-
-    def get_update_url(self):
-        return reverse('empresa:update', args=(self.pk,))
-
-    def get_delete_url(self):
-        return reverse('empresa:delete', args=(self.pk,))

@@ -1,39 +1,55 @@
+from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
-from apps.comunes.forms.domicilio import Domicilio, DomicilioForm
+from apps.comunes.models import Domicilio as DomicilioModel
+from apps.comunes.forms.domicilio import DomicilioForm
 
-PAGINATION = 15
+# 
+# Domicilio
+#  
+class DomicilioListView(ListView):
+    model = DomicilioModel
+    template_name = 'comunes/tabla.html'
+    paginate_by = 15
 
-
-class ListView(ListView):
-    model = Domicilio
-    template_name = '{app}/list.html'.format(app=model._meta.verbose_name.lower())
-    paginate_by = PAGINATION
-
-
-class CreateView(CreateView):
-    model = Domicilio
-    template_name = '{app}/create.html'.format(app=model._meta.verbose_name.lower())
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['object_list'] = DomicilioModel.objects.filter(active=True)
+        return context
+ 
+ 
+class DomicilioCreateView(CreateView):
+    model = DomicilioModel
     form_class = DomicilioForm
+    template_name = 'comunes/formulario.html'
 
-
-class DetailView(DetailView):
-    model = Domicilio
-    template_name = '{app}/detail.html'.format(app=model._meta.verbose_name.lower())
-
-
-class UpdateView(UpdateView):
-    model = Domicilio
-    template_name = '{app}/update.html'.format(app=model._meta.verbose_name.lower())
-    form_class = DomicilioForm
-
-
-class DeleteView(DeleteView):
-    model = Domicilio
-
-    def get(self, request, *args, **kwargs):
-        return self.post(request, *args, **kwargs)
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
 
     def get_success_url(self):
-        return reverse_lazy('comunes:domicilio_list')
+        return reverse_lazy('{app}:list'.format(app=__package__.split('.')[1]))
+        
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        return response
+ 
+ 
+class DomicilioDetailView(DetailView):
+    model = DomicilioModel
+    template_name = 'comunes/detalle.html'
+ 
+ 
+class DomicilioUpdateView(UpdateView):
+    model = DomicilioModel
+    form_class = DomicilioForm
+    template_name = 'comunes/formulario.html'
+
+    def get_success_url(self):
+        name = self.model._meta.verbose_name.lower()
+        return reverse_lazy('{app}:list'.format(app=name))
+ 
+ 
+class DomicilioDeleteView(DeleteView):
+    pass

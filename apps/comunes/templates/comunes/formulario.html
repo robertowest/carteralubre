@@ -5,7 +5,7 @@
 {% load mis_tags %}
 
 
-{% block contenido %}
+{% block content %}
 
 <div class="row">
     <div class="col-lg-6">
@@ -14,7 +14,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">
                     {% if object %}Modifica Datos de 
                     {% else %}Nuevo Registro de 
-                    {% endif %}{{app_name|title}}
+                    {% endif %}{{object|verbose_name|title}}
                 </h6>
             </div>
             <div class="card-body">

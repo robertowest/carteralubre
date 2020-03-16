@@ -3,7 +3,7 @@ import datetime
 from django.urls import reverse
 from django.db import models
 
-from apps.comunes.models import CommonStruct
+from apps.comunes.models import CommonStruct, Comunicacion, Domicilio
 from apps.comunes.functions import get_app_name, get_model_name
 
 
@@ -12,6 +12,10 @@ class Persona(CommonStruct):
     apellido = models.CharField(max_length=40)
     documento = models.CharField('DNI', max_length=12, null=True, blank=True)
     fecha_nacimiento = models.DateField('Fecha de Nacimiento', blank=True, null=True)
+    domicilio = models.ForeignKey(Domicilio, on_delete=models.CASCADE, null=True, blank=True,
+                                  limit_choices_to = {'active': True})
+    comunicaciones = models.ManyToManyField(Comunicacion, related_name='persona_comunicaciones', 
+                                            blank=True, limit_choices_to = {'active': True})
 
     class Meta:
         verbose_name = 'Persona'
@@ -20,15 +24,6 @@ class Persona(CommonStruct):
 
     def __str__(self):
         return "%s, %s" % (self.apellido, self.nombre)
-
-    def get_absolute_url(self):
-        return reverse('persona:detail', args=(self.pk,))
-
-    def get_update_url(self):
-        return reverse('persona:update', args=(self.pk,))
-
-    def get_delete_url(self):
-        return reverse('persona:delete', args=(self.pk,))
 
     @property
     def edad(self):

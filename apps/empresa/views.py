@@ -54,7 +54,7 @@ class EmpresaCreateView(generic.CreateView):
 
 class EmpresaDetailView(generic.DetailView):
     model = models.Empresa
-    template_name = 'comunes/detalle.html'
+    template_name = 'empresa/detalle.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

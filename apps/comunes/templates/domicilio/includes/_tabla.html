@@ -1,0 +1,32 @@
+<thead>
+    <tr>
+        <th>#</th>
+        <th>Domicilio</th>
+        <th>Ciudad</th>
+        <th>Localidad</th>
+        <th>País</th>
+    </tr>
+</thead>
+<tbody>
+    {% for object in object_list %}
+    <tr>
+        <td><a href="{{object.get_detail_url}}">{{object.pk}}</a></td>
+        <td>{{object}}</td>
+        <td>{{object.ciudad}}</td>
+        <td>{{object.localidad}}</td>
+        <td>{{object.pais}}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+
+
+{% comment %}
+    {% for object in object_list %}
+    <tr>
+        <td><a href="{{object.get_absolute_url}}">{{object.pk}}</a></td>
+        <td>{{object.razon_social}}</td>
+        <td>{{object.actividad}}</td>
+        <td>{{object.cuit}}</td>
+    </tr>
+    {% endfor %}
+{% endcomment %}

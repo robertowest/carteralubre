@@ -38,6 +38,34 @@ class CommonStruct(models.Model):
                     value = None
         return fields
 
+    def get_absolute_url(self):
+        return reverse('%s:detail' % self._meta.model_name, args=(self.pk,))
+
+    def get_list_url(self):
+        return reverse('%s:list' % self._meta.model_name)
+
+    def get_create_url(self):
+        # self._meta.app_label
+        # self._meta.module_name
+        import pdb; pdb.set_trace()
+        return reverse('%s:create' % self._meta.app_label)
+
+    def get_detail_url(self):
+        # object._meta.model_name
+        return reverse('%s:detail' % self._meta.model_name, args=(self.pk,))
+
+    def get_update_url(self):
+        return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
+
+    def get_delete_url(self):
+        return reverse('%s:delete' % self._meta.model_name, args=(self.pk,))
+
+    def get_app_label(self):
+        return self._meta.app_label
+    
+    def get_module_name(self):
+        return self._meta.module_name
+
 
 class Pais(CommonStruct):
     nombre = models.CharField(max_length=40)
@@ -104,16 +132,6 @@ class Domicilio(CommonStruct):
     def __str__(self):
         return "%s %s" % (self.calle, self.numero)
 
-    def get_absolute_url(self):
-        # reverse('comunes:domi_info', kwargs={'pk': self.pk})
-        return reverse('comunes:diccionario_detail', args=(self.pk,))
-
-    def get_update_url(self):
-        return reverse('comunes:domdiccionario_update', args=(self.pk,))
-
-    def get_delete_url(self):
-        return reverse('comunes:diccionario_delete', args=(self.pk,))
-
 
 class Diccionario(CommonStruct):
     TABLA = (('actividad', 'Actividades'), ('domicilio', 'Domicilios'),)
@@ -130,15 +148,6 @@ class Diccionario(CommonStruct):
 
     def get_texto(self):
         return str(self.texto).capitalize()
-
-    def get_absolute_url(self):
-        return reverse('comunes:diccionario_detail', args=(self.pk,))
-
-    def get_update_url(self):
-        return reverse('comunes:diccionario_update', args=(self.pk,))
-
-    def get_delete_url(self):
-        return reverse('comunes:diccionario_delete', args=(self.pk,))
 
 
 class Comunicacion(CommonStruct):
@@ -163,12 +172,3 @@ class Comunicacion(CommonStruct):
 
     def __str__(self):
         return "%s: %s" % (self.get_tipo_display(), self.texto)
-
-    def get_absolute_url(self):
-        return reverse('comunes:comunicacion_detail', args=(self.pk,))
-
-    def get_update_url(self):
-        return reverse('comunes:comunicacion_update', args=(self.pk,))
-
-    def get_delete_url(self):
-        return reverse('comunes:comunicacion_delete', args=(self.pk,))
