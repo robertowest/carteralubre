@@ -1,4 +1,5 @@
 from crispy_forms import helper, layout
+from crispy_forms.bootstrap import FormActions
 from django import forms
 
 from apps.comunes.models import Domicilio as DomicilioModel
@@ -13,22 +14,17 @@ class DomicilioForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         # self.fields['actividad'].queryset = Diccionario.objects.filter(tabla='actividad')
         self.helper = helper.FormHelper()
-        self.helper.layout = layout.Layout(
-            'tipo', 
-            'calle', 
-            'numero', 
-            'piso', 
-            'puerta', 
-            'pais', 
-            'ciudad', 
-            'localidad', 
-            'active'
-        )
-        self.helper.layout.append(
-            layout.HTML('<button type="submit" class="btn btn-primary btn-icon-split">'
-                        '<span class="icon text-white-50">'
-                        '<i class="fas fa-save"></i>'
-                        '</span>'
-                        '<span class="text">Grabar</span>'
-                        '</button>')
-        )
+
+        # creamos layouts
+        self.helper.layout = layout.Layout()        
+
+        # agregamos todos los campos
+        for fld in self.Meta.fields:
+            self.helper.layout.append(fld)
+
+        # agregamos los botones de acción
+        bSave = '<button type="submit" class="btn btn-primary btn-icon-split"><span class="icon text-white-50"><i class="fas fa-save"></i></span><span class="text">Grabar</span></button>'
+        bCancel = '<a class="btn btn-warning btn-icon-split" style="margin-left: 5px" href="{{request.META.HTTP_REFERER}}"><span class="icon text-white-50"><i class="fas fa-undo"></i></span><span class="text">Cancela</span></a>'
+        self.helper.layout.append(layout.HTML("<hr>"))
+        self.helper.layout.append(layout.HTML(bSave))
+        self.helper.layout.append(layout.HTML(bCancel))

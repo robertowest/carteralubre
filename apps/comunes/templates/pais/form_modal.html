@@ -1,0 +1,27 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">
+                {% if object %}Editar{% else %}Crear{% endif %} País
+            </h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" class="btn btn-danger">
+                    <span class="fa fa-save"></span> Guardar</button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>         
+            </form>
+        </div>
+        <!--
+        <div class="modal-footer">
+            <a class="btn btn-primary" href="#">Grabar</a>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+        </div>
+        -->
+    </div>
+</div>

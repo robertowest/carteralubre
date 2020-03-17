@@ -1,12 +1,13 @@
 from django.urls import path
-from apps.comunes import views
+from apps.comunes.views import comunicacion as views
 
 app_name = 'comunicacion'
 
 urlpatterns = [
-    path('', views.ListView.as_view(), name='list'),
-    path('crear/', views.CreateView.as_view(), name='create'),
-    path('<int:pk>/', views.DetailView.as_view(), name='detail'),
-    path('<int:pk>/modificar/', views.UpdateView.as_view(), name='update'),
-    path('<int:pk>/eliminar/', views.DeleteView.as_view(), name='delete'),
+    path('', views.ComunicacionTemplateView.as_view(), name='index'),
+    path('listado/', views.ComunicacionListView.as_view(), name='list'),
+    path('crear/', views.ComunicacionCreateView.as_view(), name='create'),
+    path('<int:pk>/', views.ComunicacionDetailView.as_view(), name='detail'),
+    path('<int:pk>/modificar/', views.ComunicacionUpdateView.as_view(), name='update'),
+    path('<int:pk>/eliminar/', views.ComunicacionDeleteView.as_view(), name='delete'),
 ]

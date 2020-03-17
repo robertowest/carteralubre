@@ -63,110 +63,110 @@
                     </a>
                 </div>
             </div>
-
         </div>
 
         <div class="col-lg-6">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card shadow mb-4">
-                        <a href="#domicilioCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="domicilioCard">
-                            <h6 class="m-0 font-weight-bold text-primary">Domicilios</h6>
+            <!-- domicilios -->
+            <div class="card shadow mb-4">
+                <a href="#domicilioCard" class="d-block card-header py-3" 
+                    data-toggle="collapse" role="button" aria-expanded="false" 
+                    aria-controls="domicilioCard">
+                    <h6 class="m-0 font-weight-bold text-primary">Domicilios</h6>
+                </a>
+                <div class="collapse" id="domicilioCard">
+                    <div class="card-body">
+
+                        {% if domicilios  %}
+                        
+                        <table class="table" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Domicilio</th>
+                                    <th>Localidad</th>
+                                    <th>Ciudad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for registro in domicilios %}
+                                <tr>
+                                    <td><a href="{{contacto.get_absolute_url}}">{{registro}}</a></td>
+                                    <td>{{registro.localidad}}</td>
+                                    <td>{{registro.ciudad}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+
+                        {% endif  %}
+
+                        <!-- asociar domicilio -->
+                        <a href="#" class="btn btn-primary btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="text">Asociar</span>
                         </a>
-                        <div class="collapse show" id="domicilioCard">
-                            <div class="card-body">
+                        <!-- agregar nuevo y domicilio -->
+                        <a href="#" class="btn btn-success btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            <span class="text">Crear y asociar</span>
+                        </a>
 
-                                {% if domicilios  %}
-                                
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Domicilio</th>
-                                            <th>Localidad</th>
-                                            <th>Ciudad</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for registro in domicilios %}
-                                        <tr>
-                                            <td><a href="{{contacto.get_absolute_url}}">{{registro}}</a></td>
-                                            <td>{{registro.localidad}}</td>
-                                            <td>{{registro.ciudad}}</td>
-                                        </tr>
-                                        {% endfor %}
-                                    </tbody>
-                                </table>
-
-                                {% endif  %}
-
-                                <!-- asociar domicilio -->
-                                <a href="#" class="btn btn-primary btn-icon-split">
-                                    <span class="icon text-white-50">
-                                      <i class="fas fa-check"></i>
-                                    </span>
-                                    <span class="text">Asociar</span>
-                                </a>
-                                <!-- agregar nuevo y domicilio -->
-                                <a href="#" class="btn btn-success btn-icon-split">
-                                    <span class="icon text-white-50">
-                                      <i class="fas fa-plus"></i>
-                                    </span>
-                                    <span class="text">Crear y asociar</span>
-                                </a>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
+            </div>
+            
 
-                <div class="col-lg-12">
-                    <div class="card shadow mb-4">
-                        <a href="#comunicacionCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="comunicacionCard">
-                            <h6 class="m-0 font-weight-bold text-primary">Comunicaciones</h6>
+            <!-- contactos -->
+            <div class="card shadow mb-4">
+                <a href="#comunicacionCard" class="d-block card-header py-3" 
+                    data-toggle="collapse" role="button" aria-expanded="false" 
+                    aria-controls="comunicacionCard">
+                    <h6 class="m-0 font-weight-bold text-primary">Comunicaciones</h6>
+                </a>
+                <div class="collapse" id="comunicacionCard">
+                    <div class="card-body">
+
+                        {% if comunicaciones  %}
+
+                        <table class="table" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for registro in comunicaciones %}
+                                <tr>
+                                    <td>{{registro.get_tipo_display}}</td>
+                                    <td><a href="{{contacto.get_absolute_url}}">{{registro.texto}}</a></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+
+                        {% endif  %}
+
+                        <!-- asociar domicilio -->
+                        <a href="#" class="btn btn-primary btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="text">Asociar</span>
                         </a>
-                        <div class="collapse show" id="comunicacionCard">
-                            <div class="card-body">
+                        <!-- agregar nuevo y domicilio -->
+                        <a href="#" class="btn btn-success btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            <span class="text">Crear y asociar</span>
+                        </a>
 
-                                {% if comunicaciones  %}
-
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Tipo</th>
-                                            <th>Descripción</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for registro in comunicaciones %}
-                                        <tr>
-                                            <td>{{registro.get_tipo_display}}</td>
-                                            <td><a href="{{contacto.get_absolute_url}}">{{registro.texto}}</a></td>
-                                        </tr>
-                                        {% endfor %}
-                                    </tbody>
-                                </table>
-
-                                {% endif  %}
-
-                                <!-- asociar domicilio -->
-                                <a href="#" class="btn btn-primary btn-icon-split">
-                                    <span class="icon text-white-50">
-                                      <i class="fas fa-check"></i>
-                                    </span>
-                                    <span class="text">Asociar</span>
-                                </a>
-                                <!-- agregar nuevo y domicilio -->
-                                <a href="#" class="btn btn-success btn-icon-split">
-                                    <span class="icon text-white-50">
-                                      <i class="fas fa-plus"></i>
-                                    </span>
-                                    <span class="text">Crear y asociar</span>
-                                </a>
-
-                            </div>
-                        </div>
                     </div>
-                </div>        
+                </div>
             </div>
         </div>
     </div>

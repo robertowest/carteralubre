@@ -130,7 +130,10 @@ class Domicilio(CommonStruct):
         verbose_name_plural = 'Domicilios'
 
     def __str__(self):
-        return "%s %s" % (self.calle, self.numero)
+        texto = "%s %s" % (self.calle, self.numero)
+        if self.piso:
+            texto = texto + " - %s piso, puerta %s" % (self.piso, self.puerta)
+        return texto
 
 
 class Diccionario(CommonStruct):

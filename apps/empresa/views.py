@@ -78,7 +78,8 @@ class EmpresaDeleteView(generic.DeleteView):
 
 class FilterListView(generic.ListView):
     model = models.Empresa
-    template_name = '{app}/list.html'.format(app=model._meta.verbose_name.lower())
+    # template_name = '{app}/list.html'.format(app=model._meta.verbose_name.lower())
+    template_name = 'comunes/tabla.html'
     paginate_by = 15
 
     def url_name(self):

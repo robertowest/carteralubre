@@ -35,7 +35,9 @@
 
 {% block content %}
 <div class="row">
+    <!-- izquierda -->
     <div class="col-lg-6">
+        <!-- persona -->
         <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary">Datos de la Persona</h6>
@@ -55,7 +57,8 @@
             </div>
             <div class="card-body">
                 {% include 'includes/_detail_snippet.html' %}
-
+            </div>
+            <div class="card-footer">
                 <a href="{% url object|url_action:'update' object.pk %}" class="btn btn-primary btn-icon-split">
                     <span class="icon text-white-50">
                       <i class="fas fa-pen"></i>
@@ -64,162 +67,75 @@
                 </a>
             </div>
         </div>
-
     </div>
 
+    <!-- derecha -->
     <div class="col-lg-6">
+        <!-- contacto -->
+        <div class="card shadow mb-4">
+            <a href="#comunicacionCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="comunicacionCard">
+                <h6 class="m-0 font-weight-bold text-primary">Datos de Contacto</h6>
+            </a>
+            <div class="collapse show" id="comunicacionCard">
+                <div class="card-body">
+                    <table class="table">
+                        <tbody>
+                            {% for registro in comunicaciones %}
+                            <tr>
+                                <td>{{registro.get_tipo_display}}</td>
+                                <td>
+                                    <a href="{{registro.get_update_url}}">{{registro.texto}}</a>                                    
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    <!-- /comunicacion/1/modificar/  -->
+                    <a href="{{object.get_related_url_with_contact}}" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text">Nuevo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- domicilio -->
-        <div class="col-lg-12">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Domicilio de la Persona</h6>
-                    <div class="dropdown no-arrow">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                            {# object.domicilio.get_create_url #}
-                            <a class="dropdown-item" href="#">Agregar</a>
-                            <a class="dropdown-item" href="#">Modificar</a>
-                            <a class="dropdown-item" href="#">Eliminar</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="card shadow mb-4">
+            <a href="#domicilioCard" class="d-block card-header py-3" 
+               data-toggle="collapse" role="button" aria-expanded="false" 
+               aria-controls="domicilioCard">
+                <h6 class="m-0 font-weight-bold text-primary">Datos de Domicilio</h6>
+            </a>
+            <div class="collapse" id="domicilioCard">
                 <div class="card-body">
+                    {% with object.domicilio as object %}
                     {% include 'includes/_detail_snippet.html' %}
-
-                    <a href="{% url object|url_action:'update' object.pk %}" class="btn btn-primary btn-icon-split">
+                    {% endwith %}
+                </div>    
+                <div class="card-footer">
+                    {% if object.domicilio %}
+                    <a href="{{object.domicilio.get_update_url}}" class="btn btn-primary btn-icon-split">
                         <span class="icon text-white-50">
-                            <i class="fas fa-pen"></i>
+                            <i class="fas fa-edit"></i>
                         </span>
                         <span class="text">Modificar</span>
                     </a>
+                    {% else %}
+                    <a href="{{object.get_related_url_with_address}}" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text">Nuevo</span>
+                    </a>
+                    {% endif %}
                 </div>
             </div>
-
         </div>
     </div>
+
 </div>
-{% endblock %}
-
-
-{% block content2 %}
-
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Datos de la Persona</h6>
-                    <div class="dropdown no-arrow">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                            <!--
-                            <div class="dropdown-header">Acciones:</div>
-                            <div class="dropdown-divider"></div>
-                            -->
-                            <a class="dropdown-item" href="{{object.get_update_url}}">Modificar</a>
-                            <a class="dropdown-item" href="{{object.get_delete_url}}">Eliminar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    {% include 'includes/_detail_snippet.html' %}
-
-                    <a href="{% url object|url_action:'update' object.pk %}" class="btn btn-primary btn-icon-split">
-                        <span class="icon text-white-50">
-                          <i class="fas fa-pen"></i>
-                        </span>
-                        <span class="text">Modificar</span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-6">
-            <div class="row">
-                <!-- domicilio -->
-                <div class="col-lg-12">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Domicilio de la Persona</h6>
-                            <div class="dropdown no-arrow">
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="{{object.domicilio.get_update_url}}">Agregar</a>
-                                    <a class="dropdown-item" href="{{object.domicilio.get_update_url}}">Modificar</a>
-                                    <a class="dropdown-item" href="{{object.domicilio.get_delete_url}}">Eliminar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            {% include 'includes/_detail_snippet.html' %}
-        
-                            <a href="{% url object|url_action:'update' object.pk %}" class="btn btn-primary btn-icon-split">
-                                <span class="icon text-white-50">
-                                  <i class="fas fa-pen"></i>
-                                </span>
-                                <span class="text">Modificar</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- comunicaciones -->
-                <div class="col-lg-12">
-                    <div class="card shadow mb-4">
-                        <a href="#comunicacionCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="comunicacionCard">
-                            <h6 class="m-0 font-weight-bold text-primary">Comunicaciones</h6>
-                        </a>
-                        <div class="collapse show" id="comunicacionCard">
-                            <div class="card-body">
-                                {% if comunicaciones  %}
-
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Tipo</th>
-                                            <th>Descripción</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for registro in comunicaciones %}
-                                        <tr>
-                                            <td>{{registro.get_tipo_display}}</td>
-                                            <td><a href="{{contacto.get_absolute_url}}">{{registro.texto}}</a></td>
-                                        </tr>
-                                        {% endfor %}
-                                    </tbody>
-                                </table>
-
-                                {% endif  %}
-
-                                <!-- asociar domicilio -->
-                                <a href="#" class="btn btn-primary btn-icon-split">
-                                    <span class="icon text-white-50">
-                                      <i class="fas fa-check"></i>
-                                    </span>
-                                    <span class="text">Asociar</span>
-                                </a>
-                                <!-- agregar nuevo y domicilio -->
-                                <a href="#" class="btn btn-success btn-icon-split">
-                                    <span class="icon text-white-50">
-                                      <i class="fas fa-plus"></i>
-                                    </span>
-                                    <span class="text">Crear y asociar</span>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>
-    </div>
-
 {% endblock %}

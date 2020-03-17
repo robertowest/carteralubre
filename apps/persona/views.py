@@ -71,3 +71,39 @@ class PersonaUpdateView(generic.UpdateView):
 
 class PersonaDeleteView(generic.DeleteView):
     pass
+
+
+
+from apps.comunes.models import Comunicacion as ComunicacionModel
+from apps.comunes.forms.comunicacion import ComunicacionForm
+
+
+class CreateContactView(generic.CreateView):
+    model = ComunicacionModel
+    form_class = ComunicacionForm
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, **kwargs):
+        # context['view'].kwargs['fk']
+        context = super().get_context_data(**kwargs)
+        # context['app_name'] = __package__.split('.')[1]
+        return context
+
+    def get_success_url(self):
+        # {{ request.META.HTTP_REFERER }}
+        # return self.request.META.HTTP_REFERER
+        return reverse_lazy('{app}:list'.format(app=__package__.split('.')[1]))
+
+    def form_valid(self, form):
+        # grabamos el objeto para obtener identificador
+        self.object = form.save()
+        # obtenemos el objeto primario
+        persona = models.Persona.objects.get(id=self.kwargs['fk'])
+        # creamos la asociación
+        persona.comunicaciones.add(self.object)
+        # terminamos
+        return super().form_valid(form)
+
+
+class CreateAddressView(generic.CreateView):
+    pass

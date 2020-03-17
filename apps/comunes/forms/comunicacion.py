@@ -1,20 +1,20 @@
 from crispy_forms import helper, layout
 from django import forms
 
-from apps.comunes.models import Diccionario
-from .models import Empresa
+from apps.comunes.models import Comunicacion as ComunicacionModel
 
 
-class EmpresaForm(forms.ModelForm):
+class ComunicacionForm(forms.ModelForm):
     class Meta:
-        model = Empresa
-        fields = ['nombre', 'razon_social', 'cuit', 'comercial', 'actividad', 'referencia_id', 'active']
+        model = ComunicacionModel
+        fields = ['tipo', 'texto', 'active']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        # self.fields['actividad'].queryset = Diccionario.objects.filter(tabla='actividad')
+        self.helper = helper.FormHelper()
 
         # creamos layouts
-        self.helper = helper.FormHelper()
         self.helper.layout = layout.Layout()        
 
         # agregamos todos los campos
