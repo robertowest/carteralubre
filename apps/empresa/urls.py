@@ -13,4 +13,7 @@ urlpatterns = [
 
     path('filtro_actividad/<int:filtro>', views.FilterListView.as_view(), name='filtro_actividad'),
     path('filtro_comercial/<int:filtro>', views.FilterListView.as_view(), name='filtro_comercial'),
+
+    path('<int:fk>/comunicacion/', views.CreateContactView.as_view(), name='associate_with_contact'),
+    path('<int:fk>/domicilio/', views.CreateAddressView.as_view(), name='associate_with_address'),
 ]

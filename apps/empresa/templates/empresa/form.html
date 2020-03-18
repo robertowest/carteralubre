@@ -11,19 +11,11 @@
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">
-                        {%comment%}
-                        {{object|verbose_name}}
-                        {{object|default_if_none:'Nuevo Registro'}}
-
-                        {% if object %}
-                            Modificación de Empresa
-                        {% else %}
-                            Nueva Empresa
-                        {% endif %}
-                        {%endcomment%}
-
+                        <!--
+                        object|verbose_name
+                        object|default_if_none:'Nuevo Registro'
+                        -->
                         {% firstof object 'Nueva Empresa' %}
-
                     </h6>
                 </div>
                 <div class="card-body">

@@ -61,3 +61,9 @@ class Empresa(CommonStruct):
 
     def __str__(self):
         return self.razon_social
+
+    def get_related_url_with_address(self):
+        return reverse('%s:associate_with_address' % self._meta.model_name, args=(self.pk,))
+
+    def get_related_url_with_contact(self):
+        return reverse('%s:associate_with_contact' % self._meta.model_name, args=(self.pk,))

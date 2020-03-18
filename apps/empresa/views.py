@@ -5,6 +5,10 @@ from django.urls import reverse_lazy, resolve
 from django.views import generic
 
 from . import forms, models
+from apps.comunes.models import Comunicacion as ComunicacionModel
+from apps.comunes.models import Domicilio as DomicilioModel
+from apps.comunes.forms.comunicacion import ComunicacionForm
+from apps.comunes.forms.domicilio import DomicilioForm
 
 
 class EmpresaTemplateView(generic.TemplateView):
@@ -106,3 +110,60 @@ class FilterListView(generic.ListView):
         if name == 'filtro_comercial':
             context['filtro'] = 'filtrado por Comercial'
         return context
+
+
+class CreateContactView(generic.CreateView):
+    model = ComunicacionModel
+    form_class = ComunicacionForm
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # context['app_name'] = __package__.split('.')[1]
+        context['previous_url'] = self.request.META['HTTP_REFERER']
+        return context
+
+    def get_success_url(self):
+        referer_url = self.request.META.get('HTTP_REFERER')
+        previous_url = self.request.GET.get('next')
+        # {{ request.META.HTTP_REFERER }}
+        # return self.request.META.HTTP_REFERER
+        if previous_url:
+            return previous_url
+        return reverse_lazy('{app}:list'.format(app=__package__.split('.')[1]))
+
+    def form_valid(self, form):
+        # grabamos el objeto para obtener identificador
+        self.object = form.save()
+        # obtenemos el objeto primario
+        empresa = models.Empresa.objects.get(id=self.kwargs['fk'])
+        # creamos la asociación
+        empresa.comunicaciones.add(self.object)
+        # terminamos
+        return super().form_valid(form)
+
+
+class CreateAddressView(generic.CreateView):
+    model = DomicilioModel
+    form_class = DomicilioForm
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # context['app_name'] = __package__.split('.')[1]
+        return context
+
+    def get_success_url(self):
+        # {{ request.META.HTTP_REFERER }}
+        # return self.request.META.HTTP_REFERER
+        return reverse_lazy('{app}:list'.format(app=__package__.split('.')[1]))
+
+    def form_valid(self, form):
+        # grabamos el objeto para obtener identificador
+        self.object = form.save()
+        # obtenemos el objeto primario
+        empresa = models.Empresa.objects.get(id=self.kwargs['fk'])
+        # creamos la asociación
+        empresa.domicilios.add(self.object)
+        # terminamos
+        return super().form_valid(form)

@@ -1,0 +1,16 @@
+<thead>
+    <tr>
+        <th>#</th>
+        <th>Tipo</th>
+        <th>Contenido</th>
+    </tr>
+</thead>
+<tbody>
+    {% for object in object_list %}
+    <tr>
+        <td><a href="{{object.get_detail_url}}">{{object.pk}}</a></td>
+        <td>{{object.tipo}}</td>
+        <td>{{object.texto}}</td>
+    </tr>
+    {% endfor %}
+</tbody>

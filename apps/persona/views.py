@@ -5,6 +5,9 @@ from django.urls import reverse_lazy
 from django.views import generic
 
 from . import forms, models
+from apps.comunes.models import Comunicacion as ComunicacionModel
+from apps.comunes.forms.comunicacion import ComunicacionForm
+
 
 # Create your views here.
 def home(request):
@@ -71,11 +74,6 @@ class PersonaUpdateView(generic.UpdateView):
 
 class PersonaDeleteView(generic.DeleteView):
     pass
-
-
-
-from apps.comunes.models import Comunicacion as ComunicacionModel
-from apps.comunes.forms.comunicacion import ComunicacionForm
 
 
 class CreateContactView(generic.CreateView):

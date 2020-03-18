@@ -58,6 +58,9 @@ class ComunicacionUpdateView(UpdateView):
         return context
 
     def get_success_url(self):
+        referer = self.request.META['HTTP_REFERER']
+        if referer:
+            return referer
         name = self.model._meta.verbose_name.lower()
         return reverse_lazy('{app}:list'.format(app=name))
 

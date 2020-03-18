@@ -47,7 +47,6 @@ class CommonStruct(models.Model):
     def get_create_url(self):
         # self._meta.app_label
         # self._meta.module_name
-        import pdb; pdb.set_trace()
         return reverse('%s:create' % self._meta.app_label)
 
     def get_detail_url(self):
