@@ -18,13 +18,22 @@
             <div class="card-body">
                 {% crispy form %}
             </div>
+
             {% comment %}
             <div class="card-footer">
                 <a class="btn " href="{{request.META.HTTP_REFERER}}">Regresar</button>
             </div>
             {% endcomment %}
+
         </div>
     </div>
 </div>
 
+{% endblock %}
+
+
+{% block js %}
+<script>
+$('#myform').append('<input type="hidden" name="previous_url" value="'+document.referrer+'" />');
+</script>
 {% endblock %}

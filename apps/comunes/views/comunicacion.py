@@ -1,3 +1,4 @@
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, TemplateView, UpdateView
@@ -57,15 +58,15 @@ class ComunicacionUpdateView(UpdateView):
         context['titulo'] = 'Modificación Tipo de Contacto'
         return context
 
-    def get_success_url(self):
-        referer = self.request.META['HTTP_REFERER']
-        if referer:
-            return referer
-        name = self.model._meta.verbose_name.lower()
-        return reverse_lazy('{app}:list'.format(app=name))
+    # def get_success_url(self):
+    #     name = self.model._meta.verbose_name.lower()
+    #     return reverse_lazy('{app}:list'.format(app=name))
 
     def form_valid(self, form):
         response = super().form_valid(form)
+        referer = self.request._post['previous_url']
+        if referer:
+            return HttpResponseRedirect(referer)
         return response
 
  

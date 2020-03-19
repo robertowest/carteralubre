@@ -12,6 +12,7 @@ class ComunicacionForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):        
         super().__init__(*args, **kwargs)
         self.helper = helper.FormHelper()
+        self.helper.form_id = "myform"
 
         # creamos layouts
         self.helper.layout = layout.Layout()        
