@@ -3,19 +3,19 @@
 #
 
 # comunes
-./manage.py dumpdata --format yaml -o apps/comunes/models/diccionario.yaml  apps/comunes/fixtures/comunes.diccionario
-./manage.py dumpdata --format yaml -o apps/comunes/models/comunicacion.yaml apps/comunes/fixtures/comunes.comunicacion
-./manage.py dumpdata --format yaml -o apps/comunes/models/pais.yaml         apps/comunes/fixtures/comunes.pais
-./manage.py dumpdata --format yaml -o apps/comunes/models/ciudad.yaml       apps/comunes/fixtures/comunes.ciudad
-./manage.py dumpdata --format yaml -o apps/comunes/models/localidad.yaml    apps/comunes/fixtures/comunes.localidad
-./manage.py dumpdata --format yaml -o apps/comunes/models/domicilio.yaml    apps/comunes/fixtures/comunes.domicilio
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/diccionario.yaml  comunes.diccionario
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/comunicacion.yaml comunes.comunicacion
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/pais.yaml         comunes.pais
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/ciudad.yaml       comunes.ciudad
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/localidad.yaml    comunes.localidad
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/domicilio.yaml    comunes.domicilio
 
 # personas
-./manage.py dumpdata --format yaml -o apps/persona/persona.yaml apps/persona/fixtures/persona.persona
+./manage.py dumpdata --format yaml -o apps/persona/fixtures/persona.yaml      persona.persona
 
 # terceros
-./manage.py dumpdata --format yaml -o apps/tercero/models/comercial.yaml    apps/tercero/fixtures/tercero.comercial
-./manage.py dumpdata --format yaml -o apps/tercero/models/empresa.yaml      apps/tercero/fixtures/tercero.empresa
+./manage.py dumpdata --format yaml -o apps/empresa/fixtures/comercial.yaml    empresa.comercial
+./manage.py dumpdata --format yaml -o apps/empresa/fixtures/empresa.yaml      empresa.empresa
 
 
 #

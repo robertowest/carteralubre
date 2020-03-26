@@ -9,13 +9,15 @@ class ComunicacionForm(forms.ModelForm):
         model = ComunicacionModel
         fields = ['tipo', 'texto', 'active']
 
-    def __init__(self, *args, **kwargs):        
+    def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+        # creamos helper
         self.helper = helper.FormHelper()
         self.helper.form_id = "myform"
 
         # creamos layouts
-        self.helper.layout = layout.Layout()        
+        self.helper.layout = layout.Layout()
 
         # agregamos todos los campos
         for fld in self.Meta.fields:

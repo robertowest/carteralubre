@@ -1,3 +1,3 @@
-# from .comunicacion import *
-# from .diccionario import *
+from .comunicacion import *
+from .diccionario import *
 from .domicilio import *

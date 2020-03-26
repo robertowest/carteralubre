@@ -1,0 +1,12 @@
+
+# eliminar todos los archivos de migraciones, excepto __init__.py
+find apps/ -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find apps/ -path "*/migrations/*.pyc" -delete
+
+# generar el 0001_initial.py en cada app con directorio migrations.
+python3 manage.py makemigrations
+
+# python3 manage.py migrate --database=mysql
+
+# migrate fake.
+python3 manage.py migrate --fake

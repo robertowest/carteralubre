@@ -1,0 +1,267 @@
+"departamento_id";"departamento_nombre";"prov_id"
+0;No se detalla;0
+1;San Miguel de Tucumán;1
+2;Cruz Alta;1
+3;Tafí Viejo;1
+4;Chicligasta;1
+5;Yerba Buena;1
+6;Lules;1
+7;Monteros;1
+8;Río Chico;1
+9;Leales;1
+10;Burruyacú;1
+11;Famaillá;1
+12;Simoca;1
+13;Juan B. Alberdi;1
+14;La Cocha;1
+15;Trancas;1
+16;Tafí del Valle;1
+17;Graneros;1
+18;Capital;2
+19;Ancasti;2
+20;Capital;3
+21;Río Hondo;21
+22;Capital;23
+23;Dr. Manuel Belgrano;9
+24;Santa Rosa;2
+25;Orán;16
+26;Tercero Arriba;3
+47;Capital;21
+48;Capital;16
+49;Capital;20
+50;Capital;12
+51;Capital;17
+52;Capital;18
+53;Capital;13
+54;Capital;11
+55;San Fernando;5
+56;Capital;4
+57;Capital;10
+58;"9 De Julio";23
+60;Florentino Ameghino;23
+61;General López;20
+62;Anta;16
+63;Caseros;20
+64;General Taboada;21
+65;Balcarce;23
+66;Belén;2
+67;Carlos Casares;23
+68;Luján De Cuyo;12
+69;Iriondo;20
+70;Colón;3
+71;La Viña;16
+72;Luis Jorge Fontana;5
+73;Tigre;23
+74;La Candelaria;16
+75;San Martín;20
+76;Gral. José De San Martín;16
+77;San Jerónimo;20
+78;Ledesma;9
+79;Río Cuarto;3
+80;Rosario De La Frontera;16
+81;Gral. Roca;3
+82;La Banda;21
+83;Gral. San Martín;3
+84;Pellegrini;21
+85;Río Segundo;3
+86;Palpalá;9
+87;Constitución;20
+88;Castellanos;20
+89;Rojas;23
+90;Rosario;20
+91;Salliqueló;23
+92;San Cristobal;20
+93;San Isidro;23
+94;San Lorenzo;20
+95;Las Colonias;20
+96;Santa María;2
+97;Pomán;2
+98;San Nicolas;23
+99;Marcos Juarez;3
+100;Maracó;10
+101;Javi;9
+102;Santa María;3
+103;General Pueyrredón;23
+104;San Antonio De Areco;23
+106;Tinogasta;2
+107;Valle Viejo;2
+108;Gral. Pedernera;18
+109;Juarez Celman;3
+110;Los Vallistos;1
+111;Pacará Pintado;1
+112;Buenos Aires;23
+113;La Reducción;1
+114;Estación Araoz;1
+115;Concepción;1
+116;Chicligasta;1
+117;Ranchillos;1
+118;El Empalme;1
+119;Capital;1
+120;El Tala;16
+121;Ingenio Santa Anta;1
+122;La Virginia;1
+123;Gobernador Piedrabuena;1
+124;Alderetes;1
+125;La Invernada;1
+126;Timbó Viejo;1
+127;Bella Vista;1
+128;Cruz Alta;1
+129;Tafi Viejo;1
+130;Granadero Baigorria;20
+131;Rio Colorado;1
+132;Colombres;1
+133;Los Nogales;1
+134;Cafayate;16
+135;Banda Rio Salí;1
+136;Juan B. Alberdi;1
+137;Viclos;1
+138;Las Cejas;1
+139;Las Talitas;1
+140;Cevil Pozo;1
+141;Santa Fe;20
+142;Andino;20
+143;Guemes;16
+144;Manatial De Ovanta;1
+145;Salta;16
+146;Salta;16
+147;San Pedro De Jujuy;9
+148;Los Altos;2
+149;Arcadia;1
+150;Aguilares;1
+151;Presidencia Roque Saenz Peña;5
+152;San Andres;1
+153;Salsipuedes;3
+154;Lastenia;1
+155;Manuel Garcia Fernandez;1
+156;Acheral;1
+157;Snan Pablo;1
+158;Raco;1
+159;Villa Fiad;1
+160;León Rougués;1
+161;Rio Primero;1
+162;San Antonio De Areco;23
+163;San Fernando Del Valle Catamarca;2
+164;Metan;16
+165;Aldao;20
+166;Cañada De Gomez;20
+167;Martinez;23
+168;Los Gutierrez;1
+169;Tartagal;16
+170;Cordoba;3
+171;La Cruz;1
+172;Piedrabuena;1
+173;Los Puestos;1
+174;Los Puestos;1
+175;Estación Araoz;1
+176;Agua Dulce;1
+177;Tusca Pozo;1
+178;Estación Araoz;1
+179;Timbó Nuevo;1
+180;Vedia;23
+181;Amaicha Del Valle;2
+182;Joaquin V. Gonzalez;16
+183;Campo Santo;16
+184;Santa Rosa De Leales;1
+185;Garmendia;1
+186;Barrio Carola Lorenzin;3
+187;San Pedro De Colalao;1
+188;Los Vega;1
+189;Villa Quinteros;1
+190;Los Aguirre;1
+191;Cañuelas;23
+192;Los Pizarros;1
+193;Cevil Redondo;1
+194;Delfin Gallo;1
+195;Boca Del Tigre;1
+196;Rafaela;20
+197;Ramada De Abajo;1
+198;Tucumán;1
+199;San Andres;1
+200;Ingenio Nueva Baviera;1
+201;Estación Vipos;1
+202;La Ramada De Abajo;1
+203;Rio Seco;1
+204;Benjamin Paz;1
+205;Oncativo;3
+206;San Miguel;1
+207;Huasa Pampa;1
+208;Los Porceles;1
+209;Las Vertientes;3
+210;Los Ralos;1
+211;El Cortaderal;1
+212;Justiniano Posse;3
+213;Los Vallistos;1
+214;Jimenez;21
+215;Copo;21
+216;Sauce Huacho;1
+217;Las Rosas;20
+218;Villa Mariano Moreno;1
+219;La Florida;1
+220;Teniente Berdina;1
+221;Ingenio La Florida;1
+222;El Quemado;21
+223;Carlos Pellegrini;1
+224;Rosario De La Frontera;16
+225;Andalgala;2
+226;Andalgala;2
+227;Las Estancias;2
+228;Rivas;23
+229;Galvez;20
+230;Galvez;20
+231;Arequito;20
+232;Barrio Las Vertientes;3
+233;Cruz Alta;1
+234;Luque;3
+235;Luisiana;1
+236;Araoz;1
+237;Zarate Norte;1
+238;Pavon Arriba;20
+239;Villa Cañas;20
+240;Florida;23
+241;Guatimozin;3
+242;Leales;1
+243;Nueva Esperanza;21
+244;Venado Tuerto;20
+245;Venado Tuerto;20
+246;San Pablo;1
+247;Lozada;3
+248;Lozada;3
+249;Cruz Alta;1
+250;Villa Eloisa;20
+251;Tacural;20
+252;Los Gutierrez;1
+253;Alderetes;1
+254;Resistencai;5
+255;Tafi Viejo;1
+256;Yerba Buena;1
+257;Yerba Buena;1
+258;Del Viso;23
+259;Dean Funes;3
+260;Recreo;2
+261;Ramos Mejia;23
+262;Sinsacate;3
+263;Almafuerte;3
+264;Lomas De Tafi;1
+265;Manantial De Ovanta;1
+266;Villa Benjamin Araoz;1
+267;Villa Benjamin Araoz;1
+268;La Ramada;1
+269;Lanus;23
+270;Frias;21
+271;San Andres;23
+272;Piquillin;3
+273;Rios Seco;1
+274;Lomas Del Mirador;23
+275;Villa Carmela;1
+276;Las Cejas;1
+277;Perico;9
+278;Aimogasta;11
+279;Marcos Paz;1
+280;Pilar;3
+281;Choromoro;1
+282;Tafi Viejo;1
+283;Tapia;1
+284;Rio Chico;1
+285;San Vicente;20
+286;Reconquista;20
+287;Chacabuco;23

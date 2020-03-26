@@ -58,15 +58,11 @@ class ComunicacionUpdateView(UpdateView):
         context['titulo'] = 'Modificación Tipo de Contacto'
         return context
 
-    # def get_success_url(self):
-    #     name = self.model._meta.verbose_name.lower()
-    #     return reverse_lazy('{app}:list'.format(app=name))
-
     def form_valid(self, form):
         response = super().form_valid(form)
-        referer = self.request._post['previous_url']
-        if referer:
-            return HttpResponseRedirect(referer)
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
         return response
 
  

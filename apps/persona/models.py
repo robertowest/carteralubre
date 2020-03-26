@@ -17,6 +17,11 @@ class Persona(CommonStruct):
     comunicaciones = models.ManyToManyField(Comunicacion, related_name='persona_comunicaciones', 
                                             blank=True, limit_choices_to = {'active': True})
 
+    # configuración para admin
+    list_display = ['apellido', 'nombre', 'documento', 'active']
+    search_fields = ['nombre', 'apellido']
+    list_filter = ['ciudad', 'localidad']
+
     class Meta:
         verbose_name = 'Persona'
         verbose_name_plural = 'Personas'

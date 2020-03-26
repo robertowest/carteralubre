@@ -1,12 +1,14 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
 from . import forms, models
 from apps.comunes.models import Comunicacion as ComunicacionModel
+from apps.comunes.models import Domicilio as DomicilioModel
 from apps.comunes.forms.comunicacion import ComunicacionForm
+from apps.comunes.forms.domicilio import DomicilioForm
 
 
 # Create your views here.
@@ -41,14 +43,14 @@ class PersonaCreateView(generic.CreateView):  # LoginRequiredMixin
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['app_name'] = __package__.split('.')[1]
+        context['form_title'] = 'Nueva Persona'
         return context
-
-    def get_success_url(self):
-        return reverse_lazy('{app}:list'.format(app=__package__.split('.')[1]))
         
     def form_valid(self, form):
         response = super().form_valid(form)
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
         return response
 
 
@@ -68,8 +70,17 @@ class PersonaUpdateView(generic.UpdateView):
     form_class = forms.PersonaForm
     template_name = 'comunes/formulario.html'
 
-    def get_success_url(self):
-        return reverse_lazy('{app}:list'.format(app=self.model._meta.verbose_name.lower()))
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form_title'] = 'Modificación de Persona'
+        return context
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
+        return response
 
 
 class PersonaDeleteView(generic.DeleteView):
@@ -82,26 +93,47 @@ class CreateContactView(generic.CreateView):
     template_name = 'comunes/formulario.html'
 
     def get_context_data(self, **kwargs):
-        # context['view'].kwargs['fk']
         context = super().get_context_data(**kwargs)
-        # context['app_name'] = __package__.split('.')[1]
+        context['form_title'] = 'Nueva Comunicación'
         return context
 
-    def get_success_url(self):
-        # {{ request.META.HTTP_REFERER }}
-        # return self.request.META.HTTP_REFERER
-        return reverse_lazy('{app}:list'.format(app=__package__.split('.')[1]))
-
     def form_valid(self, form):
+        response = super().form_valid(form)
+
         # grabamos el objeto para obtener identificador
         self.object = form.save()
         # obtenemos el objeto primario
         persona = models.Persona.objects.get(id=self.kwargs['fk'])
         # creamos la asociación
         persona.comunicaciones.add(self.object)
-        # terminamos
-        return super().form_valid(form)
+
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
+        return response
 
 
 class CreateAddressView(generic.CreateView):
-    pass
+    model = DomicilioModel
+    form_class = DomicilioForm
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form_title'] = 'Nuevo Domicilio'
+        return context
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+
+        # grabamos el objeto para obtener identificador
+        self.object = form.save()
+        # obtenemos el objeto primario
+        persona = models.Persona.objects.get(id=self.kwargs['fk'])
+        # creamos la asociación
+        persona.domicilios.add(self.object)
+
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
+        return response

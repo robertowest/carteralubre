@@ -37,14 +37,16 @@ class Empresa(CommonStruct):
     nombre = models.CharField(max_length=60)
     razon_social = models.CharField('Razón Social', max_length=60, unique=True)
     cuit = models.CharField('CUIT/CUIL', max_length=13, unique=True)
-    domicilios = models.ManyToManyField(Domicilio, related_name='empresa_domicilios',
-                                        blank=True, limit_choices_to = {'active': True})
-    comunicaciones = models.ManyToManyField(Comunicacion, related_name='empresa_comunicaciones', 
-                                            blank=True, limit_choices_to = {'active': True})
     comercial = models.ForeignKey(Comercial, on_delete=models.CASCADE, null=True, blank=True,
                                   limit_choices_to = {'active': True})
     actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True, 
                                   limit_choices_to = {'tabla': 'actividad', 'active': True})
+    domicilios = models.ManyToManyField(Domicilio, related_name='empresa_domicilios',
+                                        blank=True, limit_choices_to = {'active': True})
+    comunicaciones = models.ManyToManyField(Comunicacion, related_name='empresa_comunicaciones', 
+                                            blank=True, limit_choices_to = {'active': True})
+    contactos = models.ManyToManyField(Persona, related_name='empresa_contactos', 
+                                       blank=True, limit_choices_to = {'active': True})
     referencia_id = models.IntegerField('Referencia Externa', null=True, blank=True, unique=True)
 
     # configuración para admin
@@ -61,6 +63,9 @@ class Empresa(CommonStruct):
 
     def __str__(self):
         return self.razon_social
+
+    def get_related_url_with_comunication(self):
+        return reverse('%s:associate_with_comunication' % self._meta.model_name, args=(self.pk,))
 
     def get_related_url_with_address(self):
         return reverse('%s:associate_with_address' % self._meta.model_name, args=(self.pk,))

@@ -8,13 +8,26 @@ from .models import Empresa
 class EmpresaForm(forms.ModelForm):
     class Meta:
         model = Empresa
-        fields = ['nombre', 'razon_social', 'cuit', 'comercial', 'actividad', 'referencia_id', 'active']
+        fields = ['nombre', 'razon_social', 'cuit', 
+                  'comercial', 'actividad', 'referencia_id', 
+                  'active']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # creamos layouts
+        # valores iniciales para campos especiales
+        self.fields['actividad'].queryset = Diccionario.objects.filter(tabla='actividad').order_by('texto')
+
+        # from apps.comunes.models import Diccionario
+        # if db_field.name == "actividad":
+        #     kwargs["queryset"] = Diccionario.objects.filter(tabla='actividad').order_by('texto')
+        # return super().formfield_for_foreignkey(db_field, request, **kwargs)
+
+        # creamos helper
         self.helper = helper.FormHelper()
+        self.helper.form_id = "myform"
+
+        # creamos layouts
         self.helper.layout = layout.Layout()        
 
         # agregamos todos los campos

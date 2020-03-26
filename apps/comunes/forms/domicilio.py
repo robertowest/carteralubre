@@ -1,5 +1,4 @@
 from crispy_forms import helper, layout
-from crispy_forms.bootstrap import FormActions
 from django import forms
 
 from apps.comunes.models import Domicilio as DomicilioModel
@@ -8,20 +7,25 @@ from apps.comunes.models import Domicilio as DomicilioModel
 class DomicilioForm(forms.ModelForm):
     class Meta:
         model = DomicilioModel
-        fields = ['tipo', 'calle', 'numero', 'piso', 'puerta', 'pais', 'ciudad', 'localidad', 'active']
+        fields = ['tipo', 'tipo_calle', 
+                  'calle', 'numero', 'piso', 'puerta', 
+                  'pais', 'ciudad', 'localidad', 
+                  'active']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # self.fields['actividad'].queryset = Diccionario.objects.filter(tabla='actividad')
+
+        # creamos helper
         self.helper = helper.FormHelper()
+        self.helper.form_id = "myform"
 
         # creamos layouts
-        self.helper.layout = layout.Layout()        
+        self.helper.layout = layout.Layout()
 
         # agregamos todos los campos
         for fld in self.Meta.fields:
             self.helper.layout.append(fld)
-
+        
         # agregamos los botones de acción
         bSave = '<button type="submit" class="btn btn-primary btn-icon-split"><span class="icon text-white-50"><i class="fas fa-save"></i></span><span class="text">Grabar</span></button>'
         bCancel = '<a class="btn btn-warning btn-icon-split" style="margin-left: 5px" href="{{request.META.HTTP_REFERER}}"><span class="icon text-white-50"><i class="fas fa-undo"></i></span><span class="text">Cancela</span></a>'

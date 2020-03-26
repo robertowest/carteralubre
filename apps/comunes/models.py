@@ -104,39 +104,9 @@ class Localidad(CommonStruct):
         return self.nombre
 
 
-class Domicilio(CommonStruct):
-    TIPO = (('Av.', 'Avenida'), ('Calle', 'Calle'), ('Pje.', 'Pasaje'))
-    
-    tipo = models.CharField(max_length=5, choices=TIPO, default='Calle')
-    calle = models.CharField(max_length=40)
-    numero = models.IntegerField('Número', null=True, blank=True)
-    piso = models.CharField(max_length=2, null=True, blank=True)
-    puerta = models.CharField(max_length=2, null=True, blank=True)
-    pais = models.ForeignKey(Pais, on_delete=models.CASCADE)
-    ciudad = models.ForeignKey(Ciudad, on_delete=models.CASCADE)
-    localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
-
-    # configuración para admin
-    list_display = ['id', 'tipo', 'calle', 'numero', 'piso', 'puerta']
-    list_display_links = ['id']
-    exclude = []
-    search_fields = ['calle']
-    list_filter = ['ciudad', 'localidad']
-    date_hierarchy = ''
-
-    class Meta:
-        verbose_name = 'Domicilio'
-        verbose_name_plural = 'Domicilios'
-
-    def __str__(self):
-        texto = "%s %s" % (self.calle, self.numero)
-        if self.piso:
-            texto = texto + " - %s piso, puerta %s" % (self.piso, self.puerta)
-        return texto
-
-
 class Diccionario(CommonStruct):
-    TABLA = (('actividad', 'Actividades'), ('domicilio', 'Domicilios'),)
+    TABLA = (('actividad', 'Actividades'), 
+             ('domicilio', 'Domicilios'),)
 
     texto = models.CharField(max_length=150)
     tabla = models.CharField(max_length=45, choices=TABLA, default='actividad')
@@ -150,6 +120,42 @@ class Diccionario(CommonStruct):
 
     def get_texto(self):
         return str(self.texto).capitalize()
+
+
+class Domicilio(CommonStruct):
+    TIPO = (('Av.', 'Avenida'), ('Calle', 'Calle'), 
+            ('Pje.', 'Pasaje'), ('Ruta', 'Ruta'))
+    
+    tipo = models.ForeignKey(Diccionario, on_delete=models.CASCADE, 
+                             null=True, blank=True, default=5,
+                             limit_choices_to = {'tabla': 'domicilio', 'active': True})
+    tipo_calle = models.CharField(max_length=5, choices=TIPO, default='Calle')
+    calle = models.CharField(max_length=40)
+    numero = models.IntegerField('Número', null=True, blank=True)
+    piso = models.CharField(max_length=2, null=True, blank=True)
+    puerta = models.CharField(max_length=2, null=True, blank=True)
+    pais = models.ForeignKey(Pais, on_delete=models.CASCADE)
+    ciudad = models.ForeignKey(Ciudad, on_delete=models.CASCADE)
+    localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
+
+    # configuración para admin
+    list_display = ['id', 'tipo', 'calle', 'numero', 'piso', 'puerta']
+    list_display_links = ['id']
+    exclude = []
+    search_fields = ['calle']
+    date_hierarchy = ''
+
+    class Meta:
+        verbose_name = 'Domicilio'
+        verbose_name_plural = 'Domicilios'
+
+    def __str__(self):
+        texto = self.calle
+        if self.numero:
+            texto += ' ' + str(self.numero)
+        if self.piso:
+            texto += " - %s piso, puerta %s" % (self.piso, self.puerta)
+        return texto
 
 
 class Comunicacion(CommonStruct):

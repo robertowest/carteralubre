@@ -1,0 +1,110 @@
+"reclamo_id";"cliente";"t_recla";"fecha_recla";"reclamo";"accion";"resp_clie";"estado";"fecha_solucion"
+10;3640;2;2009-09-20 00:00:00;"Reclaman que un tambor de Aceite Multiturbo 15W40 no tiene la densidad necesaria y no levantaba la presion suficiente en un motor recien rectificado.";"Se envian muestras del aceite para analisis en YPF.
+YPF en via informe tecnico de la muestra analizada indicando que las mismas estaban en condiciones normales. Se envian copia del informe al cliente";;;
+11;4292;2;2009-01-21 00:00:00;"Comenta que recibio un balde de aceite de un color distinto al normal";"La empresa consulto al Servicio Tecnico de YPF (La Plata), informa que el cambio de color se debe a un cambio de aditivos pero la formula del producto es identica a la anterior.";;;
+12;5115;2;2009-03-18 00:00:00;"Comentan que recibieron baldes con tapas flojas";"Nos comunicamos con YPF para comentar este inconveniente, informan que estan teniendo probelmas con la maquina que coloca y sella tapas";;;
+13;5086;2;2009-07-22 00:00:00;"Reclama que el vendedor no descarga las cajas de parafinas hasta el interior de su deposito.";"La empresa consulta con el vendedor y comenta que el cliente reclama el ingreso de las cajas de parafinas hasta el interior del deposito.";;;
+14;4022;2;2009-08-07 00:00:00;"Reclaman demora de 4 meses en la entrega de grasa Buttia C 45";"En stock hay existencia del producto reclamado pero los blades estan abollados (recibidos asi), se consulto a YPF la demora en el envio e informan que no estan produciendo este tipo de grasa por el momento.";;;
+15;4039;2;2009-09-03 00:00:00;"Reclaman pedido de asfalto entregados con mucho tiempo de demora";"se consulta a YPF e informan que no se recibio el pedido solictado via internet, problemas con el servicio de arnet.";;;
+16;5086;2;2009-10-27 00:00:00;"Cliente se comunica a la empresa reclamando demora en la entrega de parafinas Nº66. Tambien nos informa Aldo Chocron que el cliente ya se quejo ante YPF";"Se envia mail a Aldo Chocron informando que desde Agosto hasta el dia de la fecha se estan realizando pedidos de parafinas especificando ademas Nº de OP y que desde planta YPF (La Plata - Bs As) no estan enviando el producto.";;;
+17;4455;1;2010-03-23 00:00:00;"Reclaman el elevado precio de Monogrados, liquidos de frenos y refrigerantes";"Se informa este reclamo al comercial y se presenta precios de la competencia.";;;
+18;4292;2;2010-04-10 00:00:00;"Reclama la entrega de banderas de publicidad";"Sergio solicita banderas al comercial de YPF";;;
+19;5131;2;2010-04-24 00:00:00;"Reclaman merchandising para el negocio";"Se solicita al comercial de YPF el envio de banderas";;;
+20;5131;2;2010-06-24 00:00:00;"Reclama elevados precios de Complementario";"se informa al comercial de YPF la queja del cliente, se espera respuesta";;;
+21;4944;2;2010-09-07 00:00:00;"Reclama que el combustible entregado no estaba en buen estado y le rompio 3 bombas inyectoras de sus tractores";"1º Se enviaron muetras al Laboratorio a planta YPF Monte Cristo (se adjunta mail explicativo).
+2º Visita del movil tecnico al cliente para tomar y evaluar nuevamente (se adjunta mail explicativo).";;;
+22;4273;2;2010-10-29 00:00:00;"Reclama rompimiento de bomba inyectora de camioneta y tractor por el uso del combustible entregado por nosotros.";"El vendedor informa al Servicio Tecnico de YPF y se pacta dia y hr con referente tecnico para visita en campo de cliente. Se tomaron muetras del combustible.";;;
+23;3928;2;2010-11-25 00:00:00;"Se entregaron nueve tambores (205lts) y tres baldes de lubricantes en el campo del cliente. Al momento de la entrega los tambores presentaban muestras de aceite en el area de apertura.";"Debiado a la cantidad de lubricante vertido (se adjuntan fotos) se procedioa la limpieza de la zona, se solicito al cliente que rompriera el precinto de la tapa encontrandonos que faltaba la tapa rosca.";;;
+24;5171;2;2010-12-04 00:00:00;"Duda con un aceite de motor AT 40 entregado por rotura de 4 motores de topadoras en 3 meses.";"Se recomendo momentaneamente cambiar a aceite Mutltiturbo 25 W 50.
+Se visito con movil tecnico al cliente tomando muestras aceite para su analisis en YPF, se esperaran resultados.";;;
+25;5086;2;2011-09-08 00:00:00;"El sr. Elias Brujis manifiesta estar molesto por las demoras constantes por la falta de stock de parafinas. La ultima compra que realizo es el 18/7/11 y no se entrego el pedido completo por no haber stock. El cliente se mostro muy molesto.";"Corina se contacta telef con el cliente informando que en breve contaremos con stock de parafinas nuevamente, el mismo comenta que ya tiene un nuevo proveedor y cuenta coon productos hasta fin de año.
+";;;
+26;3655;2;2011-02-21 00:00:00;"Cliente reclama que detecto agua en el combustible usado en las fumigadoras ytractores, motivo por el cual las maquinarias no funcionan.";"Se coordina una visita con movil técnico a la finca para tomar muestras de combustibles para su análisis en YPF. Además capacitan a encargado de finca en mantenimiento y purgado de los tanques y en el proceso de recepción de combustible en el campo.";;;
+27;5115;2;2011-01-06 00:00:00;"rotura de envases en 4 lts y 1 lts";"se envia email de las fortos correspondiente al comercial de YPF";;;
+28;5115;3;2011-05-20 00:00:00;"faltan productos de marketing (banderas, jorras,lapiceras)";"pedimos a nuestro cmercial";;;
+29;4292;2;2012-04-19 00:00:00;"reclama falta de productos elaion motos, demoras en la entrega del mismo";"Se llama al comercial de YPF para preguntar sobre la demora";;;
+30;5405;2;2012-06-08 00:00:00;"falta de aceite semi-sintetico (f30) y sintetico (f50)";"se consulta al comercial que está pasando";;;
+31;3870;2;2012-07-18 00:00:00;"falta de aceite elaion f30 (caja x 4 lts)";"se consulta a representante comercil de YPF";;;
+32;5019;2;2012-07-16 00:00:00;"Faltante de producto GRasa LImit M02 x 180 Kg. El receptor del reclamo  fué Emiliano FErnandez.";"Se llamó al Comercial de Ypf y a Mesa de Pedidos.";;;
+33;5403;2;2012-07-20 00:00:00;"Falta de productos publicitarios (banderas, banderines, lapiceras, gorros, etc.)";"Los vendedores Miguel Valeros y VIcente Dangelo, les pidieron al Comercial Sr. Rodolfo DEheza de estos elementos.";;;
+34;4800;2;2011-04-16 00:00:00;"DEfectos de envasado de Tambores de Transformador 64";"El receptor del reclamo fue Sergio Andjel. y él le comunicó al comercial.";;;
+35;5115;2;2013-01-11 00:00:00;"Yellow Cab ( José del Rio) reclama que se le entregó 1 caja de Elaion Torque, la cual estaba manchada con aceite.";"Inmediantamente se avisó a la oficina para solicitar el cambio de  la caja. El Ing. Sergio Andjel, informa que están llegando cajas manchadas con aceite desde Bs. As.";;;
+36;4868;2;2013-03-13 00:00:00;"Al romper el precinto  del Tambor de aceite normal, se dan cuenta que no tenía la tapa de acero roscada.  Cuando empiezan a utilizar el aceite, se encuentra con que está con agua.";"Se le cambió el tambor al cliente.";;;
+37;4866;2;2013-09-24 00:00:00;"Reclamo del cliente que los precios que tenemos el Distribuidor Mayorista suben y con mucha diferencia con respecto al surtidor con la misma marca. 
+Receptor del reclamo Fernando Bauque.";"Se hizo reclamo a YPF correspondiente, por medio de Rodolfo Deheza (25/09/2013)";;;
+38;5786;2;2013-09-16 00:00:00;"Bidones pinchados de Elaion F10 x 4 lts.";"REclamos reiterados al comercial de YPF SR. Rodolfo Deheza.";;;
+39;4018;2;2013-10-05 00:00:00;"El cliente dice que el aceite de motor XV300 15W40 está teniendo un consumo mucho mayor a lo normal en algunos camiones que él atiende en su taller, de marca Fiat-Renault.";"Fueron a visitarlo Emiliano FErnandez con el Ténico de YPF SR. Diego Sartori el 8/10/2013, donde nos comprometimos a hacer un seguimiento y análisis del aceite en esos camiones.";;;
+41;5420;2;2013-10-29 00:00:00;"En la prsente nota hacemos llegar nuestro reclamo y aclarar que el motivo de la cancelación de la compra de combustible, es por la falta de entrega o la entrega muy espaciada del mismo, lo que nos genera inconvenientes, dada la gran cantidad de equipos que posee la Empresa.";"Se informa que el motivo de los retrasos en la entrega del combustible, se debió a un problema de crédito del cliente. La acción fué comunicarnos con el Ing. Raul Katz (Titular de la firma), para consensuar un cumplimiento en sus pagos a modo de evitar se reitere el problema de crédito planteado.";;;
+42;5496;2;2014-07-15 00:00:00;"El cliente solicita cambio de producto  Tambor de XV·300 por estar pinchado.";"";;;
+43;5496;2;2014-07-17 00:00:00;"";"Día 16/07/2014 a hs. 10,  fué Pablo GOnzalez a ver la condición del tambor, para poder tomar una decisión .";;;
+44;5496;2;2014-07-17 00:00:00;"";"";;;
+45;5099;2;2014-08-01 00:00:00;"Siendo las 9 horas del día 1/08/2014,llamó telefonicamente el SR. Martin VIllalón,reclamando la entrega de 2 (dos) Tambores de NOrmal 50.";"";;;
+46;5099;2;2014-08-01 00:00:00;"";"En el día de la fecha, se lleva la mercaderia al cliente, previo aviso telefonico.";;;
+47;5099;2;2014-08-01 00:00:00;"";"";;;
+48;5986;2;2014-08-04 00:00:00;"Surgió problemas con un Silo Bolsa, aparentemente falla de fabricación.";"";;;
+49;5986;2;2014-08-08 00:00:00;"";"Sergio Andjel, le pidió al cliente que saque fotos para hacer el reclamo a Rodlfo DEheza.
+Día 7/08/2014 se envió email al comercial con las fotos correspodiente.";;;
+50;4882;2;2014-08-20 00:00:00;"El cliente devuelve un Tambor de Transformador 64, por que vino con tapa precinto, pero sin la tapa a rosca y este aceite no puede tener humedad para su uso. 
+se adjunta foto del tambor en cuestión.";"";;;
+51;4882;2;2014-08-21 00:00:00;"";"Se entrega al cliente el día 21/08/2014 un nuevo tambor, dejando en depósito de Lubre, el tambor en cuestión para hacer el reclamo pertinente a YPF.";;;
+52;4882;1;2014-08-21 00:00:00;"";"";;;
+53;5986;1;2014-09-18 00:00:00;"";"";;;
+55;5697;3;2014-01-14 00:00:00;"SOLICITAN INFORMACION SOBRE TECNICAS Y PUBLICIDAD";"INVITACION A CHARLAS Y EVENTOS INFORMATIVOS EN TERMAS DE RIO HONDO SOBRE EL ACEITE ELAION MOTO TC 2.000";;;
+56;4460;3;2014-07-23 00:00:00;"IMPLEMENTAR PROMOCIONES DE PRODUCTOS";"PROMOCION DE XV100, XV300 Y XV500";;;
+57;4460;3;2014-10-14 00:00:00;"";"PROMOCIONES DE LOS XV100, XV300 Y XV500.";;;
+58;4460;3;2014-10-14 00:00:00;"";"";;;
+59;5007;3;2014-03-07 00:00:00;"REQUIEREN EXTENSIÓN DE PLAZOS HASTA 60 DIAS .";"SE ACEPTO EL PEDIDO DEL CLIENTE Y SE ALARGO EL PLAZO HASTA 60 DIAS";;;
+60;5612;3;2014-01-01 00:00:00;"REQUIEREN MAYOR INFORMACION REFERENTE A NUESTROS PRODUCTOS ( asfalto)";"SE BRINDO UNA CHARLA INFORMATIVA DE ASFALTO";;;
+61;4729;3;2014-06-17 00:00:00;"IMPLEMENTAR CHARLAS INFORMATIVAS";"SE IMPLEMENTARON DISTINTAS CHARLAS INFORMATIVAS SOBRE ACEITES EN TERMAS DE RIO HONDOS Y EN EL HOTAL CATALINAS PARK.";;;
+62;5099;3;2014-01-02 00:00:00;"SOLICITA QUE SE LE EXTIENDAN PLAZOS DE FINANCIACION.";"SE LE EFECTUÓ BONIFICACION DE 3  MAS 5% CON PAGO S A 30 DIAS.";;;
+63;5055;3;2014-03-03 00:00:00;"EL CLIENTE SOLICITA LA IMPLEMENTACION DE CHARLAS INFORMATIVAS";"SE IMPLEMENTARON LAS CHARLAS TECNICAS SOBRE ELAION MOTO EN TERMAS DE RIO HONDO.";;;
+64;4861;3;2014-03-03 00:00:00;"SOLICITA EL CLIENTE LA IMPLEMENTACION DE PROMOCIONES DE PRODUCTOS.";"SE IMPLMENTO LA PROMOCION DEL SUPLEMENTO Y DEL EXTRA VIDA.";;;
+65;5043;3;2014-01-01 00:00:00;"SOLICITA EL CLIENTE AMPLIAR OFERTA DE FERTILIZANTES Y AGROQUIMICOS.";"LUBRE OFRECIO LA COMPRA DE FERTILIZANTES A 7 DIAS .";;;
+66;3910;2;2014-11-28 00:00:00;"El dia 27 /11/2014 se descargó un tambor de aceite NOrmal 50, siendo las 16, 30 hs. Al día siguiente 28/11 al iniciar sus actividads siend las 7,20 hs. observo en el piso alrededor del tambor que habia perdido del mismo. Llamé al distribuidor y me comunicaron  urgente con el vendedor, quien me solicitó que lo traspase al contenido del mismo a otro tambor y que saque fotos del mismo. realizé la operación y evidentemente hubo una falla del recipiente.";"";;;
+67;3910;2;2014-12-09 00:00:00;"";"Dia 28/11/2014 se le descontó al cliente la suma de $ 50 al verificar con la foto la pinchadura del tambor, ya que se la traspasó a otro envase de iguales caracteristicas.";;;
+68;3910;2;2014-12-09 00:00:00;"";"";;;
+72;5080;2;2014-12-31 00:00:00;"El Sr. Emilio Vera informa que el día 31/12/2014 se le entregaron 42 (cuarenta y dos) bolsas de Parafinas 66.
+El cliente reclama que una bolsa estaba rota y tenía un faltante de 4 kg. de parafinas mas o menos.";"";;;
+73;5080;2;2015-03-13 00:00:00;"";"El chofer del vehiculos que realiza la entrega, Sr. Pablo Gonzalez, verifica que es correcto.";;;
+74;5080;2;2015-03-13 00:00:00;"";"";;;
+82;6259;2;2015-08-18 00:00:00;"Informa ARmando Quinteros que el cliente le reclamó que el tambor de Kriox estaba perdiendo su contenido.";"El dia 20/08/2015 se realizó el cambio del tambor por otro en buenas  condiciones.";;;
+85;5003;2;2015-08-07 00:00:00;"El cliente Miguel Roldan informa que recibió un tambor de Refrigerante Kriox, con pérdida en el mencionado tambor de 205 lts, por problemas en la fabricación del envase";"Se llegó a un acuerdo y el cliente entregará el tambor usado cuando lo termine, para realizar el trasbazo del liquido y se lo entreguemos nuevamente. La operatoria será cumplimentada cuando se realice la misma (20/08/2015)";;;
+88;5923;2;2015-06-06 00:00:00;"En el día de la fecha informa el encargado del campo, que el gas-oil recibido, no es de buena calidad (tienen agua)";"El comercial Armando Quinteros le informa al cliente que antes de descargar el gas-oil, se hizo la purga correspondiente y se le realiza una nueva purga al dia siguiente (7/06/2015)";;;
+92;6167;2;2015-10-10 00:00:00;"Cliente molesto por la falta de entrega de combustible en tiempo y forma. 
+Se adjunta mail de reclamo.";"El receptor del reclamo es el comercial Miguel Valeros. Quien informa que el día sabado 10/10 se entregó a última hora la cantidad de 3.000 lts de combustible de un pedido de 10.000 lts realizado el día 8/10/2015 .";;;
+93;5523;2;2016-04-26 00:00:00;"El cliente solicita que se analice el combustible que se le dejo, ya que considera que este no se encuentran en buenas condicionas.
+Las cistenas se encontraban en buenas condiciones.";"Se fue a ver al cliente con una botella testigo de euro recien sacado de nuestra planta. Se saco de las cisternas del cliente y era el mismo euro de nuestra planta, se saco de una camioneta afectada y el euro tambien se encontraba en las mismas condiciones que nuestra botella testigo, el cliente lo acepto.";;;
+94;1985;2;2016-03-15 00:00:00;"Descargo: El cliente manifestó anomalías en el producto Ultra Diesel. 
+Receptor del reclamo: Sebastián Terán
+";"El vendedor se apersonó a las instalaciones donde recibe el productoel cliente que hizo constatar que los mismos no estaban en buenas condiciones de higiebe y mantención para la recepción del mismo. Se le indicó al cliente que haga purgas periódicas del tanque para mantenerlo limpio y en condiciones.";;;
+95;6676;2;2016-05-25 00:00:00;"El señor Marcelo Membribes me llamó por teléfono haciendo el reclamo del combustible Ultra Diesel que recibió el 31 de marzo de este año diciendo que tuvo problemas en su máquina cosechadora de granos cuando inició la trilla 20 días despues de recibir el gasoil diciendo que la màquina no anduvo màs de 500 m, y cambiando los filtros pasó lo mismo.
+Receptor del mensaje: Emiliano Fernández.";"Se sacó muestras de la cisterna móvil para analizar y también fotos de las instalaciones. Hay una reunión pendiente en la planta.";;;
+96;4035;2;2016-06-13 00:00:00;"Los tambores de aceite Transformador 64 con pérdidas en la base.
+Receptor: Sergio Andjel.";"Se envió fotos y comentarios al comercial.";;;
+97;4266;2;2016-09-05 00:00:00;"Se descargó por equivocación 30 lts de gasoil ultra en un tanque con 10.000 lts de aceite curafrutal contaminando el producto. Para el cliente era imposible de usar el producto para fumigar citrus.
+Receptor del mesaje: Miguel Valeros";"Se tomó muestra del aceite y se aplicó en finca propia demostrando que no producía daño en la planta.";;;
+98;5099;2;2016-10-25 00:00:00;"Los bidones de glifosato tienen una presencia de una babosa color verde flotante en su interior.
+Receptor del reclamo: Emiliano Fernández";"Se hizo el reclamo correspondiente a YPF y se le cambió los bidones con el mismo número de lote al cliente.";;;
+99;5309;2;2016-10-25 00:00:00;"Problemas con el sello aluminizado (no vienen)  que se encuentran debajo de las tapas de los envases de elaion de 1 y 4 litros.
+Receptor del mensaje: Sergio Andjel.";"Se infrmó al comercial.";;;
+100;5454;2;2016-11-01 00:00:00;"Demora en la entrega de los equipos de Asfalto en al planta asfáltica de la municipalidad.";"Hablamos con el comercial de YPF, Leonardo Bulo, para saber la situación de este tema.";;;
+101;4992;3;2016-11-21 00:00:00;"No se mantuvo una oferta de precios durante 10 días e incluso la recotizamos dos vecesmás. Era una operación de fertilizantes.";"Se le explicó al cliente que hubo aumentos luego de la cotización solicitada.";;;
+102;4882;2;2016-11-23 00:00:00;"El cliente reclamó que recibió un tambor pinchado enviando fotos de la pérdida.";"Se comprobó la pérdida por la soldadura inferior del tambor.";;;
+103;4292;2;2016-11-14 00:00:00;"Tambor de aceite con una pérdida en la costura.";"En el mismo día se le cambió al cliente el tambor de aceite.";;;
+104;5128;2;2016-12-14 00:00:00;"Cuando se va a abrir el tambor de aceite XV 300 se da con que falta la tapa que va roscada. Decide sacar aceite para ver como esta, pone la bomba y sale con mucha agua.";"Se tomó muestra del contenido del tambor. Luego se analizó la muestra y se confirmó que en el tambor el aceite estaba mezclado con agua.";;;
+105;4292;2;2017-01-16 00:00:00;"El cliente pidió una caja de Elaion en la cual encontró un envase pinchado. Se solicitó la devolución de un envase en buen estado o la realización de una nota de crédito.";"Se realizó la nota de crédito por el bidón en mal estado luego de haber revisado si el bidón tenía el pinchazo señalado por el cliente.";;;
+106;4292;2;2017-03-03 00:00:00;"El cliente hizo pedido de cajas de Elaion Moto. Una de las cajas contenía un bidón pinchado. El cliente reclamó solución ante la problemática.";"El vendedor visitó al cliente y verificó la falla en el bidón. Sacó foto del mismo.";;;
+107;5004;2;2017-03-29 00:00:00;"El cliente pidió 2 tambores de Transmisión 140 pero luego se dió cuenta de que necesitaba Transmisión 90. Solicitó el cambio.";"El vendedor fue a revisar os tambores que no fueran adulterados.";;;
+108;6405;2;2017-03-06 00:00:00;"El cliente viene siendo atendido por la administración de LUBRE ya que ningun vendedor lo quiere atender, ya que es un cliente conflictivo y complicado. El cliente solicita la figura de un comercial si o si.";"Se habló con los comerciales. Armando Quinteros se ofreció a hacerse cargo del cliente.";;;
+109;4394;2;2017-06-06 00:00:00;"El cliente pidió 1 tambor de Extra Vida XV100 el cual vino con una pequeña pinchadura en su base. El cliente consideró que debemos cambiar el producto.";"Se procedió a cambiar el tambor con la verificación previa del repartidor.";;;
+110;6659;2;2017-08-03 00:00:00;"Se hizo pedido de 50 cajas de Elaion Moto hace más de una semana. Aún no se trajo el pedido. Se solicitó una respuesta urgente.";"Se pidió prestado a un cliente y se le dio algunas cajas al cliente La Via para sacarlo de apuro.";;;
+111;1761;3;2017-12-08 00:00:00;"El cliente reclama que no se le entregó 1 tambor de hidráulico BP 100 de los 3 que había pedido.";"Se revisó en la aplicación de pedidos y se encontró que no había cargado bien el número de tambores que el cliente había pedido.";;;
+112;4579;2;2018-01-09 00:00:00;"El cliente reclama que se le entrega mal la mercadería ya que el había solicitado una caja de Elaion Moto 20 w 50 y se le entrga Elaion Moto 10 w 40.";"El cliente trajo la caja a nuestra oficina. Se corroboró el stock y efectivamente se había entregado mal una caja al cliente.";;;
+113;6204;2;2018-07-28 00:00:00;"En la compra de baldes de aceite del sábado 28 de julio, se entregó un balde de multiturbo 25 W50 con la tapa rota. El reclamo lo hizo por teléfono a mi celular enviando fotos del balde roto.";"Se le cambió el balde de multiturbo.";;;
+114;7004;2;2018-07-03 00:00:00;"El cliente mandó dos veces pago; uno con el vendedor y otro con el chofer y solicitó la devolución del cheque propio.";"Se consiguió el cheque propio que nos dió el cliente Bianchi y se lo llamó para devolverle el mismo.";;;
+115;4055;2;2019-03-06 00:00:00;"Aceite transformador 64 con bajo valor de rigidez dieléctrica.";"Se cambió los tambores con otro número de partida que en el certificado de calidad indicaba un valor mayo de rigidez.";;;
+116;7040;2;2019-02-02 00:00:00;"El cliente encontró que una de las cajas de aceite compradas se encontraba con una mancha importante de aceite.";"Se cambió por completo la caja luego de revisarla. Se vió que un bidón tenía una importante filtración por un pinchazo.";;;
+117;3651;2;2019-04-16 00:00:00;"El cliente tuvo problemas en los inyectores de sus tractores. Al revisar su tanque se dio con la presencia de una abundante cantidad de agua. Hizo el reclamo correspondiente que nuestro gasoil podría tener agua.";"Comprobamos las demás entregas que se realizaron ese día y ningún otro cliente tuvo ese problema. El cliente revisó su tanque y se encontró con un importante problema de filtración de agua en la tapa del mismo.";;;
+118;4493;2;2019-02-24 00:00:00;"Se entregaron 30 bidones de Azul 32 por 10 lts. El cliente reclama que uno fue pinchado.";"Se reconoció el bidón pinchado y se lo cambió por otro sano.";;;
+119;4055;2;2019-11-11 00:00:00;"Se vendió 5 tambores de Transformador 64 y no daba los valores de rigidez electrica( valores mas bajo de lo normal";"Se hizo el reclamo a YPF enviando numero de partida del producto.";;;
+120;3760;2;2020-03-04 00:00:00;"El cliente reclama precio de combustible, que estamos mas caros que otras petroleras y que no tenemos financiación.";"Por el momento no hay condiciones de precios y plazo";;;

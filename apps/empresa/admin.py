@@ -17,16 +17,3 @@ class EmpresaAdmin(admin.ModelAdmin):
         if db_field.name == "actividad":
             kwargs["queryset"] = Diccionario.objects.filter(tabla='actividad').order_by('texto')
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
-        
-
-
-#     model = models.Empresa.objects.filter(actividad__tabla='actividad')
-
-
-
-# def formfield_for_foreignkey(self, db_field, request, **kwargs):
-#     from apps.comunes.models import Diccionario
-#     if db_field.name == 'actividad':
-#         kwargs['queryset'] = Diccionario.objects.filter(tabla='actividad').order_by('texto')
-#     return super(EmpresaAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
-

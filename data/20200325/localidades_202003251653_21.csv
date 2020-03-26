@@ -1,0 +1,581 @@
+"localidad_id";"localidad_nombre";"dpto_id"
+0;No se detalla;0
+1;Acheral;7
+2;Aguilares;8
+3;Amaicha del Valle;16
+4;Anca Juli;3
+5;Arcadia;4
+6;Bella Vista;9
+7;Burruyacú;10
+8;Tafí Viejo;3
+10;Tafí Del Valle;16
+12;Juan B. Alberdi;13
+14;San Miguel de Tucumán;1
+15;Banda del Río Salí;2
+16;Alderetes;2
+17;Concepción;4
+18;Yerba Buena;5
+19;Monteros;7
+20;San Pedro de Colalao;15
+21;El Cadillal;3
+23;Famaillá;11
+24;San Javier;5
+25;Trancas;15
+26;El Mollar;16
+27;Lules;6
+29;La Cocha;14
+30;San Pablo;6
+31;El Chañar;10
+32;Raco;3
+33;El Siambóm;3
+34;Chuscha;15
+35;Cevil Redondo;5
+36;Las Talitas;3
+37;Colalao del Valle;16
+38;Colombres;2
+39;Delfín Gallo;2
+40;El Potrerillo;14
+41;Graneros;17
+42;La Trinidad;4
+43;Las Cejas;2
+44;Los Ralos;2
+45;Medinas;4
+46;Río Seco;7
+47;Rumi Punco;14
+48;Santa Ana;8
+49;Santa Lucía;7
+50;Santa Rosa De Leales;9
+51;Simoca;12
+52;Choromoro;15
+53;Cevil Pozo;2
+54;El Manantial;6
+55;Esquina;9
+56;Estación Araoz;9
+57;Garmendia;10
+58;La Florida;2
+59;La Aguadita;3
+60;Los Nogales;3
+61;Villa Nougués;6
+62;Timbó Nuevo;10
+63;Timbó Viejo;10
+64;San Andrés;2
+65;La Ramada;10
+66;Lastenia;2
+67;Tapia;15
+68;Lamadrid;17
+69;León Rouges;7
+70;Los Vallistos;2
+71;Los Sarmientos;8
+72;La Tipa;8
+73;Río Chico;8
+74;Los Gutierrez;2
+75;Los Pocitos;3
+76;Macomitas;10
+77;La Cruz;10
+78;San Patricio;10
+79;Malvinas;6
+80;Taco Ralos;17
+81;La Cañada;17
+82;Villa Carmela;3
+83;San Felipe;6
+84;San Agustín;2
+85;Termas De Río Hondo;21
+86;Capital;22
+87;San Salvador De Jujuy;23
+88;Los Altos;24
+89;Orán;25
+90;Río Tercero;26
+95;Santiago Del Estero;47
+96;Ciudad De Salta;48
+97;Ciudad De Córdoba;20
+98;Ciudad De Santa Fe;49
+99;San Fernando Del Valle De Catamarca;18
+100;Ciudad De Mendoza;50
+101;Ciudad De San Juan;51
+102;Ciudad De San Luis;52
+103;Posadas;53
+104;Ciudad De La Rioja;54
+105;Resistencia;55
+106;Corrientes;56
+107;Santa Rosa;57
+108;"9 De Julio";58
+109;Agua Dulce;9
+110;Almafuerte;26
+111;Florentino Ameghino;60
+112;Amenábar;61
+113;Apolinario Saravia;62
+114;Arequito;63
+115;Añatuya;64
+116;Balcarce;65
+117;Bañado De Ovanta;24
+118;Belén;66
+119;Benjamín Araoz;10
+120;Carlos Casares;67
+121;Carrodilla;68
+122;Casilda;63
+123;Cañada De Gómez;69
+124;Chabás;63
+125;Colombres;2
+126;Colonia Caroya;70
+127;Coronel Moldes;71
+128;Coronel Du Graty;72
+129;Don Torcuato;73
+130;El Bracho;2
+131;El Cevilar;2
+132;El Cortaderal;9
+133;El Naranjo;10
+134;Ranchillos;2
+135;El Tala;74
+136;El Trebol;75
+137;Embarcación;76
+138;Galvez;77
+139;Gastona;4
+140;Libertador Gral. San Martín;78
+141;Rio Colorado;9
+142;Río Cuarto;79
+143;Rosario De La Frontera;80
+144;Villa Quinteros;7
+145;Villa Trinidad;4
+146;Manantial De Ovanta;6
+147;Jesús María;70
+148;Joaquín V. Gonzalez;62
+149;Jovita;81
+150;La Banda;82
+151;La Playosa;83
+152;Nueva Esperanza;84
+153;Oncativo;85
+154;Pacará Pintado;2
+155;Palpalá;86
+156;Pampa Pozo;10
+157;Pavón Arriba;87
+158;Pilar;85
+159;Rafaela;88
+160;Rojas;89
+161;Rosario;90
+162;Salliqueló;91
+163;San Guillermo;92
+164;San Isidro;93
+165;San Lorenzo;94
+166;San Vicente;88
+167;Santa Clara De Buena Vista;95
+168;Santa María;96
+169;Saujil;97
+170;Tacural;88
+171;Taruca Pampa;10
+172;Villa María;83
+173;General Rojo;98
+174;General Baldissera;99
+175;General Pico;100
+176;La Quiaca;101
+177;Las Talas;9
+178;Las Tipas;15
+179;Los Gucheas;4
+180;Los Perez;12
+181;Los Puestos;9
+182;Los Sueldos;9
+183;Los Surgentes;99
+184;Lozada;102
+185;Mar Del Plata;103
+186;Mixta;9
+187;Monte Bello;9
+188;Monte Grande;14
+189;Monteagudo;12
+190;Los Porceles;2
+191;Villa Nueva Italia;3
+192;San Antonio De Areco;104
+193;Munro;104
+194;Tinogasta;106
+195;Santa Rosa;107
+196;Villa Mercedes;108
+197;Villa Los Sarmientos;8
+198;Tusca Pozo;9
+200;La Reduccion;6
+201;Las Talitas;1
+202;General Deheza;109
+203;Jovita;20
+204;Almafuerte;20
+205;El Naranjito;2
+206;Capitan Caceres;7
+207;Monteagudo;4
+208;Tucumán;110
+209;Tucumán;2
+210;Bajo Grande;10
+211;Bajo Grande;111
+212;Buenos Aires;112
+213;Estación Araoz;114
+214;Tucumán;115
+215;Concepción;116
+216;Ranchillos;118
+217;Concepción;115
+218;S.m.de Tucumán;119
+219;Atahona;12
+220;Banda Rio Salí;119
+221;Villa Fiad;10
+222;Villa Fiad;9
+223;Gobernador Piedrabuena;10
+224;Yerba Buena;10
+225;Las Talitas;10
+226;Santa Ana;121
+227;La Virginia;122
+228;La Virginia;123
+229;Lastenia;10
+230;Alderetes;10
+231;Lomas De Imbaud;5
+232;Rotonda Los Gutierrez;10
+233;Choromoro;124
+234;Santa Lucia;124
+235;León Rougues;124
+236;Banda Del Rio Sali;124
+237;Frias;124
+238;Frias;84
+239;Juan B. Alberdi;125
+240;Burruyacú;126
+241;Garcia Fernandez;127
+242;Cruz Alta;128
+243;La Invernada;13
+244;Leales;9
+245;Villa Mariano Moreno;124
+246;Ranchillos;117
+247;Las Talitas;129
+248;Granadero Baigorria;130
+249;Rio Colorado;131
+250;Colombres;132
+251;Tafi Viejo;133
+252;Salta;134
+253;Banda Rio Salí;135
+254;Catamarca;19
+255;Juan B. Alberdi;136
+256;Viclos;137
+257;Tafi Viejo;129
+258;Las Cejas;138
+259;Jujuy;86
+260;Tucumán;139
+261;Tucumán;140
+262;Santa Fe;141
+263;Andino;142
+264;Cevil Pozo;140
+265;Guemes;143
+266;Chicligasta;116
+267;Manantial De Ovanta;144
+268;Salta;145
+269;Salta;146
+270;Lules;113
+271;Jujuy;147
+272;Las Talitas;133
+273;Arcadia;149
+274;Aguilares;150
+275;Chaco;151
+276;San Andres;152
+277;Catamarca;148
+278;Cordoba;153
+279;Bella Vista;127
+280;Tucumán;154
+281;Manuel Garcia Fernandez;155
+282;Acheral;156
+283;San Pablo;157
+284;Raco;158
+285;Villa Fiad;159
+286;León Rougués;160
+287;Rio Primero;156
+288;Rio Primero;161
+289;Lules;156
+290;Pcia. De Buenos Aires;162
+291;Catamarca;163
+292;Metan;164
+293;Santa Fe;165
+294;Santa Fe;166
+295;Buenos Aires;167
+296;Los Gutierrez;156
+297;Los Gutierrez;168
+298;Salta;169
+299;Cordoba;170
+300;Alderetes;124
+301;Villa Benjamin Araoz;171
+302;Arenales;172
+303;Tucuman;173
+304;Tucumán;174
+305;Tucumán;175
+306;Tucumán;176
+307;Tucumán;177
+308;Tucumán;178
+309;Tucumán;179
+310;Buenos Aires;180
+311;Catamarca;181
+312;Salta;182
+313;Salta;183
+314;Leales;184
+315;Tucumán;185
+316;Córdoba;186
+317;Tucumán;187
+318;Concepción;188
+319;Tucumán;189
+320;Tucumán;190
+321;Buenos Aires;191
+322;La Cocha;192
+323;Villa Carmela;193
+324;Tucumán;194
+325;Tucumán;195
+326;Santa Fe;196
+327;Tucumán;197
+328;Banda Del Rio Salí;198
+329;Tucumán;199
+330;Tucumán;200
+331;Tucumán;201
+332;Tucumán;202
+333;Chicligasta;203
+334;Tucumán;7
+335;Tucumán;204
+336;Cordoba;205
+337;Tucumán;206
+338;Tucumán;207
+339;Tucuman;208
+340;Cordoba;209
+341;Tucuman;210
+342;Tucuman;198
+343;Tucumán;211
+344;Cordoba;212
+345;Tucuman;213
+346;Burruyacu;202
+347;Trancas;204
+348;La Virginia;10
+349;Jimenez;214
+350;Ysca Yacu;84
+351;Bobadal;214
+352;San Pedro;24
+353;Rapelli;84
+354;El Palomar;214
+355;El Cabure;215
+356;Los Pereyra;2
+357;Pozo Hondo;214
+358;Ñato Pozo;214
+359;Alpachiri;4
+360;Pampa Pozo;84
+361;Garmendia;84
+362;Leales;9
+363;Famailla;216
+364;Santa Fe;217
+365;Tafi Viejo;218
+366;Tucuman;219
+367;La Florida;128
+368;Monteros;220
+369;Los Porceles;128
+370;Estacion Vipos;129
+371;Tucuman;221
+372;Los Bulacio;156
+373;Los Bulacios;128
+374;Santa Fe;223
+375;Salta;224
+376;Chicligasta;115
+377;Catamarca;225
+378;Catamarca;226
+379;Tucuman;156
+380;El Naranjo;156
+381;El Naranjo;10
+382;Gobernador Piedrabuena;156
+383;Buenos Aires;228
+384;Santa Fe;229
+385;Santa Fe;230
+386;Aldao;94
+387;Alderetes;128
+388;Banda Del Rio Sali;128
+389;Bella Vista;128
+390;Benjamin Paz;15
+391;Boca Del Tigre;10
+392;Cevil Pozo;128
+393;Arequito;165
+394;Arequito;231
+395;Cordoba;232
+396;Delfin Gallo;128
+397;Estacion Vipos;15
+398;Gobernador Piedrabuena;15
+399;Huasa Pampa;14
+400;La Invernada;136
+401;La Ramada De Abajo;10
+402;Las Cejas;128
+403;Las Talitas;128
+404;Lastenia;128
+405;Los Aguirre;6
+406;Los Gutierrez;128
+407;Los Pizarros;14
+408;Los Ralos;128
+409;Los Vallistos;128
+410;Manuel Garcia Fernandez;9
+411;Pacara Pintado;128
+412;Ranchillos;128
+413;San Andres;128
+414;Teniente Berdina;7
+415;Banda Del Rio Sali;156
+416;Alderetes;233
+417;Buenos Aires;22
+418;Los Perez;2
+419;Los Perez;2
+420;Trancas;15
+421;Cordoba;234
+422;Mancopa;9
+423;El Chañar;156
+424;El Chañar;198
+425;Yerba Buena;156
+426;El Naranjito;156
+427;Los Ralos;156
+428;Pavon Arriba;165
+429;Las Talitas;156
+430;Leales;211
+431;Tucuman;236
+432;Agua Dulce;176
+433;Las Piedritas;156
+434;Cruz Alta;132
+435;Estacion Araoz;156
+436;Carbon Pozo;9
+437;Tucuman;237
+438;Rosario Sud;165
+439;Santa Fe;238
+440;Santa Fe;239
+441;Tucuman;154
+442;Buenos Aires;240
+443;Cordoba;241
+444;Mancopa;242
+445;El Colmenar;156
+446;Santiago Del Estero;243
+447;Santa Fe;165
+448;Tucuman;246
+449;La Tala;198
+450;Yaquilo;119
+451;Lozada;186
+452;Lozada;186
+453;Lozada;248
+454;San Andres;156
+455;San Andres;233
+456;Los Altos;181
+457;Los Perez;128
+458;Casas Viejas;15
+459;San Pablo;198
+460;Tafi Viejo;3
+461;Tres Cerritos;145
+462;Rosario De La Frontera;62
+463;La Merced;181
+464;Beccar;58
+465;Barrio Saavedra;58
+466;Cevil Redondo;156
+467;Yerba Buena;193
+468;Santa Fe;250
+469;Colonia Tirolesa;170
+470;Araoz;9
+471;Santa Fe;251
+472;Rio Colorado;156
+473;Rio Colorado;242
+474;Los Gutierrez;156
+475;Los Gutierrez;252
+476;Los Gutierrez;253
+477;Agua Dulce;156
+478;Trancas;7
+479;Zarate Norte;15
+480;Alderetes;253
+481;Chaco;254
+482;El Puestito;10
+483;Tancacha;186
+484;Tancacha;170
+485;Villa Carmela;156
+486;Villa Carmela;255
+487;Las Cejas;10
+488;Tala Pozo;10
+489;Oran;9
+490;San Antonio De Leales;9
+491;Tucuman;119
+492;El Potrero;62
+493;Del Viso;58
+494;Del Viso;258
+495;Dean Funes;186
+496;Cordoba;259
+497;Burzaco;58
+498;Burruyacu;123
+499;Cordoba;247
+500;Catamarca;260
+501;Ramos Mejia;58
+502;Taruca Pampa;156
+503;Cordoba;262
+504;Cordoba;263
+505;Tucuman;257
+506;Burruyacu;124
+507;Lomas De Tafi;156
+508;Tucuman;264
+509;Ingenio Santa Ana;156
+510;El Cañar;150
+511;El Chañar;10
+512;Gastona Sur;156
+513;Gastona Sur;115
+514;"9 De Julio";112
+515;La Invernada;156
+516;Juan B. Alberdi;156
+517;Manantial De Ovanta;156
+518;Escaba;136
+519;Tucuman;257
+520;Tucuman;266
+521;Tucuman;267
+522;Catamarca;107
+523;Tucuman;257
+524;Villa Allende;263
+525;Villa Allende;170
+526;Tucuman;268
+527;Buurruyacu;268
+528;Buenos Aires;269
+529;San Cayetano;156
+530;San Cayetano;198
+531;Tucuman;156
+532;Santiago Del Estero;270
+533;Buenos Aires;271
+534;Lastenia;156
+535;Tafi Viejo;255
+536;Piquillin;263
+537;Piquillin;170
+538;Cordoba;272
+539;Monteros;273
+540;El Cortaderal;9
+541;Las Tusquitas;9
+542;Tucuman;135
+543;Lomas Del Mirador;274
+544;Tafi Viejo;275
+545;Tucuman;256
+546;Banda Del Rio Sali;233
+547;Los Vallistos;233
+548;Gobernador Garmendia;10
+549;Tucuman;276
+550;Jujuy;277
+551;La Rioja;278
+552;Los Nogales;156
+553;San Andres;156
+554;Yerba Buena;279
+555;Marcos Paz;257
+556;Sauce Huacho;11
+557;La Florida;9
+558;Tucuman;257
+559;San Miguel;156
+560;El Puesto;156
+561;Alderetes;156
+562;Marcos Juarez;263
+563;Marcos Juarez;170
+564;Cevil Redondo;5
+565;Tucuman;5
+566;Oliva;170
+567;Salto;112
+568;Tucuman;265
+569;Tucuman;257
+570;Tucuman;189
+571;La Virginia;156
+572;Pilar;263
+573;Cordoba;280
+574;Los Sosa;7
+575;Tucuman;281
+576;La Aguadita;282
+577;Tucuman;257
+578;Tucuman;283
+579;Tucuman;256
+580;Tucuman;256
+581;Villa Los Sarmientos;156
+582;Finca El Tala;284
+583;Yerba Buena;256
+584;Santa Fe;285
+585;Yerba Buena;257
+586;Reconuista;165
+587;Santa Fe;286
+588;Buenos Aires;287
+589;Caballito;58

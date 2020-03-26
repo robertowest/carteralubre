@@ -8,12 +8,19 @@ class PersonaForm(forms.ModelForm):
     class Meta:
         model = Persona
         fields = ['nombre', 'apellido', 'documento', 'fecha_nacimiento', 'active']
+        widgets = {
+            'documento': forms.TextInput(attrs={'placeholder': '20.123.456'}),
+            'fecha_nacimiento': forms.TextInput(attrs={'placeholder': '31/03/1990'}),
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # creamos layouts
+        # creamos helper
         self.helper = helper.FormHelper()
+        self.helper.form_id = "myform"
+
+        # creamos layouts
         self.helper.layout = layout.Layout()        
 
         # agregamos todos los campos
