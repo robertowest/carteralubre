@@ -2,18 +2,16 @@
 <thead>
     <tr>
         <th>#</th>
-        <th>Razon Social</th>
-        <th>Actividad</th>
-        <th>CUIT</th>
+        <th>Nombre</th>
+        <th>Padre</th>
     </tr>
 </thead>
 <tbody>
     {% for object in object_list %}
     <tr>
         <td><a href="{{object.get_detail_url}}">{{object.pk}}</a></td>
-        <td>{{object.razon_social}}</td>
-        <td>{{object.cuit}}</td>
-        <td>{{object.actividad}}</td>
+        <td>{{object.nombre}}</td>
+        <td>{{object.parent}}</td>
     </tr>
     {% endfor %}
 </tbody>

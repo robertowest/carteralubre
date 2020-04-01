@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
-from apps.comunes.models import CommonStruct, Domicilio, Comunicacion, Diccionario
+from apps.comunes.models import Domicilio, CommonStruct, Comunicacion
 from apps.persona.models import Persona
 
 
@@ -33,21 +33,58 @@ class Comercial(CommonStruct):
         return reverse('comercial:delete', args=(self.pk,))
 
 
+class Actividad(CommonStruct):
+    nombre = models.CharField('Actividad', max_length=50)
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, 
+                               null=True, blank=True, verbose_name='Padre')
+
+    class Meta:
+        verbose_name = 'Actividad'
+        verbose_name_plural = 'Actividades'
+
+    def __str__(self):
+        return self.nombre
+
+
+# class Subactividad(Actividad):
+#     actividad = models.OneToOneField(Actividad, on_delete=models.CASCADE, parent_link=True)    
+# class Subactividad(models.Model):
+#     class Meta:
+#         verbose_name = 'Subactividad'
+#         verbose_name_plural = 'Subactividades'
+#         # managed = False
+
+#     def __str__(self):
+#         return self.nombre
+
+#     def get_update_url(self):
+#         # return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
+#         import pdb; pdb.set_trace()
+#         return "/"
+
+
 class Empresa(CommonStruct):
-    nombre = models.CharField(max_length=60)
+    nombre = models.CharField('Nombre de Fantasía', max_length=60)
     razon_social = models.CharField('Razón Social', max_length=60, unique=True)
-    cuit = models.CharField('CUIT/CUIL', max_length=13, unique=True)
+    cuit = models.CharField('CUIT/CUIL', max_length=13, unique=True, null=True, blank=True)
     comercial = models.ForeignKey(Comercial, on_delete=models.CASCADE, null=True, blank=True,
                                   limit_choices_to = {'active': True})
-    actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True, 
-                                  limit_choices_to = {'tabla': 'actividad', 'active': True})
+    # actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True, 
+    #                               limit_choices_to = {'tabla': 'actividad', 'active': True})
+    actividad = models.ForeignKey(Actividad, on_delete=models.CASCADE, null=True, blank=True, 
+                                 limit_choices_to = {'active': True})
+    actividades = models.ManyToManyField(Actividad, related_name='empresa_actividades', blank=True, 
+                                          limit_choices_to = {'parent__isnull': False, 'active': True})
     domicilios = models.ManyToManyField(Domicilio, related_name='empresa_domicilios',
                                         blank=True, limit_choices_to = {'active': True})
     comunicaciones = models.ManyToManyField(Comunicacion, related_name='empresa_comunicaciones', 
                                             blank=True, limit_choices_to = {'active': True})
     contactos = models.ManyToManyField(Persona, related_name='empresa_contactos', 
                                        blank=True, limit_choices_to = {'active': True})
+    observacion = models.TextField(null=True, blank=True)
     referencia_id = models.IntegerField('Referencia Externa', null=True, blank=True, unique=True)
+    origen = models.IntegerField(null=True, blank=True)
+    planilla = models.IntegerField(null=True, blank=True)
 
     # configuración para admin
     list_display = ['razon_social', 'cuit', 'nombre', 'active']
@@ -72,3 +109,6 @@ class Empresa(CommonStruct):
 
     def get_related_url_with_contact(self):
         return reverse('%s:associate_with_contact' % self._meta.model_name, args=(self.pk,))
+
+    def get_related_url_with_actividad(self):
+        return reverse('%s:associate_with_actividad' % self._meta.model_name, args=(self.pk,))

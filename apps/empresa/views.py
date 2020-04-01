@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+# from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -24,7 +24,7 @@ class EmpresaTemplateView(generic.TemplateView):
     def get_context_data(self, *args, **kwargs):
         model = self.model
         context = super().get_context_data()
-        context['actividades'] = model.objects.values('actividad', 'actividad__texto').annotate(contador=Count('id'))
+        context['actividades'] = model.objects.values('actividad', 'actividad__nombre').annotate(contador=Count('id'))
         context['comerciales'] = model.objects.values('comercial', 'comercial__persona__apellido').annotate(contador=Count('id'))
         return context
 
@@ -34,8 +34,8 @@ class EmpresaListView(generic.ListView):
     template_name = 'comunes/tabla.html'.format(app=__package__.split('.')[1])
     paginate_by = 15
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data()
         context['app_name'] = __package__.split('.')[1]
         # context['object_list'] = models.Empresa.objects.filter(active=True)
         return context
@@ -46,8 +46,8 @@ class EmpresaCreateView(generic.CreateView):    # LoginRequiredMixin
     form_class = forms.EmpresaForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data()
         # context['app_name'] = __package__.split('.')[1]
         context['form_title'] = 'Nueva Empresa'
         return context
@@ -68,11 +68,12 @@ class EmpresaDetailView(generic.DetailView):
     model = models.Empresa
     template_name = 'empresa/detalle.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data()
         context['domicilios'] = context['empresa'].domicilios.filter(active=True)
         context['comunicaciones'] = context['empresa'].comunicaciones.filter(active=True)
         context['contactos'] = context['empresa'].contactos.filter(active=True)
+        context['actividades'] = context['empresa'].actividades.filter(active=True)
         # context['empresa'].contactos.filter(tipo='movil').filter(active=True)
         # cargamos los celulares de los contactos
         # for reg in context['contactos']:
@@ -85,8 +86,8 @@ class EmpresaUpdateView(generic.UpdateView):
     form_class = forms.EmpresaForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data()
         context['form_title'] = 'Modificación de Empresa'
         return context
 
@@ -129,8 +130,8 @@ class FilterListView(generic.ListView):
             return self.model.objects.filter(comercial=self.kwargs['filtro'])
         return self.model.objects.all()
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data()
         name = self.url_name()
         if name == 'filtro_actividad':
             context['filtro'] = 'filtrado por Actividad'
@@ -145,7 +146,7 @@ class CreateComunicationView(generic.CreateView):
     template_name = 'comunes/formulario.html'
 
     def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = super().get_context_data()
         context['form_title'] = 'Nuevo Tipo de Comunicación'
         return context
 
@@ -171,7 +172,7 @@ class CreateAddressView(generic.CreateView):
     template_name = 'comunes/formulario.html'
 
     def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = super().get_context_data()
         context['form_title'] = 'Nuevo Domicilio'
         return context
 
@@ -197,7 +198,7 @@ class CreateContactView(generic.CreateView):
     template_name = 'comunes/formulario.html'
 
     def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = super().get_context_data(kwargs)
         context['form_title'] = 'Nuevo Contacto'
         return context
 
@@ -215,3 +216,87 @@ class CreateContactView(generic.CreateView):
         if 'previous_url' in self.request._post:
             return HttpResponseRedirect(self.request._post['previous_url'])
         return response
+
+
+class CreateActividadView(generic.CreateView):
+    model = models.Actividad
+    form_class = forms.Actividad
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data()
+        context['form_title'] = 'Nueva Subactividad'
+        return context
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+
+        # grabamos el objeto para obtener identificador
+        self.object = form.save()
+        # obtenemos el objeto primario
+        empresa = models.Empresa.objects.get(id=self.kwargs['fk'])
+        # creamos la asociación
+        empresa.actividades.add(self.object)
+
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
+        return response
+
+
+class ActividadListView(generic.ListView):
+    model = models.Actividad
+    template_name = 'actividad/tabla.html'
+    paginate_by = 15
+
+    def get_queryset(self):
+        # SELECT id, nombre, parent_id
+        # FROM empresa_actividad
+        # ORDER BY case when parent_id is null then id else parent_id end * 1000 + id ASC    
+        queryset = models.Actividad.objects.raw("SELECT id, nombre, parent_id FROM empresa_actividad ORDER BY case when parent_id is null then id else parent_id end * 1000 + id ASC")
+        return queryset
+
+
+class ActividadCreateView(generic.CreateView):
+    model = models.Actividad
+    form_class = forms.ActividadForm
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data()
+        context['form_title'] = 'Nueva Actividad'
+        return context
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
+        return response
+
+
+class ActividadDetailView(generic.DetailView):
+    model = models.Actividad
+    template_name = 'comunes/detalle.html'
+
+
+class ActividadUpdateView(generic.UpdateView):
+    model = models.Actividad
+    form_class = forms.ActividadForm
+    template_name = 'comunes/formulario.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data()
+        context['form_title'] = 'Modificación de Actividad'
+        return context
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        # terminamos, ¿hacia dónde vamos?
+        if 'previous_url' in self.request._post:
+            return HttpResponseRedirect(self.request._post['previous_url'])
+        return response
+
+
+class ActividadDeleteView(generic.DeleteView):
+    pass

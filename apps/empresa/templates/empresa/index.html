@@ -18,14 +18,15 @@
     </div>        
 
     <div class="row">
+        <div class="col-md-12">Actividad</div>
         {% for obj in actividades %}
-        <div class="col-sm-6 col-md-2 mb-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                {{obj.actividad__texto|default_if_none:'No definido'}}
+                                {{obj.actividad__nombre|default_if_none:'No definido'}}
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{obj.contador}}</div>
                         </div>
@@ -42,8 +43,9 @@
     </div>
     
     <div class="row">
+        <div class="col-md-12">Comercial</div>
         {% for obj in comerciales %}
-        <div class="col-sm-6 col-md-2 mb-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">

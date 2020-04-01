@@ -1,0 +1,120 @@
+- model: comunes.provincia
+  pk: 0
+  fields:
+    nombre: No se detalla
+    pais: 1
+- model: comunes.provincia
+  pk: 1
+  fields:
+    nombre: Tucumán
+    pais: 1
+- model: comunes.provincia
+  pk: 2
+  fields:
+    nombre: Catamarca
+    pais: 1
+- model: comunes.provincia
+  pk: 3
+  fields:
+    nombre: Córdoba
+    pais: 1
+- model: comunes.provincia
+  pk: 4
+  fields:
+    nombre: Corrientes
+    pais: 1
+- model: comunes.provincia
+  pk: 5
+  fields:
+    nombre: Chaco
+    pais: 1
+- model: comunes.provincia
+  pk: 6
+  fields:
+    nombre: Chubut
+    pais: 1
+- model: comunes.provincia
+  pk: 7
+  fields:
+    nombre: Entre Ríos
+    pais: 1
+- model: comunes.provincia
+  pk: 8
+  fields:
+    nombre: Formosa
+    pais: 1
+- model: comunes.provincia
+  pk: 9
+  fields:
+    nombre: Jujuy
+    pais: 1
+- model: comunes.provincia
+  pk: 10
+  fields:
+    nombre: La Pampa
+    pais: 1
+- model: comunes.provincia
+  pk: 11
+  fields:
+    nombre: La Rioja
+    pais: 1
+- model: comunes.provincia
+  pk: 12
+  fields:
+    nombre: Mendoza
+    pais: 1
+- model: comunes.provincia
+  pk: 13
+  fields:
+    nombre: Misiones
+    pais: 1
+- model: comunes.provincia
+  pk: 14
+  fields:
+    nombre: Neuquén
+    pais: 1
+- model: comunes.provincia
+  pk: 15
+  fields:
+    nombre: Río Negro
+    pais: 1
+- model: comunes.provincia
+  pk: 16
+  fields:
+    nombre: Salta
+    pais: 1
+- model: comunes.provincia
+  pk: 17
+  fields:
+    nombre: San Juan
+    pais: 1
+- model: comunes.provincia
+  pk: 18
+  fields:
+    nombre: San Luís
+    pais: 1
+- model: comunes.provincia
+  pk: 19
+  fields:
+    nombre: Santa Cruz
+    pais: 1
+- model: comunes.provincia
+  pk: 20
+  fields:
+    nombre: Santa Fe
+    pais: 1
+- model: comunes.provincia
+  pk: 21
+  fields:
+    nombre: Santiago del Estero
+    pais: 1
+- model: comunes.provincia
+  pk: 22
+  fields:
+    nombre: Tierra del Fuego
+    pais: 1
+- model: comunes.provincia
+  pk: 23
+  fields:
+    nombre: Buenos Aires
+    pais: 1

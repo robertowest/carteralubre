@@ -1,4 +1,0 @@
-- model: app_name.Model_name
-  pk: 0
-  fields:
-    field_1: id;"nombre";"pais_id"

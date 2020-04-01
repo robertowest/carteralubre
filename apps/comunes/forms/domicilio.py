@@ -9,7 +9,7 @@ class DomicilioForm(forms.ModelForm):
         model = DomicilioModel
         fields = ['tipo', 'tipo_calle', 
                   'calle', 'numero', 'piso', 'puerta', 
-                  'pais', 'ciudad', 'localidad', 
+                  'pais', 'provincia', 'departamento', 'localidad', 
                   'active']
 
     def __init__(self, *args, **kwargs):

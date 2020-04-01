@@ -1,30 +1,45 @@
 - model: comunes.diccionario
   pk: 1
   fields:
-    active: true
-    created: 2019-07-30 16:01:45.009321+00:00
-    created_by: null
-    modified: 2019-07-30 16:01:45.009404+00:00
-    modified_by: null
-    texto: Agro
-    tabla: actividad
+    texto: Domicilio Fiscal
+    tabla: domicilio
 - model: comunes.diccionario
   pk: 2
   fields:
-    active: true
-    created: 2019-07-30 16:01:52.684074+00:00
-    created_by: null
-    modified: 2019-07-30 16:01:52.684155+00:00
-    modified_by: null
-    texto: Transporte
-    tabla: actividad
+    texto: Domicilio de Entrega
+    tabla: domicilio
 - model: comunes.diccionario
-  pk: 3
+    pk: 3
+    fields:
+      texto: Teléfono
+      tabla: comunicacion
+- model: comunes.diccionario
+    pk: 4
+    fields:
+      texto: Celular
+      tabla: comunicacion
+- model: comunes.diccionario
+  pk: 5
   fields:
-    active: true
-    created: 2019-07-30 16:02:14.603392+00:00
-    created_by: null
-    modified: 2019-07-30 16:02:14.603477+00:00
-    modified_by: null
-    texto: Lubricentro
-    tabla: actividad
+    texto: WhatsApp
+    tabla: comunicacion
+- model: comunes.diccionario
+  pk: 6
+  fields:
+    texto: Correo Electrónico
+    tabla: comunicacion
+- model: comunes.diccionario
+  pk: 7
+  fields:
+    texto: Facebook
+    tabla: comunicacion
+- model: comunes.diccionario
+  pk: 8
+  fields:
+    texto: Twitter
+    tabla: comunicacion
+- model: comunes.diccionario
+  pk: 9
+  fields:
+    texto: LinkedIn
+    tabla: comunicacion

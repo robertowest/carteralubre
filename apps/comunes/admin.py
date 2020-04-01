@@ -3,7 +3,8 @@ from django.contrib import admin
 from . import models
 
 admin.site.register(models.Pais)
-admin.site.register(models.Ciudad)
+admin.site.register(models.Provincia)
+admin.site.register(models.Departamento)
 admin.site.register(models.Localidad)
 admin.site.register(models.Domicilio)
 admin.site.register(models.Diccionario)

@@ -1,8 +1,37 @@
 from crispy_forms import helper, layout
 from django import forms
 
-from apps.comunes.models import Diccionario
-from .models import Empresa
+from .models import Actividad, Comercial, Empresa
+
+
+class ActividadForm(forms.ModelForm):
+    class Meta:
+        model = Actividad
+        fields = ['nombre', 'parent', 'active']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        # valores iniciales para campos especiales
+        self.fields['parent'].queryset = Actividad.objects.filter(parent__isnull=True).order_by('nombre')
+
+        # creamos helper
+        self.helper = helper.FormHelper()
+        self.helper.form_id = "myform"
+
+        # creamos layouts
+        self.helper.layout = layout.Layout()        
+
+        # agregamos todos los campos
+        for fld in self.Meta.fields:
+            self.helper.layout.append(fld)
+
+        # agregamos los botones de acción
+        bSave = '<button type="submit" class="btn btn-primary btn-icon-split"><span class="icon text-white-50"><i class="fas fa-save"></i></span><span class="text">Grabar</span></button>'
+        bCancel = '<a class="btn btn-warning btn-icon-split" style="margin-left: 5px" href="{{request.META.HTTP_REFERER}}"><span class="icon text-white-50"><i class="fas fa-undo"></i></span><span class="text">Cancela</span></a>'
+        self.helper.layout.append(layout.HTML("<hr>"))
+        self.helper.layout.append(layout.HTML(bSave))
+        self.helper.layout.append(layout.HTML(bCancel))
 
 
 class EmpresaForm(forms.ModelForm):
@@ -16,12 +45,8 @@ class EmpresaForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
 
         # valores iniciales para campos especiales
-        self.fields['actividad'].queryset = Diccionario.objects.filter(tabla='actividad').order_by('texto')
-
-        # from apps.comunes.models import Diccionario
-        # if db_field.name == "actividad":
-        #     kwargs["queryset"] = Diccionario.objects.filter(tabla='actividad').order_by('texto')
-        # return super().formfield_for_foreignkey(db_field, request, **kwargs)
+        self.fields['comercial'].queryset = Comercial.objects.all().order_by('persona__nombre')
+        self.fields['actividad'].queryset = Actividad.objects.filter(parent__isnull=True).order_by('nombre')
 
         # creamos helper
         self.helper = helper.FormHelper()

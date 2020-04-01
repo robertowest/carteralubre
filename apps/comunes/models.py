@@ -11,6 +11,8 @@ class CommonStruct(models.Model):
     modified_by = models.CharField('Modif. por', max_length=15, editable=False, null=True, blank=True)
 
     class Meta:
+        # self._meta.app_label
+        # self._meta.model_name        
         abstract = True
 
     def save(self, *args, **kwargs):
@@ -39,10 +41,10 @@ class CommonStruct(models.Model):
         return fields
 
     def get_absolute_url(self):
-        return reverse('%s:detail' % self._meta.model_name, args=(self.pk,))
+        return reverse('%s:detail' % self._meta.app_label, args=(self.pk,))
 
     def get_list_url(self):
-        return reverse('%s:list' % self._meta.model_name)
+        return reverse('%s:list' % self._meta.app_label)
 
     def get_create_url(self):
         # self._meta.app_label
@@ -50,14 +52,13 @@ class CommonStruct(models.Model):
         return reverse('%s:create' % self._meta.app_label)
 
     def get_detail_url(self):
-        # object._meta.model_name
-        return reverse('%s:detail' % self._meta.model_name, args=(self.pk,))
+        return reverse('%s:detail' % self._meta.app_label, args=(self.pk,))
 
     def get_update_url(self):
-        return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
+        return reverse('%s:update' % self._meta.app_label, args=(self.pk,))
 
     def get_delete_url(self):
-        return reverse('%s:delete' % self._meta.model_name, args=(self.pk,))
+        return reverse('%s:delete' % self._meta.app_label, args=(self.pk,))
 
     def get_app_label(self):
         return self._meta.app_label
@@ -78,23 +79,35 @@ class Pais(CommonStruct):
         return self.nombre
 
 
-class Ciudad(CommonStruct):
+class Provincia(CommonStruct):
     pais = models.ForeignKey(Pais, on_delete=models.CASCADE)  # , null=True, blank=True
     nombre = models.CharField(max_length=40)
-    cod_area_tel = models.CharField('Cód. Area Telef.', max_length=4, null=True, blank=True)
 
     class Meta:
-        verbose_name = 'Ciudad'
-        verbose_name_plural = 'Ciudades'
+        verbose_name = 'Provincia'
+        verbose_name_plural = 'Provincias'
+
+    def __str__(self):
+        return self.nombre
+
+
+class Departamento(CommonStruct):
+    provincia = models.ForeignKey(Provincia, on_delete=models.CASCADE)
+    nombre = models.CharField(max_length=40)
+
+    class Meta:
+        verbose_name = 'Departamento'
+        verbose_name_plural = 'Departamentos'
 
     def __str__(self):
         return self.nombre
 
 
 class Localidad(CommonStruct):
-    ciudad = models.ForeignKey(Ciudad, on_delete=models.CASCADE)
+    departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE)
     nombre = models.CharField(max_length=40)
-    cod_postal = models.CharField(max_length=12, null=True, blank=True)
+    cod_postal = models.CharField('Cód. Postal', max_length=12, null=True, blank=True)
+    cod_area_tel = models.CharField('Cód. Area Telef.', max_length=4, null=True, blank=True)
 
     class Meta:
         verbose_name = 'Localidad'
@@ -106,6 +119,7 @@ class Localidad(CommonStruct):
 
 class Diccionario(CommonStruct):
     TABLA = (('actividad', 'Actividades'), 
+             ('comunicacion', 'Comunicaciones'), 
              ('domicilio', 'Domicilios'),)
 
     texto = models.CharField(max_length=150)
@@ -127,7 +141,7 @@ class Domicilio(CommonStruct):
             ('Pje.', 'Pasaje'), ('Ruta', 'Ruta'))
     
     tipo = models.ForeignKey(Diccionario, on_delete=models.CASCADE, 
-                             null=True, blank=True, default=5,
+                             null=True, blank=True, default=1,
                              limit_choices_to = {'tabla': 'domicilio', 'active': True})
     tipo_calle = models.CharField(max_length=5, choices=TIPO, default='Calle')
     calle = models.CharField(max_length=40)
@@ -135,7 +149,8 @@ class Domicilio(CommonStruct):
     piso = models.CharField(max_length=2, null=True, blank=True)
     puerta = models.CharField(max_length=2, null=True, blank=True)
     pais = models.ForeignKey(Pais, on_delete=models.CASCADE)
-    ciudad = models.ForeignKey(Ciudad, on_delete=models.CASCADE)
+    provincia = models.ForeignKey(Provincia, on_delete=models.CASCADE)
+    departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE)
     localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
 
     # configuración para admin
@@ -159,11 +174,9 @@ class Domicilio(CommonStruct):
 
 
 class Comunicacion(CommonStruct):
-    TIPO = (('tel', 'Teléfono'), ('movil', 'Celular'), ('wa', 'WhatsApp'),
-            ('email', 'Correo Electrónico'), ('face', 'Facebook'),
-            ('twitt', 'Twitter'), ('link', 'LinkedIn'))
-
-    tipo = models.CharField(max_length=5, choices=TIPO, default='movil')
+    tipo = models.ForeignKey(Diccionario, on_delete=models.CASCADE, 
+                             null=True, blank=True, default=3,
+                             limit_choices_to = {'tabla': 'comunicacion', 'active': True})
     texto = models.CharField(max_length=150)
 
     # configuración para admin

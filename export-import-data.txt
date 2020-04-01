@@ -21,10 +21,13 @@
 #
 # Cargar datos a la tabla
 #
+
+# comunes
+./manage.py loaddata pais --settings=config.settings-debug
+./manage.py loaddata provincia  --settings=config.settings-debug
+
 ./manage.py loaddata diccionario
 ./manage.py loaddata comunicacion
-./manage.py loaddata pais
-./manage.py loaddata ciudad
 ./manage.py loaddata localidad
 ./manage.py loaddata domicilio
 ./manage.py loaddata persona

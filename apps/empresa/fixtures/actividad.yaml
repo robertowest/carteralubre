@@ -1,0 +1,124 @@
+- model: empresa.actividad
+  pk: 1
+  fields:
+    nombre: Lubricentro
+- model: empresa.actividad
+  pk: 2
+  fields:
+    nombre: Industria
+- model: empresa.actividad
+  pk: 3
+  fields:
+    nombre: Agro
+- model: empresa.actividad
+  pk: 4
+  fields:
+    nombre: Transporte
+- model: empresa.actividad
+  pk: 5
+  fields:
+    nombre: Otros
+- model: empresa.actividad
+  pk: 6
+  fields:
+    nombre: Estado
+- model: empresa.actividad
+  pk: 7
+  fields:
+    nombre: Lubricentro
+    parent: 1
+- model: empresa.actividad
+  pk: 8
+  fields:
+    nombre: Talleres y Reventa
+    parent: 1
+- model: empresa.actividad
+  pk: 9
+  fields:
+    nombre: Concesionarios
+    parent: 1
+- model: empresa.actividad
+  pk: 10
+  fields:
+    nombre: Estación de Servicios
+    parent: 1
+- model: empresa.actividad
+  pk: 11
+  fields:
+    nombre: Ingenios Azucareros
+    parent: 2
+- model: empresa.actividad
+  pk: 12
+  fields:
+    nombre: Empresas Constructoras
+    parent: 2
+- model: empresa.actividad
+  pk: 13
+  fields:
+    nombre: Empresas Viales
+    parent: 2
+- model: empresa.actividad
+  pk: 14
+  fields:
+    nombre: Obras Industriales
+    parent: 2
+- model: empresa.actividad
+  pk: 15
+  fields:
+    nombre: Explotaciones Agrícolas
+    parent: 3
+- model: empresa.actividad
+  pk: 16
+  fields:
+    nombre: Servicios para Agro
+    parent: 3
+- model: empresa.actividad
+  pk: 17
+  fields:
+    nombre: Transporte de Carga
+    parent: 4
+- model: empresa.actividad
+  pk: 18
+  fields:
+    nombre: Transporte de Pasajeros
+    parent: 4
+- model: empresa.actividad
+  pk: 19
+  fields:
+    nombre: Servicios a Terceros
+    parent: 5
+- model: empresa.actividad
+  pk: 20
+  fields:
+    nombre: Distribución Gas Granel
+    parent: 5
+- model: empresa.actividad
+  pk: 21
+  fields:
+    nombre: Parafinas
+    parent: 5
+- model: empresa.actividad
+  pk: 22
+  fields:
+    nombre: Caña
+    parent: 3
+- model: empresa.actividad
+  pk: 23
+  fields:
+    nombre: Citrus
+    parent: 3
+- model: empresa.actividad
+  pk: 24
+  fields:
+    nombre: Granos
+    parent: 3
+- model: empresa.actividad
+  pk: 25
+  fields:
+    nombre: Otros
+    parent: 3
+- model: empresa.actividad
+  pk: 26
+  fields:
+    nombre: Servicios al Estado
+    parent: 6

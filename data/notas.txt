@@ -1,0 +1,22 @@
+python data/convert2yaml.py -i data/csv/empresa.01.comercial.csv -o data/yaml/empresa.01.comercial.yaml
+python data/convert2yaml.py -i data/csv/empresa.02.empresa.csv -o data/yaml/empresa.02.empresa.yaml
+
+./manage.py loaddata comercial --app empresa --settings=config.settings-debug
+./manage.py loaddata empresa --app empresa --settings=config.settings-debug
+
+
+id;nombre;pais_id
+23;Tucumán;1
+24;Salta;1
+
+
+- model: app_name.Model_name
+  pk: 23
+  fields:
+    nombre: Tucumán
+    pais_id: 1
+- model: app_name.Model_name
+  pk: 24
+  fields:
+    nombre: Salta
+    pais_id: 1

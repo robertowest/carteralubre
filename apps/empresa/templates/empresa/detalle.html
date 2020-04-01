@@ -176,6 +176,44 @@
                 </div>
             </div>
         </div>
+
+        <!-- actividades -->
+        <div class="card shadow mb-4">
+            <a href="#actividadCard" class="d-block card-header py-3" 
+               data-toggle="collapse" role="button" aria-expanded="false" 
+               aria-controls="actividadCard">
+                <h6 class="m-0 font-weight-bold text-primary">Actividades</h6>
+            </a>
+            <div class="collapse" id="actividadCard">
+                <div class="card-body">
+                    {% if actividades  %}
+                    <table class="table" id="dataTable" width="100%" cellspacing="0">
+                        <tbody>
+
+                            {% for registro in actividades %}
+                            <tr>
+                                <td>
+                                    {{registro}}
+                                </td>
+                            </tr>
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                    {% endif  %}
+                </div>
+                <div class="card-footer">
+                    <!-- agregar nuevo contacto y asociarlo a la empresa -->
+                    <a href="{{object.get_related_url_with_actividad}}" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text">Nuevo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 {% endblock %}

@@ -1,0 +1,1330 @@
+- model: comunes.departemento
+  pk: 0
+  fields:
+    nombre: No se detalla
+    provincia: 0
+- model: comunes.departemento
+  pk: 1
+  fields:
+    nombre: San Miguel de Tucumán
+    provincia: 1
+- model: comunes.departemento
+  pk: 2
+  fields:
+    nombre: Cruz Alta
+    provincia: 1
+- model: comunes.departemento
+  pk: 3
+  fields:
+    nombre: Tafí Viejo
+    provincia: 1
+- model: comunes.departemento
+  pk: 4
+  fields:
+    nombre: Chicligasta
+    provincia: 1
+- model: comunes.departemento
+  pk: 5
+  fields:
+    nombre: Yerba Buena
+    provincia: 1
+- model: comunes.departemento
+  pk: 6
+  fields:
+    nombre: Lules
+    provincia: 1
+- model: comunes.departemento
+  pk: 7
+  fields:
+    nombre: Monteros
+    provincia: 1
+- model: comunes.departemento
+  pk: 8
+  fields:
+    nombre: Río Chico
+    provincia: 1
+- model: comunes.departemento
+  pk: 9
+  fields:
+    nombre: Leales
+    provincia: 1
+- model: comunes.departemento
+  pk: 10
+  fields:
+    nombre: Burruyacú
+    provincia: 1
+- model: comunes.departemento
+  pk: 11
+  fields:
+    nombre: Famaillá
+    provincia: 1
+- model: comunes.departemento
+  pk: 12
+  fields:
+    nombre: Simoca
+    provincia: 1
+- model: comunes.departemento
+  pk: 13
+  fields:
+    nombre: Juan B. Alberdi
+    provincia: 1
+- model: comunes.departemento
+  pk: 14
+  fields:
+    nombre: La Cocha
+    provincia: 1
+- model: comunes.departemento
+  pk: 15
+  fields:
+    nombre: Trancas
+    provincia: 1
+- model: comunes.departemento
+  pk: 16
+  fields:
+    nombre: Tafí del Valle
+    provincia: 1
+- model: comunes.departemento
+  pk: 17
+  fields:
+    nombre: Graneros
+    provincia: 1
+- model: comunes.departemento
+  pk: 18
+  fields:
+    nombre: Capital
+    provincia: 2
+- model: comunes.departemento
+  pk: 19
+  fields:
+    nombre: Ancasti
+    provincia: 2
+- model: comunes.departemento
+  pk: 20
+  fields:
+    nombre: Capital
+    provincia: 3
+- model: comunes.departemento
+  pk: 21
+  fields:
+    nombre: Río Hondo
+    provincia: 21
+- model: comunes.departemento
+  pk: 22
+  fields:
+    nombre: Capital
+    provincia: 23
+- model: comunes.departemento
+  pk: 23
+  fields:
+    nombre: Dr. Manuel Belgrano
+    provincia: 9
+- model: comunes.departemento
+  pk: 24
+  fields:
+    nombre: Santa Rosa
+    provincia: 2
+- model: comunes.departemento
+  pk: 25
+  fields:
+    nombre: Orán
+    provincia: 16
+- model: comunes.departemento
+  pk: 26
+  fields:
+    nombre: Tercero Arriba
+    provincia: 3
+- model: comunes.departemento
+  pk: 47
+  fields:
+    nombre: Capital
+    provincia: 21
+- model: comunes.departemento
+  pk: 48
+  fields:
+    nombre: Capital
+    provincia: 16
+- model: comunes.departemento
+  pk: 49
+  fields:
+    nombre: Capital
+    provincia: 20
+- model: comunes.departemento
+  pk: 50
+  fields:
+    nombre: Capital
+    provincia: 12
+- model: comunes.departemento
+  pk: 51
+  fields:
+    nombre: Capital
+    provincia: 17
+- model: comunes.departemento
+  pk: 52
+  fields:
+    nombre: Capital
+    provincia: 18
+- model: comunes.departemento
+  pk: 53
+  fields:
+    nombre: Capital
+    provincia: 13
+- model: comunes.departemento
+  pk: 54
+  fields:
+    nombre: Capital
+    provincia: 11
+- model: comunes.departemento
+  pk: 55
+  fields:
+    nombre: San Fernando
+    provincia: 5
+- model: comunes.departemento
+  pk: 56
+  fields:
+    nombre: Capital
+    provincia: 4
+- model: comunes.departemento
+  pk: 57
+  fields:
+    nombre: Capital
+    provincia: 10
+- model: comunes.departemento
+  pk: 58
+  fields:
+    nombre: 9 De Julio
+    provincia: 23
+- model: comunes.departemento
+  pk: 60
+  fields:
+    nombre: Florentino Ameghino
+    provincia: 23
+- model: comunes.departemento
+  pk: 61
+  fields:
+    nombre: General López
+    provincia: 20
+- model: comunes.departemento
+  pk: 62
+  fields:
+    nombre: Anta
+    provincia: 16
+- model: comunes.departemento
+  pk: 63
+  fields:
+    nombre: Caseros
+    provincia: 20
+- model: comunes.departemento
+  pk: 64
+  fields:
+    nombre: General Taboada
+    provincia: 21
+- model: comunes.departemento
+  pk: 65
+  fields:
+    nombre: Balcarce
+    provincia: 23
+- model: comunes.departemento
+  pk: 66
+  fields:
+    nombre: Belén
+    provincia: 2
+- model: comunes.departemento
+  pk: 67
+  fields:
+    nombre: Carlos Casares
+    provincia: 23
+- model: comunes.departemento
+  pk: 68
+  fields:
+    nombre: Luján De Cuyo
+    provincia: 12
+- model: comunes.departemento
+  pk: 69
+  fields:
+    nombre: Iriondo
+    provincia: 20
+- model: comunes.departemento
+  pk: 70
+  fields:
+    nombre: Colón
+    provincia: 3
+- model: comunes.departemento
+  pk: 71
+  fields:
+    nombre: La Viña
+    provincia: 16
+- model: comunes.departemento
+  pk: 72
+  fields:
+    nombre: Luis Jorge Fontana
+    provincia: 5
+- model: comunes.departemento
+  pk: 73
+  fields:
+    nombre: Tigre
+    provincia: 23
+- model: comunes.departemento
+  pk: 74
+  fields:
+    nombre: La Candelaria
+    provincia: 16
+- model: comunes.departemento
+  pk: 75
+  fields:
+    nombre: San Martín
+    provincia: 20
+- model: comunes.departemento
+  pk: 76
+  fields:
+    nombre: Gral. José De San Martín
+    provincia: 16
+- model: comunes.departemento
+  pk: 77
+  fields:
+    nombre: San Jerónimo
+    provincia: 20
+- model: comunes.departemento
+  pk: 78
+  fields:
+    nombre: Ledesma
+    provincia: 9
+- model: comunes.departemento
+  pk: 79
+  fields:
+    nombre: Río Cuarto
+    provincia: 3
+- model: comunes.departemento
+  pk: 80
+  fields:
+    nombre: Rosario De La Frontera
+    provincia: 16
+- model: comunes.departemento
+  pk: 81
+  fields:
+    nombre: Gral. Roca
+    provincia: 3
+- model: comunes.departemento
+  pk: 82
+  fields:
+    nombre: La Banda
+    provincia: 21
+- model: comunes.departemento
+  pk: 83
+  fields:
+    nombre: Gral. San Martín
+    provincia: 3
+- model: comunes.departemento
+  pk: 84
+  fields:
+    nombre: Pellegrini
+    provincia: 21
+- model: comunes.departemento
+  pk: 85
+  fields:
+    nombre: Río Segundo
+    provincia: 3
+- model: comunes.departemento
+  pk: 86
+  fields:
+    nombre: Palpalá
+    provincia: 9
+- model: comunes.departemento
+  pk: 87
+  fields:
+    nombre: Constitución
+    provincia: 20
+- model: comunes.departemento
+  pk: 88
+  fields:
+    nombre: Castellanos
+    provincia: 20
+- model: comunes.departemento
+  pk: 89
+  fields:
+    nombre: Rojas
+    provincia: 23
+- model: comunes.departemento
+  pk: 90
+  fields:
+    nombre: Rosario
+    provincia: 20
+- model: comunes.departemento
+  pk: 91
+  fields:
+    nombre: Salliqueló
+    provincia: 23
+- model: comunes.departemento
+  pk: 92
+  fields:
+    nombre: San Cristobal
+    provincia: 20
+- model: comunes.departemento
+  pk: 93
+  fields:
+    nombre: San Isidro
+    provincia: 23
+- model: comunes.departemento
+  pk: 94
+  fields:
+    nombre: San Lorenzo
+    provincia: 20
+- model: comunes.departemento
+  pk: 95
+  fields:
+    nombre: Las Colonias
+    provincia: 20
+- model: comunes.departemento
+  pk: 96
+  fields:
+    nombre: Santa María
+    provincia: 2
+- model: comunes.departemento
+  pk: 97
+  fields:
+    nombre: Pomán
+    provincia: 2
+- model: comunes.departemento
+  pk: 98
+  fields:
+    nombre: San Nicolas
+    provincia: 23
+- model: comunes.departemento
+  pk: 99
+  fields:
+    nombre: Marcos Juarez
+    provincia: 3
+- model: comunes.departemento
+  pk: 100
+  fields:
+    nombre: Maracó
+    provincia: 10
+- model: comunes.departemento
+  pk: 101
+  fields:
+    nombre: Javi
+    provincia: 9
+- model: comunes.departemento
+  pk: 102
+  fields:
+    nombre: Santa María
+    provincia: 3
+- model: comunes.departemento
+  pk: 103
+  fields:
+    nombre: General Pueyrredón
+    provincia: 23
+- model: comunes.departemento
+  pk: 104
+  fields:
+    nombre: San Antonio De Areco
+    provincia: 23
+- model: comunes.departemento
+  pk: 106
+  fields:
+    nombre: Tinogasta
+    provincia: 2
+- model: comunes.departemento
+  pk: 107
+  fields:
+    nombre: Valle Viejo
+    provincia: 2
+- model: comunes.departemento
+  pk: 108
+  fields:
+    nombre: Gral. Pedernera
+    provincia: 18
+- model: comunes.departemento
+  pk: 109
+  fields:
+    nombre: Juarez Celman
+    provincia: 3
+- model: comunes.departemento
+  pk: 110
+  fields:
+    nombre: Los Vallistos
+    provincia: 1
+- model: comunes.departemento
+  pk: 111
+  fields:
+    nombre: Pacará Pintado
+    provincia: 1
+- model: comunes.departemento
+  pk: 112
+  fields:
+    nombre: Buenos Aires
+    provincia: 23
+- model: comunes.departemento
+  pk: 113
+  fields:
+    nombre: La Reducción
+    provincia: 1
+- model: comunes.departemento
+  pk: 114
+  fields:
+    nombre: Estación Araoz
+    provincia: 1
+- model: comunes.departemento
+  pk: 115
+  fields:
+    nombre: Concepción
+    provincia: 1
+- model: comunes.departemento
+  pk: 116
+  fields:
+    nombre: Chicligasta
+    provincia: 1
+- model: comunes.departemento
+  pk: 117
+  fields:
+    nombre: Ranchillos
+    provincia: 1
+- model: comunes.departemento
+  pk: 118
+  fields:
+    nombre: El Empalme
+    provincia: 1
+- model: comunes.departemento
+  pk: 119
+  fields:
+    nombre: Capital
+    provincia: 1
+- model: comunes.departemento
+  pk: 120
+  fields:
+    nombre: El Tala
+    provincia: 16
+- model: comunes.departemento
+  pk: 121
+  fields:
+    nombre: Ingenio Santa Anta
+    provincia: 1
+- model: comunes.departemento
+  pk: 122
+  fields:
+    nombre: La Virginia
+    provincia: 1
+- model: comunes.departemento
+  pk: 123
+  fields:
+    nombre: Gobernador Piedrabuena
+    provincia: 1
+- model: comunes.departemento
+  pk: 124
+  fields:
+    nombre: Alderetes
+    provincia: 1
+- model: comunes.departemento
+  pk: 125
+  fields:
+    nombre: La Invernada
+    provincia: 1
+- model: comunes.departemento
+  pk: 126
+  fields:
+    nombre: Timbó Viejo
+    provincia: 1
+- model: comunes.departemento
+  pk: 127
+  fields:
+    nombre: Bella Vista
+    provincia: 1
+- model: comunes.departemento
+  pk: 128
+  fields:
+    nombre: Cruz Alta
+    provincia: 1
+- model: comunes.departemento
+  pk: 129
+  fields:
+    nombre: Tafi Viejo
+    provincia: 1
+- model: comunes.departemento
+  pk: 130
+  fields:
+    nombre: Granadero Baigorria
+    provincia: 20
+- model: comunes.departemento
+  pk: 131
+  fields:
+    nombre: Rio Colorado
+    provincia: 1
+- model: comunes.departemento
+  pk: 132
+  fields:
+    nombre: Colombres
+    provincia: 1
+- model: comunes.departemento
+  pk: 133
+  fields:
+    nombre: Los Nogales
+    provincia: 1
+- model: comunes.departemento
+  pk: 134
+  fields:
+    nombre: Cafayate
+    provincia: 16
+- model: comunes.departemento
+  pk: 135
+  fields:
+    nombre: Banda Rio Salí
+    provincia: 1
+- model: comunes.departemento
+  pk: 136
+  fields:
+    nombre: Juan B. Alberdi
+    provincia: 1
+- model: comunes.departemento
+  pk: 137
+  fields:
+    nombre: Viclos
+    provincia: 1
+- model: comunes.departemento
+  pk: 138
+  fields:
+    nombre: Las Cejas
+    provincia: 1
+- model: comunes.departemento
+  pk: 139
+  fields:
+    nombre: Las Talitas
+    provincia: 1
+- model: comunes.departemento
+  pk: 140
+  fields:
+    nombre: Cevil Pozo
+    provincia: 1
+- model: comunes.departemento
+  pk: 141
+  fields:
+    nombre: Santa Fe
+    provincia: 20
+- model: comunes.departemento
+  pk: 142
+  fields:
+    nombre: Andino
+    provincia: 20
+- model: comunes.departemento
+  pk: 143
+  fields:
+    nombre: Guemes
+    provincia: 16
+- model: comunes.departemento
+  pk: 144
+  fields:
+    nombre: Manatial De Ovanta
+    provincia: 1
+- model: comunes.departemento
+  pk: 145
+  fields:
+    nombre: Salta
+    provincia: 16
+- model: comunes.departemento
+  pk: 146
+  fields:
+    nombre: Salta
+    provincia: 16
+- model: comunes.departemento
+  pk: 147
+  fields:
+    nombre: San Pedro De Jujuy
+    provincia: 9
+- model: comunes.departemento
+  pk: 148
+  fields:
+    nombre: Los Altos
+    provincia: 2
+- model: comunes.departemento
+  pk: 149
+  fields:
+    nombre: Arcadia
+    provincia: 1
+- model: comunes.departemento
+  pk: 150
+  fields:
+    nombre: Aguilares
+    provincia: 1
+- model: comunes.departemento
+  pk: 151
+  fields:
+    nombre: Presidencia Roque Saenz Peña
+    provincia: 5
+- model: comunes.departemento
+  pk: 152
+  fields:
+    nombre: San Andres
+    provincia: 1
+- model: comunes.departemento
+  pk: 153
+  fields:
+    nombre: Salsipuedes
+    provincia: 3
+- model: comunes.departemento
+  pk: 154
+  fields:
+    nombre: Lastenia
+    provincia: 1
+- model: comunes.departemento
+  pk: 155
+  fields:
+    nombre: Manuel Garcia Fernandez
+    provincia: 1
+- model: comunes.departemento
+  pk: 156
+  fields:
+    nombre: Acheral
+    provincia: 1
+- model: comunes.departemento
+  pk: 157
+  fields:
+    nombre: Snan Pablo
+    provincia: 1
+- model: comunes.departemento
+  pk: 158
+  fields:
+    nombre: Raco
+    provincia: 1
+- model: comunes.departemento
+  pk: 159
+  fields:
+    nombre: Villa Fiad
+    provincia: 1
+- model: comunes.departemento
+  pk: 160
+  fields:
+    nombre: León Rougués
+    provincia: 1
+- model: comunes.departemento
+  pk: 161
+  fields:
+    nombre: Rio Primero
+    provincia: 1
+- model: comunes.departemento
+  pk: 162
+  fields:
+    nombre: San Antonio De Areco
+    provincia: 23
+- model: comunes.departemento
+  pk: 163
+  fields:
+    nombre: San Fernando Del Valle Catamarca
+    provincia: 2
+- model: comunes.departemento
+  pk: 164
+  fields:
+    nombre: Metan
+    provincia: 16
+- model: comunes.departemento
+  pk: 165
+  fields:
+    nombre: Aldao
+    provincia: 20
+- model: comunes.departemento
+  pk: 166
+  fields:
+    nombre: Cañada De Gomez
+    provincia: 20
+- model: comunes.departemento
+  pk: 167
+  fields:
+    nombre: Martinez
+    provincia: 23
+- model: comunes.departemento
+  pk: 168
+  fields:
+    nombre: Los Gutierrez
+    provincia: 1
+- model: comunes.departemento
+  pk: 169
+  fields:
+    nombre: Tartagal
+    provincia: 16
+- model: comunes.departemento
+  pk: 170
+  fields:
+    nombre: Cordoba
+    provincia: 3
+- model: comunes.departemento
+  pk: 171
+  fields:
+    nombre: La Cruz
+    provincia: 1
+- model: comunes.departemento
+  pk: 172
+  fields:
+    nombre: Piedrabuena
+    provincia: 1
+- model: comunes.departemento
+  pk: 173
+  fields:
+    nombre: Los Puestos
+    provincia: 1
+- model: comunes.departemento
+  pk: 174
+  fields:
+    nombre: Los Puestos
+    provincia: 1
+- model: comunes.departemento
+  pk: 175
+  fields:
+    nombre: Estación Araoz
+    provincia: 1
+- model: comunes.departemento
+  pk: 176
+  fields:
+    nombre: Agua Dulce
+    provincia: 1
+- model: comunes.departemento
+  pk: 177
+  fields:
+    nombre: Tusca Pozo
+    provincia: 1
+- model: comunes.departemento
+  pk: 178
+  fields:
+    nombre: Estación Araoz
+    provincia: 1
+- model: comunes.departemento
+  pk: 179
+  fields:
+    nombre: Timbó Nuevo
+    provincia: 1
+- model: comunes.departemento
+  pk: 180
+  fields:
+    nombre: Vedia
+    provincia: 23
+- model: comunes.departemento
+  pk: 181
+  fields:
+    nombre: Amaicha Del Valle
+    provincia: 2
+- model: comunes.departemento
+  pk: 182
+  fields:
+    nombre: Joaquin V. Gonzalez
+    provincia: 16
+- model: comunes.departemento
+  pk: 183
+  fields:
+    nombre: Campo Santo
+    provincia: 16
+- model: comunes.departemento
+  pk: 184
+  fields:
+    nombre: Santa Rosa De Leales
+    provincia: 1
+- model: comunes.departemento
+  pk: 185
+  fields:
+    nombre: Garmendia
+    provincia: 1
+- model: comunes.departemento
+  pk: 186
+  fields:
+    nombre: Barrio Carola Lorenzin
+    provincia: 3
+- model: comunes.departemento
+  pk: 187
+  fields:
+    nombre: San Pedro De Colalao
+    provincia: 1
+- model: comunes.departemento
+  pk: 188
+  fields:
+    nombre: Los Vega
+    provincia: 1
+- model: comunes.departemento
+  pk: 189
+  fields:
+    nombre: Villa Quinteros
+    provincia: 1
+- model: comunes.departemento
+  pk: 190
+  fields:
+    nombre: Los Aguirre
+    provincia: 1
+- model: comunes.departemento
+  pk: 191
+  fields:
+    nombre: Cañuelas
+    provincia: 23
+- model: comunes.departemento
+  pk: 192
+  fields:
+    nombre: Los Pizarros
+    provincia: 1
+- model: comunes.departemento
+  pk: 193
+  fields:
+    nombre: Cevil Redondo
+    provincia: 1
+- model: comunes.departemento
+  pk: 194
+  fields:
+    nombre: Delfin Gallo
+    provincia: 1
+- model: comunes.departemento
+  pk: 195
+  fields:
+    nombre: Boca Del Tigre
+    provincia: 1
+- model: comunes.departemento
+  pk: 196
+  fields:
+    nombre: Rafaela
+    provincia: 20
+- model: comunes.departemento
+  pk: 197
+  fields:
+    nombre: Ramada De Abajo
+    provincia: 1
+- model: comunes.departemento
+  pk: 198
+  fields:
+    nombre: Tucumán
+    provincia: 1
+- model: comunes.departemento
+  pk: 199
+  fields:
+    nombre: San Andres
+    provincia: 1
+- model: comunes.departemento
+  pk: 200
+  fields:
+    nombre: Ingenio Nueva Baviera
+    provincia: 1
+- model: comunes.departemento
+  pk: 201
+  fields:
+    nombre: Estación Vipos
+    provincia: 1
+- model: comunes.departemento
+  pk: 202
+  fields:
+    nombre: La Ramada De Abajo
+    provincia: 1
+- model: comunes.departemento
+  pk: 203
+  fields:
+    nombre: Rio Seco
+    provincia: 1
+- model: comunes.departemento
+  pk: 204
+  fields:
+    nombre: Benjamin Paz
+    provincia: 1
+- model: comunes.departemento
+  pk: 205
+  fields:
+    nombre: Oncativo
+    provincia: 3
+- model: comunes.departemento
+  pk: 206
+  fields:
+    nombre: San Miguel
+    provincia: 1
+- model: comunes.departemento
+  pk: 207
+  fields:
+    nombre: Huasa Pampa
+    provincia: 1
+- model: comunes.departemento
+  pk: 208
+  fields:
+    nombre: Los Porceles
+    provincia: 1
+- model: comunes.departemento
+  pk: 209
+  fields:
+    nombre: Las Vertientes
+    provincia: 3
+- model: comunes.departemento
+  pk: 210
+  fields:
+    nombre: Los Ralos
+    provincia: 1
+- model: comunes.departemento
+  pk: 211
+  fields:
+    nombre: El Cortaderal
+    provincia: 1
+- model: comunes.departemento
+  pk: 212
+  fields:
+    nombre: Justiniano Posse
+    provincia: 3
+- model: comunes.departemento
+  pk: 213
+  fields:
+    nombre: Los Vallistos
+    provincia: 1
+- model: comunes.departemento
+  pk: 214
+  fields:
+    nombre: Jimenez
+    provincia: 21
+- model: comunes.departemento
+  pk: 215
+  fields:
+    nombre: Copo
+    provincia: 21
+- model: comunes.departemento
+  pk: 216
+  fields:
+    nombre: Sauce Huacho
+    provincia: 1
+- model: comunes.departemento
+  pk: 217
+  fields:
+    nombre: Las Rosas
+    provincia: 20
+- model: comunes.departemento
+  pk: 218
+  fields:
+    nombre: Villa Mariano Moreno
+    provincia: 1
+- model: comunes.departemento
+  pk: 219
+  fields:
+    nombre: La Florida
+    provincia: 1
+- model: comunes.departemento
+  pk: 220
+  fields:
+    nombre: Teniente Berdina
+    provincia: 1
+- model: comunes.departemento
+  pk: 221
+  fields:
+    nombre: Ingenio La Florida
+    provincia: 1
+- model: comunes.departemento
+  pk: 222
+  fields:
+    nombre: El Quemado
+    provincia: 21
+- model: comunes.departemento
+  pk: 223
+  fields:
+    nombre: Carlos Pellegrini
+    provincia: 1
+- model: comunes.departemento
+  pk: 224
+  fields:
+    nombre: Rosario De La Frontera
+    provincia: 16
+- model: comunes.departemento
+  pk: 225
+  fields:
+    nombre: Andalgala
+    provincia: 2
+- model: comunes.departemento
+  pk: 226
+  fields:
+    nombre: Andalgala
+    provincia: 2
+- model: comunes.departemento
+  pk: 227
+  fields:
+    nombre: Las Estancias
+    provincia: 2
+- model: comunes.departemento
+  pk: 228
+  fields:
+    nombre: Rivas
+    provincia: 23
+- model: comunes.departemento
+  pk: 229
+  fields:
+    nombre: Galvez
+    provincia: 20
+- model: comunes.departemento
+  pk: 230
+  fields:
+    nombre: Galvez
+    provincia: 20
+- model: comunes.departemento
+  pk: 231
+  fields:
+    nombre: Arequito
+    provincia: 20
+- model: comunes.departemento
+  pk: 232
+  fields:
+    nombre: Barrio Las Vertientes
+    provincia: 3
+- model: comunes.departemento
+  pk: 233
+  fields:
+    nombre: Cruz Alta
+    provincia: 1
+- model: comunes.departemento
+  pk: 234
+  fields:
+    nombre: Luque
+    provincia: 3
+- model: comunes.departemento
+  pk: 235
+  fields:
+    nombre: Luisiana
+    provincia: 1
+- model: comunes.departemento
+  pk: 236
+  fields:
+    nombre: Araoz
+    provincia: 1
+- model: comunes.departemento
+  pk: 237
+  fields:
+    nombre: Zarate Norte
+    provincia: 1
+- model: comunes.departemento
+  pk: 238
+  fields:
+    nombre: Pavon Arriba
+    provincia: 20
+- model: comunes.departemento
+  pk: 239
+  fields:
+    nombre: Villa Cañas
+    provincia: 20
+- model: comunes.departemento
+  pk: 240
+  fields:
+    nombre: Florida
+    provincia: 23
+- model: comunes.departemento
+  pk: 241
+  fields:
+    nombre: Guatimozin
+    provincia: 3
+- model: comunes.departemento
+  pk: 242
+  fields:
+    nombre: Leales
+    provincia: 1
+- model: comunes.departemento
+  pk: 243
+  fields:
+    nombre: Nueva Esperanza
+    provincia: 21
+- model: comunes.departemento
+  pk: 244
+  fields:
+    nombre: Venado Tuerto
+    provincia: 20
+- model: comunes.departemento
+  pk: 245
+  fields:
+    nombre: Venado Tuerto
+    provincia: 20
+- model: comunes.departemento
+  pk: 246
+  fields:
+    nombre: San Pablo
+    provincia: 1
+- model: comunes.departemento
+  pk: 247
+  fields:
+    nombre: Lozada
+    provincia: 3
+- model: comunes.departemento
+  pk: 248
+  fields:
+    nombre: Lozada
+    provincia: 3
+- model: comunes.departemento
+  pk: 249
+  fields:
+    nombre: Cruz Alta
+    provincia: 1
+- model: comunes.departemento
+  pk: 250
+  fields:
+    nombre: Villa Eloisa
+    provincia: 20
+- model: comunes.departemento
+  pk: 251
+  fields:
+    nombre: Tacural
+    provincia: 20
+- model: comunes.departemento
+  pk: 252
+  fields:
+    nombre: Los Gutierrez
+    provincia: 1
+- model: comunes.departemento
+  pk: 253
+  fields:
+    nombre: Alderetes
+    provincia: 1
+- model: comunes.departemento
+  pk: 254
+  fields:
+    nombre: Resistencai
+    provincia: 5
+- model: comunes.departemento
+  pk: 255
+  fields:
+    nombre: Tafi Viejo
+    provincia: 1
+- model: comunes.departemento
+  pk: 256
+  fields:
+    nombre: Yerba Buena
+    provincia: 1
+- model: comunes.departemento
+  pk: 257
+  fields:
+    nombre: Yerba Buena
+    provincia: 1
+- model: comunes.departemento
+  pk: 258
+  fields:
+    nombre: Del Viso
+    provincia: 23
+- model: comunes.departemento
+  pk: 259
+  fields:
+    nombre: Dean Funes
+    provincia: 3
+- model: comunes.departemento
+  pk: 260
+  fields:
+    nombre: Recreo
+    provincia: 2
+- model: comunes.departemento
+  pk: 261
+  fields:
+    nombre: Ramos Mejia
+    provincia: 23
+- model: comunes.departemento
+  pk: 262
+  fields:
+    nombre: Sinsacate
+    provincia: 3
+- model: comunes.departemento
+  pk: 263
+  fields:
+    nombre: Almafuerte
+    provincia: 3
+- model: comunes.departemento
+  pk: 264
+  fields:
+    nombre: Lomas De Tafi
+    provincia: 1
+- model: comunes.departemento
+  pk: 265
+  fields:
+    nombre: Manantial De Ovanta
+    provincia: 1
+- model: comunes.departemento
+  pk: 266
+  fields:
+    nombre: Villa Benjamin Araoz
+    provincia: 1
+- model: comunes.departemento
+  pk: 267
+  fields:
+    nombre: Villa Benjamin Araoz
+    provincia: 1
+- model: comunes.departemento
+  pk: 268
+  fields:
+    nombre: La Ramada
+    provincia: 1
+- model: comunes.departemento
+  pk: 269
+  fields:
+    nombre: Lanus
+    provincia: 23
+- model: comunes.departemento
+  pk: 270
+  fields:
+    nombre: Frias
+    provincia: 21
+- model: comunes.departemento
+  pk: 271
+  fields:
+    nombre: San Andres
+    provincia: 23
+- model: comunes.departemento
+  pk: 272
+  fields:
+    nombre: Piquillin
+    provincia: 3
+- model: comunes.departemento
+  pk: 273
+  fields:
+    nombre: Rios Seco
+    provincia: 1
+- model: comunes.departemento
+  pk: 274
+  fields:
+    nombre: Lomas Del Mirador
+    provincia: 23
+- model: comunes.departemento
+  pk: 275
+  fields:
+    nombre: Villa Carmela
+    provincia: 1
+- model: comunes.departemento
+  pk: 276
+  fields:
+    nombre: Las Cejas
+    provincia: 1
+- model: comunes.departemento
+  pk: 277
+  fields:
+    nombre: Perico
+    provincia: 9
+- model: comunes.departemento
+  pk: 278
+  fields:
+    nombre: Aimogasta
+    provincia: 11
+- model: comunes.departemento
+  pk: 279
+  fields:
+    nombre: Marcos Paz
+    provincia: 1
+- model: comunes.departemento
+  pk: 280
+  fields:
+    nombre: Pilar
+    provincia: 3
+- model: comunes.departemento
+  pk: 281
+  fields:
+    nombre: Choromoro
+    provincia: 1
+- model: comunes.departemento
+  pk: 282
+  fields:
+    nombre: Tafi Viejo
+    provincia: 1
+- model: comunes.departemento
+  pk: 283
+  fields:
+    nombre: Tapia
+    provincia: 1
+- model: comunes.departemento
+  pk: 284
+  fields:
+    nombre: Rio Chico
+    provincia: 1
+- model: comunes.departemento
+  pk: 285
+  fields:
+    nombre: San Vicente
+    provincia: 20
+- model: comunes.departemento
+  pk: 286
+  fields:
+    nombre: Reconquista
+    provincia: 20
+- model: comunes.departemento
+  pk: 287
+  fields:
+    nombre: Chacabuco
+    provincia: 23

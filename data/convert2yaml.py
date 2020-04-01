@@ -19,16 +19,34 @@ root = os.getcwd()
 
 def csvToYaml2(csvFile, output):
     f = open(output, 'w', encoding="utf-8")
-    csvOpen = csv.reader(codecs.iterdecode(csvFile, 'utf-8'))
+    csvOpen = csv.reader(codecs.iterdecode(csvFile, 'utf-8'), delimiter=';', quotechar='"')
+    data_headings = []
+
     for i, row in enumerate(csvOpen):
-        csv_content = ' '.join(row)
-        csv_content = csv_content.split(',')
-        f.write('- model: app_name.Model_name\n')
-        f.write('  pk: %d\n' % i)
-        f.write('  fields:\n')
-        f.write('    field_1: %s\n' % csv_content[0])
-        f.write('    field_2: %s\n' % csv_content[1])
-        f.write('    field_3: %s\n' % csv_content[2])
+        if i == 0:
+            data_headings = row
+        else:
+            for cell_index, cell in enumerate(row):
+                cell_heading = data_headings[cell_index].lower().replace(" ", "_").replace("-", "")
+                
+                if cell_heading == 'id':
+                    f.write('- model: app_name.Model_name\n')
+                    f.write('  pk: {}\n'.format(cell))
+                    f.write('  fields:\n')
+                else:
+                    if cell:
+                        cell_text = "    " + cell_heading + ": " + cell.replace("\n", ", ") + "\n"
+                        f.write(cell_text)
+                
+
+        # csv_content = ' '.join(row)
+        # csv_content = csv_content.split(',')
+        # f.write('- model: app_name.Model_name\n')
+        # f.write('  pk: %d\n' % i)
+        # f.write('  fields:\n')
+        # f.write('    field_1: %s\n' % csv_content[0])
+        # f.write('    field_2: %s\n' % csv_content[1])
+        # f.write('    field_3: %s\n' % csv_content[2])
     f.close()
         
 # takes a csvFile name and output file name/path

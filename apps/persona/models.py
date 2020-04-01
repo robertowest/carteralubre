@@ -48,3 +48,11 @@ class Persona(CommonStruct):
 
     def get_related_url_with_contact(self):
         return reverse('%s:associate_with_contact' % self._meta.model_name, args=(self.pk,))
+
+    @property
+    def nombre_apellido(self):
+        return "%s %s" % (self.nombre, self.apellido)
+
+    @property
+    def apellido_nombre(self):
+        return "%s, %s" % (self.apellido, self.nombre)
