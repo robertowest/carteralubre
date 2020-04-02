@@ -197,6 +197,11 @@
                             {% for registro in actividades %}
                             <tr>
                                 <td>
+                                    {% comment %}
+                                    <a href="{{registro.get_update_url}}">
+                                        {{registro}}
+                                    </a>
+                                    {% endcomment %}
                                     <a href="{{registro.get_update_url}}">
                                         {{registro}}
                                     </a>

@@ -55,9 +55,14 @@ class CommonStruct(models.Model):
         return reverse('%s:detail' % self._meta.app_label, args=(self.pk,))
 
     def get_update_url(self):
-        # import pdb; pdb.set_trace()
         # return reverse('%s:update' % self._meta.app_label, args=(self.pk,))
-        return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
+        # return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
+        if self._meta.app_label == 'empresa' and \
+           self._meta.model_name == 'actividad':
+            path = '{0}:{1}_update'.format(self._meta.app_label, self._meta.model_name)
+            return reverse(path, args=(self.pk,))
+        else:
+            return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
 
     def get_delete_url(self):
         return reverse('%s:delete' % self._meta.app_label, args=(self.pk,))
