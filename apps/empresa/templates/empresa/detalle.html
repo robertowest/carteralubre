@@ -62,8 +62,12 @@
                         <tbody>
                             {% for registro in comunicaciones %}
                             <tr>
-                                <td>{{registro.get_tipo_display}}</td>
-                                <td><a href="{{registro.get_update_url}}">{{registro.texto}}</a></td>
+                                <td>{{registro.tipo.texto}}</td>
+                                <td>
+                                    <a href="{{registro.get_update_url}}">
+                                        {{registro.texto}}
+                                    </a>
+                                </td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -193,7 +197,9 @@
                             {% for registro in actividades %}
                             <tr>
                                 <td>
-                                    {{registro}}
+                                    <a href="{{registro.get_update_url}}">
+                                        {{registro}}
+                                    </a>
                                 </td>
                             </tr>
                             {% endfor %}

@@ -55,7 +55,9 @@ class CommonStruct(models.Model):
         return reverse('%s:detail' % self._meta.app_label, args=(self.pk,))
 
     def get_update_url(self):
-        return reverse('%s:update' % self._meta.app_label, args=(self.pk,))
+        # import pdb; pdb.set_trace()
+        # return reverse('%s:update' % self._meta.app_label, args=(self.pk,))
+        return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
 
     def get_delete_url(self):
         return reverse('%s:delete' % self._meta.app_label, args=(self.pk,))
@@ -118,12 +120,13 @@ class Localidad(CommonStruct):
 
 
 class Diccionario(CommonStruct):
-    TABLA = (('actividad', 'Actividades'), 
-             ('comunicacion', 'Comunicaciones'), 
-             ('domicilio', 'Domicilios'),)
+    TABLA = (
+        ('comunicacion', 'Comunicaciones'), 
+        ('domicilio', 'Domicilios'),
+    )
 
     texto = models.CharField(max_length=150)
-    tabla = models.CharField(max_length=45, choices=TABLA, default='actividad')
+    tabla = models.CharField(max_length=45, choices=TABLA, default='comunicacion')
 
     class Meta:
         verbose_name = 'Diccionario'

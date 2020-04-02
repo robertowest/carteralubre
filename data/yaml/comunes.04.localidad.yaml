@@ -1,2899 +1,2899 @@
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 0
   fields:
     nombre: No se detalla
     departamento: 0
-- model: app_name.Model_name
+- model: comunes.localidad
   pk: 1
   fields:
     nombre: Acheral
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 2
   fields:
     nombre: Aguilares
     departamento: 8
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 3
   fields:
     nombre: Amaicha del Valle
     departamento: 16
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 4
   fields:
     nombre: Anca Juli
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 5
   fields:
     nombre: Arcadia
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 6
   fields:
     nombre: Bella Vista
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 7
   fields:
     nombre: Burruyacú
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 8
   fields:
     nombre: Tafí Viejo
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 10
   fields:
     nombre: Tafí Del Valle
     departamento: 16
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 12
   fields:
     nombre: Juan B. Alberdi
     departamento: 13
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 14
   fields:
     nombre: San Miguel de Tucumán
     departamento: 1
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 15
   fields:
     nombre: Banda del Río Salí
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 16
   fields:
     nombre: Alderetes
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 17
   fields:
     nombre: Concepción
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 18
   fields:
     nombre: Yerba Buena
     departamento: 5
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 19
   fields:
     nombre: Monteros
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 20
   fields:
     nombre: San Pedro de Colalao
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 21
   fields:
     nombre: El Cadillal
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 23
   fields:
     nombre: Famaillá
     departamento: 11
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 24
   fields:
     nombre: San Javier
     departamento: 5
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 25
   fields:
     nombre: Trancas
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 26
   fields:
     nombre: El Mollar
     departamento: 16
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 27
   fields:
     nombre: Lules
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 29
   fields:
     nombre: La Cocha
     departamento: 14
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 30
   fields:
     nombre: San Pablo
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 31
   fields:
     nombre: El Chañar
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 32
   fields:
     nombre: Raco
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 33
   fields:
     nombre: El Siambóm
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 34
   fields:
     nombre: Chuscha
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 35
   fields:
     nombre: Cevil Redondo
     departamento: 5
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 36
   fields:
     nombre: Las Talitas
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 37
   fields:
     nombre: Colalao del Valle
     departamento: 16
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 38
   fields:
     nombre: Colombres
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 39
   fields:
     nombre: Delfín Gallo
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 40
   fields:
     nombre: El Potrerillo
     departamento: 14
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 41
   fields:
     nombre: Graneros
     departamento: 17
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 42
   fields:
     nombre: La Trinidad
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 43
   fields:
     nombre: Las Cejas
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 44
   fields:
     nombre: Los Ralos
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 45
   fields:
     nombre: Medinas
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 46
   fields:
     nombre: Río Seco
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 47
   fields:
     nombre: Rumi Punco
     departamento: 14
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 48
   fields:
     nombre: Santa Ana
     departamento: 8
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 49
   fields:
     nombre: Santa Lucía
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 50
   fields:
     nombre: Santa Rosa De Leales
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 51
   fields:
     nombre: Simoca
     departamento: 12
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 52
   fields:
     nombre: Choromoro
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 53
   fields:
     nombre: Cevil Pozo
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 54
   fields:
     nombre: El Manantial
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 55
   fields:
     nombre: Esquina
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 56
   fields:
     nombre: Estación Araoz
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 57
   fields:
     nombre: Garmendia
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 58
   fields:
     nombre: La Florida
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 59
   fields:
     nombre: La Aguadita
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 60
   fields:
     nombre: Los Nogales
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 61
   fields:
     nombre: Villa Nougués
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 62
   fields:
     nombre: Timbó Nuevo
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 63
   fields:
     nombre: Timbó Viejo
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 64
   fields:
     nombre: San Andrés
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 65
   fields:
     nombre: La Ramada
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 66
   fields:
     nombre: Lastenia
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 67
   fields:
     nombre: Tapia
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 68
   fields:
     nombre: Lamadrid
     departamento: 17
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 69
   fields:
     nombre: León Rouges
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 70
   fields:
     nombre: Los Vallistos
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 71
   fields:
     nombre: Los Sarmientos
     departamento: 8
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 72
   fields:
     nombre: La Tipa
     departamento: 8
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 73
   fields:
     nombre: Río Chico
     departamento: 8
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 74
   fields:
     nombre: Los Gutierrez
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 75
   fields:
     nombre: Los Pocitos
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 76
   fields:
     nombre: Macomitas
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 77
   fields:
     nombre: La Cruz
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 78
   fields:
     nombre: San Patricio
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 79
   fields:
     nombre: Malvinas
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 80
   fields:
     nombre: Taco Ralos
     departamento: 17
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 81
   fields:
     nombre: La Cañada
     departamento: 17
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 82
   fields:
     nombre: Villa Carmela
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 83
   fields:
     nombre: San Felipe
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 84
   fields:
     nombre: San Agustín
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 85
   fields:
     nombre: Termas De Río Hondo
     departamento: 21
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 86
   fields:
     nombre: Capital
     departamento: 22
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 87
   fields:
     nombre: San Salvador De Jujuy
     departamento: 23
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 88
   fields:
     nombre: Los Altos
     departamento: 24
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 89
   fields:
     nombre: Orán
     departamento: 25
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 90
   fields:
     nombre: Río Tercero
     departamento: 26
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 95
   fields:
     nombre: Santiago Del Estero
     departamento: 47
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 96
   fields:
     nombre: Ciudad De Salta
     departamento: 48
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 97
   fields:
     nombre: Ciudad De Córdoba
     departamento: 20
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 98
   fields:
     nombre: Ciudad De Santa Fe
     departamento: 49
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 99
   fields:
     nombre: San Fernando Del Valle De Catamarca
     departamento: 18
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 100
   fields:
     nombre: Ciudad De Mendoza
     departamento: 50
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 101
   fields:
     nombre: Ciudad De San Juan
     departamento: 51
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 102
   fields:
     nombre: Ciudad De San Luis
     departamento: 52
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 103
   fields:
     nombre: Posadas
     departamento: 53
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 104
   fields:
     nombre: Ciudad De La Rioja
     departamento: 54
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 105
   fields:
     nombre: Resistencia
     departamento: 55
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 106
   fields:
     nombre: Corrientes
     departamento: 56
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 107
   fields:
     nombre: Santa Rosa
     departamento: 57
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 108
   fields:
     nombre: 9 De Julio
     departamento: 58
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 109
   fields:
     nombre: Agua Dulce
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 110
   fields:
     nombre: Almafuerte
     departamento: 26
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 111
   fields:
     nombre: Florentino Ameghino
     departamento: 60
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 112
   fields:
     nombre: Amenábar
     departamento: 61
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 113
   fields:
     nombre: Apolinario Saravia
     departamento: 62
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 114
   fields:
     nombre: Arequito
     departamento: 63
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 115
   fields:
     nombre: Añatuya
     departamento: 64
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 116
   fields:
     nombre: Balcarce
     departamento: 65
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 117
   fields:
     nombre: Bañado De Ovanta
     departamento: 24
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 118
   fields:
     nombre: Belén
     departamento: 66
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 119
   fields:
     nombre: Benjamín Araoz
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 120
   fields:
     nombre: Carlos Casares
     departamento: 67
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 121
   fields:
     nombre: Carrodilla
     departamento: 68
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 122
   fields:
     nombre: Casilda
     departamento: 63
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 123
   fields:
     nombre: Cañada De Gómez
     departamento: 69
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 124
   fields:
     nombre: Chabás
     departamento: 63
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 125
   fields:
     nombre: Colombres
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 126
   fields:
     nombre: Colonia Caroya
     departamento: 70
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 127
   fields:
     nombre: Coronel Moldes
     departamento: 71
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 128
   fields:
     nombre: Coronel Du Graty
     departamento: 72
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 129
   fields:
     nombre: Don Torcuato
     departamento: 73
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 130
   fields:
     nombre: El Bracho
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 131
   fields:
     nombre: El Cevilar
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 132
   fields:
     nombre: El Cortaderal
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 133
   fields:
     nombre: El Naranjo
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 134
   fields:
     nombre: Ranchillos
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 135
   fields:
     nombre: El Tala
     departamento: 74
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 136
   fields:
     nombre: El Trebol
     departamento: 75
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 137
   fields:
     nombre: Embarcación
     departamento: 76
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 138
   fields:
     nombre: Galvez
     departamento: 77
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 139
   fields:
     nombre: Gastona
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 140
   fields:
     nombre: Libertador Gral. San Martín
     departamento: 78
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 141
   fields:
     nombre: Rio Colorado
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 142
   fields:
     nombre: Río Cuarto
     departamento: 79
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 143
   fields:
     nombre: Rosario De La Frontera
     departamento: 80
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 144
   fields:
     nombre: Villa Quinteros
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 145
   fields:
     nombre: Villa Trinidad
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 146
   fields:
     nombre: Manantial De Ovanta
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 147
   fields:
     nombre: Jesús María
     departamento: 70
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 148
   fields:
     nombre: Joaquín V. Gonzalez
     departamento: 62
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 149
   fields:
     nombre: Jovita
     departamento: 81
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 150
   fields:
     nombre: La Banda
     departamento: 82
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 151
   fields:
     nombre: La Playosa
     departamento: 83
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 152
   fields:
     nombre: Nueva Esperanza
     departamento: 84
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 153
   fields:
     nombre: Oncativo
     departamento: 85
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 154
   fields:
     nombre: Pacará Pintado
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 155
   fields:
     nombre: Palpalá
     departamento: 86
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 156
   fields:
     nombre: Pampa Pozo
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 157
   fields:
     nombre: Pavón Arriba
     departamento: 87
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 158
   fields:
     nombre: Pilar
     departamento: 85
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 159
   fields:
     nombre: Rafaela
     departamento: 88
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 160
   fields:
     nombre: Rojas
     departamento: 89
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 161
   fields:
     nombre: Rosario
     departamento: 90
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 162
   fields:
     nombre: Salliqueló
     departamento: 91
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 163
   fields:
     nombre: San Guillermo
     departamento: 92
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 164
   fields:
     nombre: San Isidro
     departamento: 93
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 165
   fields:
     nombre: San Lorenzo
     departamento: 94
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 166
   fields:
     nombre: San Vicente
     departamento: 88
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 167
   fields:
     nombre: Santa Clara De Buena Vista
     departamento: 95
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 168
   fields:
     nombre: Santa María
     departamento: 96
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 169
   fields:
     nombre: Saujil
     departamento: 97
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 170
   fields:
     nombre: Tacural
     departamento: 88
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 171
   fields:
     nombre: Taruca Pampa
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 172
   fields:
     nombre: Villa María
     departamento: 83
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 173
   fields:
     nombre: General Rojo
     departamento: 98
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 174
   fields:
     nombre: General Baldissera
     departamento: 99
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 175
   fields:
     nombre: General Pico
     departamento: 100
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 176
   fields:
     nombre: La Quiaca
     departamento: 101
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 177
   fields:
     nombre: Las Talas
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 178
   fields:
     nombre: Las Tipas
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 179
   fields:
     nombre: Los Gucheas
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 180
   fields:
     nombre: Los Perez
     departamento: 12
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 181
   fields:
     nombre: Los Puestos
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 182
   fields:
     nombre: Los Sueldos
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 183
   fields:
     nombre: Los Surgentes
     departamento: 99
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 184
   fields:
     nombre: Lozada
     departamento: 102
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 185
   fields:
     nombre: Mar Del Plata
     departamento: 103
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 186
   fields:
     nombre: Mixta
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 187
   fields:
     nombre: Monte Bello
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 188
   fields:
     nombre: Monte Grande
     departamento: 14
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 189
   fields:
     nombre: Monteagudo
     departamento: 12
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 190
   fields:
     nombre: Los Porceles
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 191
   fields:
     nombre: Villa Nueva Italia
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 192
   fields:
     nombre: San Antonio De Areco
     departamento: 104
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 193
   fields:
     nombre: Munro
     departamento: 104
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 194
   fields:
     nombre: Tinogasta
     departamento: 106
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 195
   fields:
     nombre: Santa Rosa
     departamento: 107
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 196
   fields:
     nombre: Villa Mercedes
     departamento: 108
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 197
   fields:
     nombre: Villa Los Sarmientos
     departamento: 8
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 198
   fields:
     nombre: Tusca Pozo
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 200
   fields:
     nombre: La Reduccion
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 201
   fields:
     nombre: Las Talitas
     departamento: 1
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 202
   fields:
     nombre: General Deheza
     departamento: 109
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 203
   fields:
     nombre: Jovita
     departamento: 20
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 204
   fields:
     nombre: Almafuerte
     departamento: 20
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 205
   fields:
     nombre: El Naranjito
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 206
   fields:
     nombre: Capitan Caceres
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 207
   fields:
     nombre: Monteagudo
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 208
   fields:
     nombre: Tucumán
     departamento: 110
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 209
   fields:
     nombre: Tucumán
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 210
   fields:
     nombre: Bajo Grande
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 211
   fields:
     nombre: Bajo Grande
     departamento: 111
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 212
   fields:
     nombre: Buenos Aires
     departamento: 112
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 213
   fields:
     nombre: Estación Araoz
     departamento: 114
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 214
   fields:
     nombre: Tucumán
     departamento: 115
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 215
   fields:
     nombre: Concepción
     departamento: 116
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 216
   fields:
     nombre: Ranchillos
     departamento: 118
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 217
   fields:
     nombre: Concepción
     departamento: 115
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 218
   fields:
     nombre: S.m.de Tucumán
     departamento: 119
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 219
   fields:
     nombre: Atahona
     departamento: 12
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 220
   fields:
     nombre: Banda Rio Salí
     departamento: 119
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 221
   fields:
     nombre: Villa Fiad
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 222
   fields:
     nombre: Villa Fiad
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 223
   fields:
     nombre: Gobernador Piedrabuena
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 224
   fields:
     nombre: Yerba Buena
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 225
   fields:
     nombre: Las Talitas
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 226
   fields:
     nombre: Santa Ana
     departamento: 121
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 227
   fields:
     nombre: La Virginia
     departamento: 122
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 228
   fields:
     nombre: La Virginia
     departamento: 123
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 229
   fields:
     nombre: Lastenia
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 230
   fields:
     nombre: Alderetes
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 231
   fields:
     nombre: Lomas De Imbaud
     departamento: 5
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 232
   fields:
     nombre: Rotonda Los Gutierrez
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 233
   fields:
     nombre: Choromoro
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 234
   fields:
     nombre: Santa Lucia
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 235
   fields:
     nombre: León Rougues
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 236
   fields:
     nombre: Banda Del Rio Sali
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 237
   fields:
     nombre: Frias
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 238
   fields:
     nombre: Frias
     departamento: 84
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 239
   fields:
     nombre: Juan B. Alberdi
     departamento: 125
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 240
   fields:
     nombre: Burruyacú
     departamento: 126
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 241
   fields:
     nombre: Garcia Fernandez
     departamento: 127
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 242
   fields:
     nombre: Cruz Alta
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 243
   fields:
     nombre: La Invernada
     departamento: 13
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 244
   fields:
     nombre: Leales
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 245
   fields:
     nombre: Villa Mariano Moreno
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 246
   fields:
     nombre: Ranchillos
     departamento: 117
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 247
   fields:
     nombre: Las Talitas
     departamento: 129
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 248
   fields:
     nombre: Granadero Baigorria
     departamento: 130
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 249
   fields:
     nombre: Rio Colorado
     departamento: 131
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 250
   fields:
     nombre: Colombres
     departamento: 132
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 251
   fields:
     nombre: Tafi Viejo
     departamento: 133
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 252
   fields:
     nombre: Salta
     departamento: 134
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 253
   fields:
     nombre: Banda Rio Salí
     departamento: 135
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 254
   fields:
     nombre: Catamarca
     departamento: 19
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 255
   fields:
     nombre: Juan B. Alberdi
     departamento: 136
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 256
   fields:
     nombre: Viclos
     departamento: 137
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 257
   fields:
     nombre: Tafi Viejo
     departamento: 129
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 258
   fields:
     nombre: Las Cejas
     departamento: 138
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 259
   fields:
     nombre: Jujuy
     departamento: 86
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 260
   fields:
     nombre: Tucumán
     departamento: 139
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 261
   fields:
     nombre: Tucumán
     departamento: 140
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 262
   fields:
     nombre: Santa Fe
     departamento: 141
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 263
   fields:
     nombre: Andino
     departamento: 142
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 264
   fields:
     nombre: Cevil Pozo
     departamento: 140
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 265
   fields:
     nombre: Guemes
     departamento: 143
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 266
   fields:
     nombre: Chicligasta
     departamento: 116
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 267
   fields:
     nombre: Manantial De Ovanta
     departamento: 144
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 268
   fields:
     nombre: Salta
     departamento: 145
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 269
   fields:
     nombre: Salta
     departamento: 146
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 270
   fields:
     nombre: Lules
     departamento: 113
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 271
   fields:
     nombre: Jujuy
     departamento: 147
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 272
   fields:
     nombre: Las Talitas
     departamento: 133
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 273
   fields:
     nombre: Arcadia
     departamento: 149
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 274
   fields:
     nombre: Aguilares
     departamento: 150
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 275
   fields:
     nombre: Chaco
     departamento: 151
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 276
   fields:
     nombre: San Andres
     departamento: 152
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 277
   fields:
     nombre: Catamarca
     departamento: 148
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 278
   fields:
     nombre: Cordoba
     departamento: 153
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 279
   fields:
     nombre: Bella Vista
     departamento: 127
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 280
   fields:
     nombre: Tucumán
     departamento: 154
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 281
   fields:
     nombre: Manuel Garcia Fernandez
     departamento: 155
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 282
   fields:
     nombre: Acheral
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 283
   fields:
     nombre: San Pablo
     departamento: 157
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 284
   fields:
     nombre: Raco
     departamento: 158
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 285
   fields:
     nombre: Villa Fiad
     departamento: 159
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 286
   fields:
     nombre: León Rougués
     departamento: 160
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 287
   fields:
     nombre: Rio Primero
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 288
   fields:
     nombre: Rio Primero
     departamento: 161
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 289
   fields:
     nombre: Lules
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 290
   fields:
     nombre: Pcia. De Buenos Aires
     departamento: 162
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 291
   fields:
     nombre: Catamarca
     departamento: 163
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 292
   fields:
     nombre: Metan
     departamento: 164
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 293
   fields:
     nombre: Santa Fe
     departamento: 165
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 294
   fields:
     nombre: Santa Fe
     departamento: 166
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 295
   fields:
     nombre: Buenos Aires
     departamento: 167
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 296
   fields:
     nombre: Los Gutierrez
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 297
   fields:
     nombre: Los Gutierrez
     departamento: 168
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 298
   fields:
     nombre: Salta
     departamento: 169
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 299
   fields:
     nombre: Cordoba
     departamento: 170
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 300
   fields:
     nombre: Alderetes
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 301
   fields:
     nombre: Villa Benjamin Araoz
     departamento: 171
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 302
   fields:
     nombre: Arenales
     departamento: 172
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 303
   fields:
     nombre: Tucuman
     departamento: 173
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 304
   fields:
     nombre: Tucumán
     departamento: 174
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 305
   fields:
     nombre: Tucumán
     departamento: 175
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 306
   fields:
     nombre: Tucumán
     departamento: 176
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 307
   fields:
     nombre: Tucumán
     departamento: 177
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 308
   fields:
     nombre: Tucumán
     departamento: 178
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 309
   fields:
     nombre: Tucumán
     departamento: 179
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 310
   fields:
     nombre: Buenos Aires
     departamento: 180
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 311
   fields:
     nombre: Catamarca
     departamento: 181
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 312
   fields:
     nombre: Salta
     departamento: 182
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 313
   fields:
     nombre: Salta
     departamento: 183
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 314
   fields:
     nombre: Leales
     departamento: 184
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 315
   fields:
     nombre: Tucumán
     departamento: 185
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 316
   fields:
     nombre: Córdoba
     departamento: 186
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 317
   fields:
     nombre: Tucumán
     departamento: 187
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 318
   fields:
     nombre: Concepción
     departamento: 188
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 319
   fields:
     nombre: Tucumán
     departamento: 189
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 320
   fields:
     nombre: Tucumán
     departamento: 190
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 321
   fields:
     nombre: Buenos Aires
     departamento: 191
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 322
   fields:
     nombre: La Cocha
     departamento: 192
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 323
   fields:
     nombre: Villa Carmela
     departamento: 193
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 324
   fields:
     nombre: Tucumán
     departamento: 194
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 325
   fields:
     nombre: Tucumán
     departamento: 195
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 326
   fields:
     nombre: Santa Fe
     departamento: 196
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 327
   fields:
     nombre: Tucumán
     departamento: 197
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 328
   fields:
     nombre: Banda Del Rio Salí
     departamento: 198
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 329
   fields:
     nombre: Tucumán
     departamento: 199
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 330
   fields:
     nombre: Tucumán
     departamento: 200
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 331
   fields:
     nombre: Tucumán
     departamento: 201
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 332
   fields:
     nombre: Tucumán
     departamento: 202
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 333
   fields:
     nombre: Chicligasta
     departamento: 203
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 334
   fields:
     nombre: Tucumán
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 335
   fields:
     nombre: Tucumán
     departamento: 204
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 336
   fields:
     nombre: Cordoba
     departamento: 205
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 337
   fields:
     nombre: Tucumán
     departamento: 206
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 338
   fields:
     nombre: Tucumán
     departamento: 207
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 339
   fields:
     nombre: Tucuman
     departamento: 208
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 340
   fields:
     nombre: Cordoba
     departamento: 209
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 341
   fields:
     nombre: Tucuman
     departamento: 210
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 342
   fields:
     nombre: Tucuman
     departamento: 198
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 343
   fields:
     nombre: Tucumán
     departamento: 211
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 344
   fields:
     nombre: Cordoba
     departamento: 212
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 345
   fields:
     nombre: Tucuman
     departamento: 213
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 346
   fields:
     nombre: Burruyacu
     departamento: 202
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 347
   fields:
     nombre: Trancas
     departamento: 204
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 348
   fields:
     nombre: La Virginia
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 349
   fields:
     nombre: Jimenez
     departamento: 214
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 350
   fields:
     nombre: Ysca Yacu
     departamento: 84
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 351
   fields:
     nombre: Bobadal
     departamento: 214
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 352
   fields:
     nombre: San Pedro
     departamento: 24
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 353
   fields:
     nombre: Rapelli
     departamento: 84
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 354
   fields:
     nombre: El Palomar
     departamento: 214
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 355
   fields:
     nombre: El Cabure
     departamento: 215
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 356
   fields:
     nombre: Los Pereyra
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 357
   fields:
     nombre: Pozo Hondo
     departamento: 214
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 358
   fields:
     nombre: Ñato Pozo
     departamento: 214
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 359
   fields:
     nombre: Alpachiri
     departamento: 4
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 360
   fields:
     nombre: Pampa Pozo
     departamento: 84
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 361
   fields:
     nombre: Garmendia
     departamento: 84
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 362
   fields:
     nombre: Leales
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 363
   fields:
     nombre: Famailla
     departamento: 216
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 364
   fields:
     nombre: Santa Fe
     departamento: 217
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 365
   fields:
     nombre: Tafi Viejo
     departamento: 218
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 366
   fields:
     nombre: Tucuman
     departamento: 219
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 367
   fields:
     nombre: La Florida
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 368
   fields:
     nombre: Monteros
     departamento: 220
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 369
   fields:
     nombre: Los Porceles
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 370
   fields:
     nombre: Estacion Vipos
     departamento: 129
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 371
   fields:
     nombre: Tucuman
     departamento: 221
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 372
   fields:
     nombre: Los Bulacio
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 373
   fields:
     nombre: Los Bulacios
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 374
   fields:
     nombre: Santa Fe
     departamento: 223
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 375
   fields:
     nombre: Salta
     departamento: 224
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 376
   fields:
     nombre: Chicligasta
     departamento: 115
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 377
   fields:
     nombre: Catamarca
     departamento: 225
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 378
   fields:
     nombre: Catamarca
     departamento: 226
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 379
   fields:
     nombre: Tucuman
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 380
   fields:
     nombre: El Naranjo
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 381
   fields:
     nombre: El Naranjo
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 382
   fields:
     nombre: Gobernador Piedrabuena
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 383
   fields:
     nombre: Buenos Aires
     departamento: 228
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 384
   fields:
     nombre: Santa Fe
     departamento: 229
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 385
   fields:
     nombre: Santa Fe
     departamento: 230
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 386
   fields:
     nombre: Aldao
     departamento: 94
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 387
   fields:
     nombre: Alderetes
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 388
   fields:
     nombre: Banda Del Rio Sali
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 389
   fields:
     nombre: Bella Vista
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 390
   fields:
     nombre: Benjamin Paz
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 391
   fields:
     nombre: Boca Del Tigre
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 392
   fields:
     nombre: Cevil Pozo
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 393
   fields:
     nombre: Arequito
     departamento: 165
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 394
   fields:
     nombre: Arequito
     departamento: 231
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 395
   fields:
     nombre: Cordoba
     departamento: 232
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 396
   fields:
     nombre: Delfin Gallo
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 397
   fields:
     nombre: Estacion Vipos
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 398
   fields:
     nombre: Gobernador Piedrabuena
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 399
   fields:
     nombre: Huasa Pampa
     departamento: 14
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 400
   fields:
     nombre: La Invernada
     departamento: 136
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 401
   fields:
     nombre: La Ramada De Abajo
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 402
   fields:
     nombre: Las Cejas
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 403
   fields:
     nombre: Las Talitas
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 404
   fields:
     nombre: Lastenia
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 405
   fields:
     nombre: Los Aguirre
     departamento: 6
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 406
   fields:
     nombre: Los Gutierrez
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 407
   fields:
     nombre: Los Pizarros
     departamento: 14
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 408
   fields:
     nombre: Los Ralos
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 409
   fields:
     nombre: Los Vallistos
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 410
   fields:
     nombre: Manuel Garcia Fernandez
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 411
   fields:
     nombre: Pacara Pintado
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 412
   fields:
     nombre: Ranchillos
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 413
   fields:
     nombre: San Andres
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 414
   fields:
     nombre: Teniente Berdina
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 415
   fields:
     nombre: Banda Del Rio Sali
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 416
   fields:
     nombre: Alderetes
     departamento: 233
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 417
   fields:
     nombre: Buenos Aires
     departamento: 22
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 418
   fields:
     nombre: Los Perez
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 419
   fields:
     nombre: Los Perez
     departamento: 2
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 420
   fields:
     nombre: Trancas
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 421
   fields:
     nombre: Cordoba
     departamento: 234
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 422
   fields:
     nombre: Mancopa
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 423
   fields:
     nombre: El Chañar
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 424
   fields:
     nombre: El Chañar
     departamento: 198
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 425
   fields:
     nombre: Yerba Buena
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 426
   fields:
     nombre: El Naranjito
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 427
   fields:
     nombre: Los Ralos
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 428
   fields:
     nombre: Pavon Arriba
     departamento: 165
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 429
   fields:
     nombre: Las Talitas
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 430
   fields:
     nombre: Leales
     departamento: 211
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 431
   fields:
     nombre: Tucuman
     departamento: 236
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 432
   fields:
     nombre: Agua Dulce
     departamento: 176
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 433
   fields:
     nombre: Las Piedritas
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 434
   fields:
     nombre: Cruz Alta
     departamento: 132
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 435
   fields:
     nombre: Estacion Araoz
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 436
   fields:
     nombre: Carbon Pozo
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 437
   fields:
     nombre: Tucuman
     departamento: 237
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 438
   fields:
     nombre: Rosario Sud
     departamento: 165
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 439
   fields:
     nombre: Santa Fe
     departamento: 238
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 440
   fields:
     nombre: Santa Fe
     departamento: 239
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 441
   fields:
     nombre: Tucuman
     departamento: 154
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 442
   fields:
     nombre: Buenos Aires
     departamento: 240
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 443
   fields:
     nombre: Cordoba
     departamento: 241
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 444
   fields:
     nombre: Mancopa
     departamento: 242
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 445
   fields:
     nombre: El Colmenar
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 446
   fields:
     nombre: Santiago Del Estero
     departamento: 243
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 447
   fields:
     nombre: Santa Fe
     departamento: 165
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 448
   fields:
     nombre: Tucuman
     departamento: 246
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 449
   fields:
     nombre: La Tala
     departamento: 198
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 450
   fields:
     nombre: Yaquilo
     departamento: 119
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 451
   fields:
     nombre: Lozada
     departamento: 186
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 452
   fields:
     nombre: Lozada
     departamento: 186
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 453
   fields:
     nombre: Lozada
     departamento: 248
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 454
   fields:
     nombre: San Andres
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 455
   fields:
     nombre: San Andres
     departamento: 233
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 456
   fields:
     nombre: Los Altos
     departamento: 181
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 457
   fields:
     nombre: Los Perez
     departamento: 128
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 458
   fields:
     nombre: Casas Viejas
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 459
   fields:
     nombre: San Pablo
     departamento: 198
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 460
   fields:
     nombre: Tafi Viejo
     departamento: 3
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 461
   fields:
     nombre: Tres Cerritos
     departamento: 145
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 462
   fields:
     nombre: Rosario De La Frontera
     departamento: 62
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 463
   fields:
     nombre: La Merced
     departamento: 181
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 464
   fields:
     nombre: Beccar
     departamento: 58
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 465
   fields:
     nombre: Barrio Saavedra
     departamento: 58
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 466
   fields:
     nombre: Cevil Redondo
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 467
   fields:
     nombre: Yerba Buena
     departamento: 193
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 468
   fields:
     nombre: Santa Fe
     departamento: 250
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 469
   fields:
     nombre: Colonia Tirolesa
     departamento: 170
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 470
   fields:
     nombre: Araoz
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 471
   fields:
     nombre: Santa Fe
     departamento: 251
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 472
   fields:
     nombre: Rio Colorado
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 473
   fields:
     nombre: Rio Colorado
     departamento: 242
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 474
   fields:
     nombre: Los Gutierrez
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 475
   fields:
     nombre: Los Gutierrez
     departamento: 252
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 476
   fields:
     nombre: Los Gutierrez
     departamento: 253
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 477
   fields:
     nombre: Agua Dulce
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 478
   fields:
     nombre: Trancas
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 479
   fields:
     nombre: Zarate Norte
     departamento: 15
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 480
   fields:
     nombre: Alderetes
     departamento: 253
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 481
   fields:
     nombre: Chaco
     departamento: 254
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 482
   fields:
     nombre: El Puestito
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 483
   fields:
     nombre: Tancacha
     departamento: 186
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 484
   fields:
     nombre: Tancacha
     departamento: 170
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 485
   fields:
     nombre: Villa Carmela
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 486
   fields:
     nombre: Villa Carmela
     departamento: 255
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 487
   fields:
     nombre: Las Cejas
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 488
   fields:
     nombre: Tala Pozo
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 489
   fields:
     nombre: Oran
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 490
   fields:
     nombre: San Antonio De Leales
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 491
   fields:
     nombre: Tucuman
     departamento: 119
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 492
   fields:
     nombre: El Potrero
     departamento: 62
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 493
   fields:
     nombre: Del Viso
     departamento: 58
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 494
   fields:
     nombre: Del Viso
     departamento: 258
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 495
   fields:
     nombre: Dean Funes
     departamento: 186
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 496
   fields:
     nombre: Cordoba
     departamento: 259
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 497
   fields:
     nombre: Burzaco
     departamento: 58
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 498
   fields:
     nombre: Burruyacu
     departamento: 123
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 499
   fields:
     nombre: Cordoba
     departamento: 247
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 500
   fields:
     nombre: Catamarca
     departamento: 260
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 501
   fields:
     nombre: Ramos Mejia
     departamento: 58
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 502
   fields:
     nombre: Taruca Pampa
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 503
   fields:
     nombre: Cordoba
     departamento: 262
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 504
   fields:
     nombre: Cordoba
     departamento: 263
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 505
   fields:
     nombre: Tucuman
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 506
   fields:
     nombre: Burruyacu
     departamento: 124
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 507
   fields:
     nombre: Lomas De Tafi
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 508
   fields:
     nombre: Tucuman
     departamento: 264
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 509
   fields:
     nombre: Ingenio Santa Ana
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 510
   fields:
     nombre: El Cañar
     departamento: 150
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 511
   fields:
     nombre: El Chañar
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 512
   fields:
     nombre: Gastona Sur
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 513
   fields:
     nombre: Gastona Sur
     departamento: 115
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 514
   fields:
     nombre: 9 De Julio
     departamento: 112
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 515
   fields:
     nombre: La Invernada
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 516
   fields:
     nombre: Juan B. Alberdi
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 517
   fields:
     nombre: Manantial De Ovanta
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 518
   fields:
     nombre: Escaba
     departamento: 136
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 519
   fields:
     nombre: Tucuman
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 520
   fields:
     nombre: Tucuman
     departamento: 266
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 521
   fields:
     nombre: Tucuman
     departamento: 267
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 522
   fields:
     nombre: Catamarca
     departamento: 107
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 523
   fields:
     nombre: Tucuman
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 524
   fields:
     nombre: Villa Allende
     departamento: 263
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 525
   fields:
     nombre: Villa Allende
     departamento: 170
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 526
   fields:
     nombre: Tucuman
     departamento: 268
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 527
   fields:
     nombre: Buurruyacu
     departamento: 268
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 528
   fields:
     nombre: Buenos Aires
     departamento: 269
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 529
   fields:
     nombre: San Cayetano
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 530
   fields:
     nombre: San Cayetano
     departamento: 198
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 531
   fields:
     nombre: Tucuman
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 532
   fields:
     nombre: Santiago Del Estero
     departamento: 270
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 533
   fields:
     nombre: Buenos Aires
     departamento: 271
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 534
   fields:
     nombre: Lastenia
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 535
   fields:
     nombre: Tafi Viejo
     departamento: 255
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 536
   fields:
     nombre: Piquillin
     departamento: 263
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 537
   fields:
     nombre: Piquillin
     departamento: 170
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 538
   fields:
     nombre: Cordoba
     departamento: 272
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 539
   fields:
     nombre: Monteros
     departamento: 273
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 540
   fields:
     nombre: El Cortaderal
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 541
   fields:
     nombre: Las Tusquitas
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 542
   fields:
     nombre: Tucuman
     departamento: 135
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 543
   fields:
     nombre: Lomas Del Mirador
     departamento: 274
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 544
   fields:
     nombre: Tafi Viejo
     departamento: 275
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 545
   fields:
     nombre: Tucuman
     departamento: 256
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 546
   fields:
     nombre: Banda Del Rio Sali
     departamento: 233
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 547
   fields:
     nombre: Los Vallistos
     departamento: 233
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 548
   fields:
     nombre: Gobernador Garmendia
     departamento: 10
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 549
   fields:
     nombre: Tucuman
     departamento: 276
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 550
   fields:
     nombre: Jujuy
     departamento: 277
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 551
   fields:
     nombre: La Rioja
     departamento: 278
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 552
   fields:
     nombre: Los Nogales
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 553
   fields:
     nombre: San Andres
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 554
   fields:
     nombre: Yerba Buena
     departamento: 279
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 555
   fields:
     nombre: Marcos Paz
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 556
   fields:
     nombre: Sauce Huacho
     departamento: 11
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 557
   fields:
     nombre: La Florida
     departamento: 9
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 558
   fields:
     nombre: Tucuman
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 559
   fields:
     nombre: San Miguel
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 560
   fields:
     nombre: El Puesto
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 561
   fields:
     nombre: Alderetes
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 562
   fields:
     nombre: Marcos Juarez
     departamento: 263
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 563
   fields:
     nombre: Marcos Juarez
     departamento: 170
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 564
   fields:
     nombre: Cevil Redondo
     departamento: 5
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 565
   fields:
     nombre: Tucuman
     departamento: 5
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 566
   fields:
     nombre: Oliva
     departamento: 170
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 567
   fields:
     nombre: Salto
     departamento: 112
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 568
   fields:
     nombre: Tucuman
     departamento: 265
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 569
   fields:
     nombre: Tucuman
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 570
   fields:
     nombre: Tucuman
     departamento: 189
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 571
   fields:
     nombre: La Virginia
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 572
   fields:
     nombre: Pilar
     departamento: 263
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 573
   fields:
     nombre: Cordoba
     departamento: 280
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 574
   fields:
     nombre: Los Sosa
     departamento: 7
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 575
   fields:
     nombre: Tucuman
     departamento: 281
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 576
   fields:
     nombre: La Aguadita
     departamento: 282
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 577
   fields:
     nombre: Tucuman
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 578
   fields:
     nombre: Tucuman
     departamento: 283
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 579
   fields:
     nombre: Tucuman
     departamento: 256
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 580
   fields:
     nombre: Tucuman
     departamento: 256
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 581
   fields:
     nombre: Villa Los Sarmientos
     departamento: 156
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 582
   fields:
     nombre: Finca El Tala
     departamento: 284
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 583
   fields:
     nombre: Yerba Buena
     departamento: 256
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 584
   fields:
     nombre: Santa Fe
     departamento: 285
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 585
   fields:
     nombre: Yerba Buena
     departamento: 257
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 586
   fields:
     nombre: Reconuista
     departamento: 165
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 587
   fields:
     nombre: Santa Fe
     departamento: 286
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 588
   fields:
     nombre: Buenos Aires
     departamento: 287
-- model: app_name.Model_name
+- model: empresa.empresa
   pk: 589
   fields:
     nombre: Caballito

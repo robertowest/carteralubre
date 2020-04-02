@@ -5,6 +5,20 @@ python data/convert2yaml.py -i data/csv/empresa.02.empresa.csv -o data/yaml/empr
 ./manage.py loaddata empresa --app empresa --settings=config.settings-debug
 
 
+
+
+
+
+
+python data/convert2yaml.py -i data/csv/comunes.07.comunicacion.csv -o data/yaml/comunes.07.comunicacion.yaml
+./manage.py loaddata comunicacion --app comunes --settings=config.settings-debug
+
+
+
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/diccionario.yaml  comunes.diccionario
+
+
+
 id;nombre;pais_id
 23;Tucumán;1
 24;Salta;1
