@@ -1,11 +1,11 @@
 # from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
-from django.urls import reverse_lazy, resolve
+from django.http import HttpResponseRedirect
+from django.urls import resolve
 from django.views import generic
 
 from . import forms, models
+
 from apps.comunes.models import Comunicacion as ComunicacionModel
 from apps.comunes.models import Domicilio as DomicilioModel
 from apps.comunes.forms.comunicacion import ComunicacionForm
@@ -13,6 +13,11 @@ from apps.comunes.forms.domicilio import DomicilioForm
 
 from apps.persona.models import Persona as ContactoModel
 from apps.persona.forms import PersonaForm as ContactoForm
+
+
+# -----------------------------------------------------------------------------
+# Empresas
+# -----------------------------------------------------------------------------
 
 
 class EmpresaTemplateView(generic.TemplateView):
@@ -31,7 +36,7 @@ class EmpresaTemplateView(generic.TemplateView):
 
 class EmpresaListView(generic.ListView):
     model = models.Empresa
-    template_name = 'comunes/tabla.html'.format(app=__package__.split('.')[1])
+    template_name = 'comunes/tabla.html'    # .format(app=__package__.split('.')[1])
     paginate_by = 15
 
     def get_context_data(self, *args, **kwargs):
@@ -108,6 +113,11 @@ class EmpresaDeleteView(generic.DeleteView):
     pass
 
 
+# -----------------------------------------------------------------------------
+# Empresas filtradas por Actividades y Comerciales
+# -----------------------------------------------------------------------------
+
+
 class FilterListView(generic.ListView):
     model = models.Empresa
     # template_name = '{app}/list.html'.format(app=model._meta.verbose_name.lower())
@@ -138,6 +148,11 @@ class FilterListView(generic.ListView):
         if name == 'filtro_comercial':
             context['filtro'] = 'filtrado por Comercial'
         return context
+
+
+# -----------------------------------------------------------------------------
+# Tablas relacionadas a la Empreda
+# -----------------------------------------------------------------------------
 
 
 class CreateComunicationView(generic.CreateView):
@@ -244,17 +259,28 @@ class CreateActividadView(generic.CreateView):
         return response
 
 
+# -----------------------------------------------------------------------------
+# Actividad
+# -----------------------------------------------------------------------------
+
+class ActividadTemplateView(generic.TemplateView):
+    def get(self, request, *args, **kwargs):
+        return ActividadListView.as_view()(request)
+
+
 class ActividadListView(generic.ListView):
     model = models.Actividad
-    template_name = 'actividad/tabla.html'
+    template_name = 'comunes/tabla.html'
     paginate_by = 15
 
     def get_queryset(self):
-        # SELECT id, nombre, parent_id
-        # FROM empresa_actividad
-        # ORDER BY case when parent_id is null then id else parent_id end * 1000 + id ASC    
-        queryset = models.Actividad.objects.raw("SELECT id, nombre, parent_id FROM empresa_actividad ORDER BY case when parent_id is null then id else parent_id end * 1000 + id ASC")
-        return queryset
+        # queryset = super().get_queryset()
+        # sql = "SELECT id, nombre, parent_id FROM empresa_actividad ORDER BY case when parent_id is null then id else parent_id end * 1000 + id ASC"
+        # queryset = models.Actividad.objects.raw(sql).all()
+        # return queryset
+        ordering = 'CASE WHEN parent_id IS Null THEN id ELSE parent_id END * 1000 + id'
+        qs = models.Actividad.objects.all().extra(select={'criterio': ordering}, order_by=('criterio',))
+        return qs
 
 
 class ActividadCreateView(generic.CreateView):

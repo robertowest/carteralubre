@@ -41,34 +41,30 @@ class CommonStruct(models.Model):
         return fields
 
     def get_absolute_url(self):
-        return reverse('%s:detail' % self._meta.app_label, args=(self.pk,))
+        return reverse('%s:detail' % self._meta.model_name, args=(self.pk,))
 
     def get_list_url(self):
-        return reverse('%s:list' % self._meta.app_label)
+        return reverse('%s:list' % self._meta.model_name)
 
     def get_create_url(self):
-        # self._meta.app_label
+        # self._meta.model_name
         # self._meta.module_name
-        return reverse('%s:create' % self._meta.app_label)
+        return reverse('%s:create' % self._meta.model_name)
 
     def get_detail_url(self):
-        return reverse('%s:detail' % self._meta.app_label, args=(self.pk,))
+        return reverse('%s:detail' % self._meta.model_name, args=(self.pk,))
 
     def get_update_url(self):
-        # return reverse('%s:update' % self._meta.app_label, args=(self.pk,))
+        # import pdb; pdb.set_trace()
         # return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
-        if self._meta.app_label == 'empresa' and \
-           self._meta.model_name == 'actividad':
-            path = '{0}:{1}_update'.format(self._meta.app_label, self._meta.model_name)
-            return reverse(path, args=(self.pk,))
-        else:
-            return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
+        # return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
+        return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
 
     def get_delete_url(self):
-        return reverse('%s:delete' % self._meta.app_label, args=(self.pk,))
+        return reverse('%s:delete' % self._meta.model_name, args=(self.pk,))
 
     def get_app_label(self):
-        return self._meta.app_label
+        return self._meta.model_name
     
     def get_module_name(self):
         return self._meta.module_name

@@ -18,10 +18,4 @@ urlpatterns = [
     path('<int:fk>/domicilio/', views.CreateAddressView.as_view(), name='associate_with_address'),
     path('<int:fk>/contacto/', views.CreateContactView.as_view(), name='associate_with_contact'),
     path('<int:fk>/actividad/', views.CreateActividadView.as_view(), name='associate_with_actividad'),
-    # actividades
-    path('actividad/listado/', views.ActividadListView.as_view(), name='actividad_list'),
-    path('actividad/crear/', views.ActividadCreateView.as_view(), name='actividad_create'),
-    path('actividad/<int:pk>/', views.ActividadDetailView.as_view(), name='actividad_detail'),
-    path('actividad/<int:pk>/modificar/', views.ActividadUpdateView.as_view(), name='actividad_update'),
-    path('actividad/<int:pk>/eliminar/', views.ActividadDeleteView.as_view(), name='actividad_delete'),
 ]

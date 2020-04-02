@@ -1,4 +1,3 @@
-
 <thead>
     <tr>
         <th>#</th>
@@ -9,7 +8,11 @@
 <tbody>
     {% for object in object_list %}
     <tr>
-        <td><a href="{{object.get_detail_url}}">{{object.pk}}</a></td>
+        <td>
+            <a href="{{object.get_update_url}}">
+                {{object.pk}}
+            </a>
+        </td>
         <td>{{object.nombre}}</td>
         <td>{{object.parent}}</td>
     </tr>

@@ -23,7 +23,9 @@ urlpatterns = [
     path('diccionario/', include('apps.comunes.urls.diccionario')),
     path('domicilio/', include('apps.comunes.urls.domicilio')),
 
-    path('empresa/', include('apps.empresa.urls')),
+    path('empresa/', include('apps.empresa.urls.empresa')),
+    path('empresa/actividad/', include('apps.empresa.urls.actividad')),
+
     path('persona/', include('apps.persona.urls')),
 ]
 
