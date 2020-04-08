@@ -48,19 +48,6 @@ class Actividad(CommonStruct):
 
 # class Subactividad(Actividad):
 #     actividad = models.OneToOneField(Actividad, on_delete=models.CASCADE, parent_link=True)    
-# class Subactividad(models.Model):
-#     class Meta:
-#         verbose_name = 'Subactividad'
-#         verbose_name_plural = 'Subactividades'
-#         # managed = False
-
-#     def __str__(self):
-#         return self.nombre
-
-#     def get_update_url(self):
-#         # return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
-#         import pdb; pdb.set_trace()
-#         return "/"
 
 
 class Empresa(CommonStruct):

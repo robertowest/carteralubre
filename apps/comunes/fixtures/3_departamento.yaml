@@ -1,9 +1,4 @@
 - model: comunes.departamento
-  pk: 0
-  fields:
-    nombre: No se detalla
-    provincia: 0
-- model: comunes.departamento
   pk: 1
   fields:
     nombre: San Miguel de Tucumán

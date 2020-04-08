@@ -70,6 +70,28 @@ class CommonStruct(models.Model):
         return self._meta.module_name
 
 
+class georef(CommonStruct):
+    NIVEL = (
+        ('01', 'País'), 
+        ('02', 'Provincia'),
+        ('03', 'Departamento'),
+        ('04', 'Municipio'),
+        ('05', 'Localidad'),
+    )
+
+    nivel = models.CharField(max_length=2, choices=NIVEL, default='03')
+    nombre = models.CharField(max_length=60)
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, 
+                               null=True, blank=True, verbose_name='Padre')
+
+    class Meta:
+        verbose_name = 'GeoReferencia'
+        verbose_name_plural = 'GeoReferencias'
+
+    def __str__(self):
+        return self.nombre
+
+
 class Pais(CommonStruct):
     nombre = models.CharField(max_length=40)
     cod_area_tel = models.CharField('Cód. Area Telef.', max_length=4, null=True, blank=True)
@@ -101,6 +123,18 @@ class Departamento(CommonStruct):
     class Meta:
         verbose_name = 'Departamento'
         verbose_name_plural = 'Departamentos'
+
+    def __str__(self):
+        return self.nombre
+
+
+class Municipio(CommonStruct):
+    departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE)
+    nombre = models.CharField(max_length=40)
+
+    class Meta:
+        verbose_name = 'Municipio'
+        verbose_name_plural = 'Municipios'
 
     def __str__(self):
         return self.nombre
@@ -141,27 +175,33 @@ class Diccionario(CommonStruct):
 
 
 class Domicilio(CommonStruct):
-    TIPO = (('Av.', 'Avenida'), ('Calle', 'Calle'), 
-            ('Pje.', 'Pasaje'), ('Ruta', 'Ruta'))
+    TIPO = (('avda', 'Avenida'), ('calle', 'Calle'), 
+            ('pje', 'Pasaje'), ('ruta', 'Ruta'))
     
     tipo = models.ForeignKey(Diccionario, on_delete=models.CASCADE, 
                              null=True, blank=True, default=1,
                              limit_choices_to = {'tabla': 'domicilio', 'active': True})
-    tipo_calle = models.CharField(max_length=5, choices=TIPO, default='Calle')
-    calle = models.CharField(max_length=40)
+    tipo_calle = models.CharField(max_length=5, choices=TIPO, default='calle')
+    nombre = models.CharField(max_length=40, null=True, blank=True)
     numero = models.IntegerField('Número', null=True, blank=True)
     piso = models.CharField(max_length=2, null=True, blank=True)
     puerta = models.CharField(max_length=2, null=True, blank=True)
-    pais = models.ForeignKey(Pais, on_delete=models.CASCADE)
-    provincia = models.ForeignKey(Provincia, on_delete=models.CASCADE)
-    departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE)
-    localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
+    barrio = models.CharField(max_length=40, null=True, blank=True)
+    # pais = models.ForeignKey(Pais, on_delete=models.CASCADE)
+    # provincia = models.ForeignKey(Provincia, on_delete=models.CASCADE)
+    # departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE)
+    # municipio = models.ForeignKey(Municipio, on_delete=models.CASCADE)
+    # localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
+    provincia_texto = models.CharField(max_length=50, null=True, blank=True)
+    departamento_texto = models.CharField(max_length=50, null=True, blank=True)
+    localidad_texto = models.CharField(max_length=50, null=True, blank=True)
+    observacion_texto = models.TextField('Nota', null=True, blank=True)
 
     # configuración para admin
-    list_display = ['id', 'tipo', 'calle', 'numero', 'piso', 'puerta']
+    list_display = ['id', 'tipo', 'nombre', 'numero', 'piso', 'puerta']
     list_display_links = ['id']
     exclude = []
-    search_fields = ['calle']
+    search_fields = ['nombre']
     date_hierarchy = ''
 
     class Meta:
@@ -169,7 +209,7 @@ class Domicilio(CommonStruct):
         verbose_name_plural = 'Domicilios'
 
     def __str__(self):
-        texto = self.calle
+        texto = self.nombre
         if self.numero:
             texto += ' ' + str(self.numero)
         if self.piso:
@@ -197,3 +237,6 @@ class Comunicacion(CommonStruct):
 
     def __str__(self):
         return "%s: %s" % (self.get_tipo_display(), self.texto)
+
+    def get_comunicacion(self):
+        return "{}: {}".format(self.get_tipo_display(), self.texto)

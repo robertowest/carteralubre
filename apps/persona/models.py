@@ -10,12 +10,13 @@ from apps.comunes.functions import get_app_name, get_model_name
 class Persona(CommonStruct):
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
-    documento = models.CharField('DNI', max_length=12, null=True, blank=True)
+    documento = models.CharField('DNI', max_length=12, null=True, blank=True, unique=True)
     fecha_nacimiento = models.DateField('Fecha de Nacimiento', blank=True, null=True)
     domicilio = models.ForeignKey(Domicilio, on_delete=models.CASCADE, null=True, blank=True,
                                   limit_choices_to = {'active': True})
     comunicaciones = models.ManyToManyField(Comunicacion, related_name='persona_comunicaciones', 
                                             blank=True, limit_choices_to = {'active': True})
+    persona_similar = models.IntegerField('Persona Similar', null=True, blank=True)
 
     # configuración para admin
     list_display = ['apellido', 'nombre', 'documento', 'active']

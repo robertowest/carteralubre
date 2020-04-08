@@ -1,9 +1,4 @@
 - model: comunes.localidad
-  pk: 0
-  fields:
-    nombre: No se detalla
-    departamento: 0
-- model: comunes.localidad
   pk: 1
   fields:
     nombre: Acheral

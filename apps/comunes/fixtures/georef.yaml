@@ -1,0 +1,785 @@
+- model: comunes.georef
+  pk: 1
+  fields:
+    nivel: 01
+    nombre: Argentina
+- model: comunes.georef
+  pk: 2
+  fields:
+    nivel: 02
+    nombre: Tucumán
+    parent_id: 1
+- model: comunes.georef
+  pk: 3
+  fields:
+    nivel: 03
+    nombre: Burruyacú
+    parent_id: 2
+- model: comunes.georef
+  pk: 4
+  fields:
+    nivel: 03
+    nombre: Capital
+    parent_id: 2
+- model: comunes.georef
+  pk: 5
+  fields:
+    nivel: 03
+    nombre: Cicligasta
+    parent_id: 2
+- model: comunes.georef
+  pk: 6
+  fields:
+    nivel: 03
+    nombre: Cruz Alta
+    parent_id: 2
+- model: comunes.georef
+  pk: 7
+  fields:
+    nivel: 03
+    nombre: Famaillá
+    parent_id: 2
+- model: comunes.georef
+  pk: 8
+  fields:
+    nivel: 03
+    nombre: Graneros
+    parent_id: 2
+- model: comunes.georef
+  pk: 9
+  fields:
+    nivel: 03
+    nombre: Juan Bautista Alberdi
+    parent_id: 2
+- model: comunes.georef
+  pk: 10
+  fields:
+    nivel: 03
+    nombre: La Cocha
+    parent_id: 2
+- model: comunes.georef
+  pk: 11
+  fields:
+    nivel: 03
+    nombre: Leales
+    parent_id: 2
+- model: comunes.georef
+  pk: 12
+  fields:
+    nivel: 03
+    nombre: Lules
+    parent_id: 2
+- model: comunes.georef
+  pk: 13
+  fields:
+    nivel: 03
+    nombre: Monteros
+    parent_id: 2
+- model: comunes.georef
+  pk: 14
+  fields:
+    nivel: 03
+    nombre: Río Chico
+    parent_id: 2
+- model: comunes.georef
+  pk: 15
+  fields:
+    nivel: 03
+    nombre: Simoca
+    parent_id: 2
+- model: comunes.georef
+  pk: 16
+  fields:
+    nivel: 03
+    nombre: Tafí del Valle
+    parent_id: 2
+- model: comunes.georef
+  pk: 17
+  fields:
+    nivel: 03
+    nombre: Tafí Viejo
+    parent_id: 2
+- model: comunes.georef
+  pk: 18
+  fields:
+    nivel: 03
+    nombre: Trancas
+    parent_id: 2
+- model: comunes.georef
+  pk: 19
+  fields:
+    nivel: 03
+    nombre: Yerba Buena
+    parent_id: 2
+- model: comunes.georef
+  pk: 20
+  fields:
+    nivel: 04
+    nombre: Burruyacú
+    parent_id: 3
+- model: comunes.georef
+  pk: 21
+  fields:
+    nivel: 04
+    nombre: El Chañar
+    parent_id: 3
+- model: comunes.georef
+  pk: 22
+  fields:
+    nivel: 04
+    nombre: El Naranjo y El Sunchal
+    parent_id: 3
+- model: comunes.georef
+  pk: 23
+  fields:
+    nivel: 04
+    nombre: El Puestito
+    parent_id: 3
+- model: comunes.georef
+  pk: 24
+  fields:
+    nivel: 04
+    nombre: El Timbó
+    parent_id: 3
+- model: comunes.georef
+  pk: 25
+  fields:
+    nivel: 04
+    nombre: Gobernador Garmendia
+    parent_id: 3
+- model: comunes.georef
+  pk: 26
+  fields:
+    nivel: 04
+    nombre: Gobernador Piedrabuena
+    parent_id: 3
+- model: comunes.georef
+  pk: 27
+  fields:
+    nivel: 04
+    nombre: La Ramada y La Cruz
+    parent_id: 3
+- model: comunes.georef
+  pk: 28
+  fields:
+    nivel: 04
+    nombre: Padre Monti
+    parent_id: 3
+- model: comunes.georef
+  pk: 29
+  fields:
+    nivel: 04
+    nombre: Siete de Abril
+    parent_id: 3
+- model: comunes.georef
+  pk: 30
+  fields:
+    nivel: 04
+    nombre: Villa Benjamín Araoz
+    parent_id: 3
+- model: comunes.georef
+  pk: 31
+  fields:
+    nivel: 04
+    nombre: San Miguel de Tucumán
+    parent_id: 4
+- model: comunes.georef
+  pk: 32
+  fields:
+    nivel: 04
+    nombre: Concepción
+    parent_id: 5
+- model: comunes.georef
+  pk: 33
+  fields:
+    nivel: 04
+    nombre: Alpachiri y El Molino
+    parent_id: 5
+- model: comunes.georef
+  pk: 34
+  fields:
+    nivel: 04
+    nombre: Alto Verde y Los Gucheas
+    parent_id: 5
+- model: comunes.georef
+  pk: 35
+  fields:
+    nivel: 04
+    nombre: Arcadia
+    parent_id: 5
+- model: comunes.georef
+  pk: 36
+  fields:
+    nivel: 04
+    nombre: Gastona y Belicha
+    parent_id: 5
+- model: comunes.georef
+  pk: 37
+  fields:
+    nivel: 04
+    nombre: La Trinidad
+    parent_id: 5
+- model: comunes.georef
+  pk: 38
+  fields:
+    nivel: 04
+    nombre: Medinas 
+    parent_id: 5
+- model: comunes.georef
+  pk: 39
+  fields:
+    nivel: 04
+    nombre: Banda del Río Salí
+    parent_id: 6
+- model: comunes.georef
+  pk: 40
+  fields:
+    nivel: 04
+    nombre: Alderetes
+    parent_id: 6
+- model: comunes.georef
+  pk: 41
+  fields:
+    nivel: 04
+    nombre: Colombres
+    parent_id: 6
+- model: comunes.georef
+  pk: 42
+  fields:
+    nivel: 04
+    nombre: Delfín Gallo
+    parent_id: 6
+- model: comunes.georef
+  pk: 43
+  fields:
+    nivel: 04
+    nombre: El Bracho y El Cevilar
+    parent_id: 6
+- model: comunes.georef
+  pk: 44
+  fields:
+    nivel: 04
+    nombre: El Naranjito
+    parent_id: 6
+- model: comunes.georef
+  pk: 45
+  fields:
+    nivel: 04
+    nombre: La Florida y Luisiana
+    parent_id: 6
+- model: comunes.georef
+  pk: 46
+  fields:
+    nivel: 04
+    nombre: Las Cejas
+    parent_id: 6
+- model: comunes.georef
+  pk: 47
+  fields:
+    nivel: 04
+    nombre: Los Bulacio y Los Villagra
+    parent_id: 6
+- model: comunes.georef
+  pk: 48
+  fields:
+    nivel: 04
+    nombre: Los Pereyra
+    parent_id: 6
+- model: comunes.georef
+  pk: 49
+  fields:
+    nivel: 04
+    nombre: Los Pérez
+    parent_id: 6
+- model: comunes.georef
+  pk: 50
+  fields:
+    nivel: 04
+    nombre: Los Ralos
+    parent_id: 6
+- model: comunes.georef
+  pk: 51
+  fields:
+    nivel: 04
+    nombre: Ranchillos y San Miguel
+    parent_id: 6
+- model: comunes.georef
+  pk: 52
+  fields:
+    nivel: 04
+    nombre: San Andrés 
+    parent_id: 6
+- model: comunes.georef
+  pk: 53
+  fields:
+    nivel: 04
+    nombre: Famaillá
+    parent_id: 7
+- model: comunes.georef
+  pk: 54
+  fields:
+    nivel: 04
+    nombre: Graneros
+    parent_id: 8
+- model: comunes.georef
+  pk: 55
+  fields:
+    nivel: 04
+    nombre: Lamadrid
+    parent_id: 8
+- model: comunes.georef
+  pk: 56
+  fields:
+    nivel: 04
+    nombre: Taco Ralo 
+    parent_id: 8
+- model: comunes.georef
+  pk: 57
+  fields:
+    nivel: 04
+    nombre: Juan Bautista Alberdi
+    parent_id: 9
+- model: comunes.georef
+  pk: 58
+  fields:
+    nivel: 04
+    nombre: Escaba
+    parent_id: 9
+- model: comunes.georef
+  pk: 59
+  fields:
+    nivel: 04
+    nombre: Villa Belgrano
+    parent_id: 9
+- model: comunes.georef
+  pk: 60
+  fields:
+    nivel: 04
+    nombre: La Cocha
+    parent_id: 10
+- model: comunes.georef
+  pk: 61
+  fields:
+    nivel: 04
+    nombre: El Sacrificio
+    parent_id: 10
+- model: comunes.georef
+  pk: 62
+  fields:
+    nivel: 04
+    nombre: Huasa Pampa Sud
+    parent_id: 10
+- model: comunes.georef
+  pk: 63
+  fields:
+    nivel: 04
+    nombre: Rumi Punco
+    parent_id: 10
+- model: comunes.georef
+  pk: 64
+  fields:
+    nivel: 04
+    nombre: San Ignacio
+    parent_id: 10
+- model: comunes.georef
+  pk: 65
+  fields:
+    nivel: 04
+    nombre: San José de la Cocha
+    parent_id: 10
+- model: comunes.georef
+  pk: 66
+  fields:
+    nivel: 04
+    nombre: Yánima
+    parent_id: 10
+- model: comunes.georef
+  pk: 67
+  fields:
+    nivel: 04
+    nombre: Bella Vista
+    parent_id: 11
+- model: comunes.georef
+  pk: 68
+  fields:
+    nivel: 04
+    nombre: Agua Dulce y La Soledad
+    parent_id: 11
+- model: comunes.georef
+  pk: 69
+  fields:
+    nivel: 04
+    nombre: El Mojón
+    parent_id: 11
+- model: comunes.georef
+  pk: 70
+  fields:
+    nivel: 04
+    nombre: Esquina y Mancopa
+    parent_id: 11
+- model: comunes.georef
+  pk: 71
+  fields:
+    nivel: 04
+    nombre: Estación Araoz y Tacanas
+    parent_id: 11
+- model: comunes.georef
+  pk: 72
+  fields:
+    nivel: 04
+    nombre: Las Talas
+    parent_id: 11
+- model: comunes.georef
+  pk: 73
+  fields:
+    nivel: 04
+    nombre: Los Gómez
+    parent_id: 11
+- model: comunes.georef
+  pk: 74
+  fields:
+    nivel: 04
+    nombre: Los Puestos
+    parent_id: 11
+- model: comunes.georef
+  pk: 75
+  fields:
+    nivel: 04
+    nombre: Manuel García Fernández
+    parent_id: 11
+- model: comunes.georef
+  pk: 76
+  fields:
+    nivel: 04
+    nombre: Quilmes y Los Sueldos
+    parent_id: 11
+- model: comunes.georef
+  pk: 77
+  fields:
+    nivel: 04
+    nombre: Río Colorado
+    parent_id: 11
+- model: comunes.georef
+  pk: 78
+  fields:
+    nivel: 04
+    nombre: Santa Rosa de Leales
+    parent_id: 11
+- model: comunes.georef
+  pk: 79
+  fields:
+    nivel: 04
+    nombre: Villa de Leales
+    parent_id: 11
+- model: comunes.georef
+  pk: 80
+  fields:
+    nivel: 04
+    nombre: San Isidro de Lules
+    parent_id: 12
+- model: comunes.georef
+  pk: 81
+  fields:
+    nivel: 04
+    nombre: El Manantial
+    parent_id: 12
+- model: comunes.georef
+  pk: 82
+  fields:
+    nivel: 04
+    nombre: San Felipe y Santa Bárbara
+    parent_id: 12
+- model: comunes.georef
+  pk: 83
+  fields:
+    nivel: 04
+    nombre: San Pablo y Villa Nougués 
+    parent_id: 12
+- model: comunes.georef
+  pk: 84
+  fields:
+    nivel: 04
+    nombre: Monteros
+    parent_id: 13
+- model: comunes.georef
+  pk: 85
+  fields:
+    nivel: 04
+    nombre: Acheral
+    parent_id: 13
+- model: comunes.georef
+  pk: 86
+  fields:
+    nivel: 04
+    nombre: Amberes
+    parent_id: 13
+- model: comunes.georef
+  pk: 87
+  fields:
+    nivel: 04
+    nombre: Capitán Cáceres
+    parent_id: 13
+- model: comunes.georef
+  pk: 88
+  fields:
+    nivel: 04
+    nombre: El Cercado
+    parent_id: 13
+- model: comunes.georef
+  pk: 89
+  fields:
+    nivel: 04
+    nombre: Los Sosas
+    parent_id: 13
+- model: comunes.georef
+  pk: 90
+  fields:
+    nivel: 04
+    nombre: Río Seco
+    parent_id: 13
+- model: comunes.georef
+  pk: 91
+  fields:
+    nivel: 04
+    nombre: Santa Lucía
+    parent_id: 13
+- model: comunes.georef
+  pk: 92
+  fields:
+    nivel: 04
+    nombre: Santa Rosa y Los Rojo
+    parent_id: 13
+- model: comunes.georef
+  pk: 93
+  fields:
+    nivel: 04
+    nombre: Sargento Moya
+    parent_id: 13
+- model: comunes.georef
+  pk: 94
+  fields:
+    nivel: 04
+    nombre: Soldado Maldonado
+    parent_id: 13
+- model: comunes.georef
+  pk: 95
+  fields:
+    nivel: 04
+    nombre: Teniente Berdina
+    parent_id: 13
+- model: comunes.georef
+  pk: 96
+  fields:
+    nivel: 04
+    nombre: Villa Quinteros
+    parent_id: 13
+- model: comunes.georef
+  pk: 97
+  fields:
+    nivel: 04
+    nombre: Aguilares
+    parent_id: 14
+- model: comunes.georef
+  pk: 98
+  fields:
+    nivel: 04
+    nombre: El Polear
+    parent_id: 14
+- model: comunes.georef
+  pk: 99
+  fields:
+    nivel: 04
+    nombre: Los Sarmientos y La Tipa
+    parent_id: 14
+- model: comunes.georef
+  pk: 100
+  fields:
+    nivel: 04
+    nombre: Monte Bello
+    parent_id: 14
+- model: comunes.georef
+  pk: 101
+  fields:
+    nivel: 04
+    nombre: Santa Ana
+    parent_id: 14
+- model: comunes.georef
+  pk: 102
+  fields:
+    nivel: 04
+    nombre: Simoca
+    parent_id: 15
+- model: comunes.georef
+  pk: 103
+  fields:
+    nivel: 04
+    nombre: Atahona
+    parent_id: 15
+- model: comunes.georef
+  pk: 104
+  fields:
+    nivel: 04
+    nombre: Buena Vista
+    parent_id: 15
+- model: comunes.georef
+  pk: 105
+  fields:
+    nivel: 04
+    nombre: Ciudacita
+    parent_id: 15
+- model: comunes.georef
+  pk: 106
+  fields:
+    nivel: 04
+    nombre: Manuela Pedraza
+    parent_id: 15
+- model: comunes.georef
+  pk: 107
+  fields:
+    nivel: 04
+    nombre: Monteagudo
+    parent_id: 15
+- model: comunes.georef
+  pk: 108
+  fields:
+    nivel: 04
+    nombre: Pampa Mayo
+    parent_id: 15
+- model: comunes.georef
+  pk: 109
+  fields:
+    nivel: 04
+    nombre: Río Chico y Nueva Trinidad
+    parent_id: 15
+- model: comunes.georef
+  pk: 110
+  fields:
+    nivel: 04
+    nombre: San Pedro y San Antonio
+    parent_id: 15
+- model: comunes.georef
+  pk: 111
+  fields:
+    nivel: 04
+    nombre: Santa Cruz y La Tuna
+    parent_id: 15
+- model: comunes.georef
+  pk: 112
+  fields:
+    nivel: 04
+    nombre: Villa Chicligasta
+    parent_id: 15
+- model: comunes.georef
+  pk: 113
+  fields:
+    nivel: 04
+    nombre: Yerba Buena
+    parent_id: 15
+- model: comunes.georef
+  pk: 114
+  fields:
+    nivel: 04
+    nombre: Tafí del Valle
+    parent_id: 16
+- model: comunes.georef
+  pk: 115
+  fields:
+    nivel: 04
+    nombre: Amaichá del Valle
+    parent_id: 16
+- model: comunes.georef
+  pk: 116
+  fields:
+    nivel: 04
+    nombre: Colalao del Valle
+    parent_id: 16
+- model: comunes.georef
+  pk: 117
+  fields:
+    nivel: 04
+    nombre: El Mollar
+    parent_id: 16
+- model: comunes.georef
+  pk: 118
+  fields:
+    nivel: 04
+    nombre: Tafí Viejo
+    parent_id: 17
+- model: comunes.georef
+  pk: 119
+  fields:
+    nivel: 04
+    nombre: Anca Juli
+    parent_id: 17
+- model: comunes.georef
+  pk: 120
+  fields:
+    nivel: 04
+    nombre: Choromoro
+    parent_id: 17
+- model: comunes.georef
+  pk: 121
+  fields:
+    nivel: 04
+    nombre: El Cadillal
+    parent_id: 17
+- model: comunes.georef
+  pk: 122
+  fields:
+    nivel: 04
+    nombre: La Esperanza
+    parent_id: 17
+- model: comunes.georef
+  pk: 123
+  fields:
+    nivel: 04
+    nombre: Las Talitas
+    parent_id: 17
+- model: comunes.georef
+  pk: 124
+  fields:
+    nivel: 04
+    nombre: Los Nogales
+    parent_id: 17
+- model: comunes.georef
+  pk: 125
+  fields:
+    nivel: 04
+    nombre: Raco
+    parent_id: 17
+- model: comunes.georef
+  pk: 126
+  fields:
+    nivel: 04
+    nombre: Trancas
+    parent_id: 18
+- model: comunes.georef
+  pk: 127
+  fields:
+    nivel: 04
+    nombre: San Pedro de Colalao
+    parent_id: 18
+- model: comunes.georef
+  pk: 128
+  fields:
+    nivel: 04
+    nombre: Tapia 
+    parent_id: 18
+- model: comunes.georef
+  pk: 129
+  fields:
+    nivel: 04
+    nombre: Yerba Buena
+    parent_id: 19
+- model: comunes.georef
+  pk: 130
+  fields:
+    nivel: 04
+    nombre: Cevil Redondo
+    parent_id: 19
+- model: comunes.georef
+  pk: 131
+  fields:
+    nivel: 04
+    nombre: San Javier 
+    parent_id: 19

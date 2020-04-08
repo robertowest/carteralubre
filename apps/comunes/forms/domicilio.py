@@ -8,8 +8,8 @@ class DomicilioForm(forms.ModelForm):
     class Meta:
         model = DomicilioModel
         fields = ['tipo', 'tipo_calle', 
-                  'calle', 'numero', 'piso', 'puerta', 
-                  'pais', 'provincia', 'departamento', 'localidad', 
+                  'nombre', 'numero', 'piso', 'puerta', 
+                  'provincia_texto', 'departamento_texto', 'localidad_texto', 
                   'active']
 
     def __init__(self, *args, **kwargs):
