@@ -6,11 +6,13 @@ django-debug-toolbar
 # mysqlclient
 # pyyaml
 
-## heroku
-# dj-database-url
-# gunicorn
-# whitenoise
-
+## necesario para heroku local
 # django-heroku
 # psycopg2
 # python-decouple
+
+## heroku remoto
+dj-database-url
+gunicorn
+whitenoise
+
