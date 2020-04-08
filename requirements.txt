@@ -5,3 +5,12 @@ django-debug-toolbar
 
 # mysqlclient
 # pyyaml
+
+## heroku
+# dj-database-url
+# gunicorn
+# whitenoise
+
+# django-heroku
+# psycopg2
+# python-decouple
