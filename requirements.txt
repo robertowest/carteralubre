@@ -15,4 +15,4 @@ django-debug-toolbar
 dj-database-url
 gunicorn
 whitenoise
-
+decouple
