@@ -1,17 +1,14 @@
-django
+Django
 django-adminlte3
 django-crispy-forms
 django-debug-toolbar
 
-# mysqlclient
-# pyyaml
-
-## necesario para heroku local
-# psycopg2
-
-## heroku remoto
-django-heroku
+# python-decouple
+decouple
 dj-database-url
+
+django-heroku
 gunicorn
-whitenoise
+psycopg2
 python-decouple
+whitenoise
