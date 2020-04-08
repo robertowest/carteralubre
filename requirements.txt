@@ -7,10 +7,10 @@ django-debug-toolbar
 # pyyaml
 
 ## necesario para heroku local
-# django-heroku
 # psycopg2
 
 ## heroku remoto
+django-heroku
 dj-database-url
 gunicorn
 whitenoise
