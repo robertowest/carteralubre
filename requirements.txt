@@ -3,8 +3,8 @@ django-adminlte3
 django-crispy-forms
 django-debug-toolbar
 
-# python-decouple
-decouple
+python-decouple
+# decouple
 dj-database-url
 
 django-heroku
