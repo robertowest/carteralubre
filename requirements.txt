@@ -9,10 +9,9 @@ django-debug-toolbar
 ## necesario para heroku local
 # django-heroku
 # psycopg2
-# python-decouple
 
 ## heroku remoto
 dj-database-url
 gunicorn
 whitenoise
-decouple
+python-decouple
