@@ -11,6 +11,9 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings-debug')
+if 'runserver' in sys.argv:
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings-debug')
+else:
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings-heroku') 
 
 application = get_wsgi_application()
