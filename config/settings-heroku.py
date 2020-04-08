@@ -8,7 +8,7 @@ from config.settings import *
 # ruta del proyecto: os.path.join(BASE_DIR, ...)
 FILE_DIR = os.path.abspath(__file__)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(FILE_DIR)))
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['carteralubre.herokuapp.com']
 
 
