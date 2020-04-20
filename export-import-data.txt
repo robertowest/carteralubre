@@ -23,8 +23,8 @@
 #
 
 # comunes
-./manage.py loaddata pais --settings=config.settings-debug
-./manage.py loaddata provincia  --settings=config.settings-debug
+./manage.py loaddata pais --settings=config.settings.production
+./manage.py loaddata provincia --settings=config.settings.production
 
 ./manage.py loaddata diccionario
 ./manage.py loaddata comunicacion

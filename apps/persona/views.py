@@ -26,7 +26,6 @@ class PersonaTemplateView(generic.TemplateView):
 class PersonasListView(generic.ListView):
     model = models.Persona
     template_name = 'comunes/tabla.html'.format(app=__package__.split('.')[1])
-    paginate_by = 15
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)

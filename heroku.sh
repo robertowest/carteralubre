@@ -1,6 +1,7 @@
 #!/bin/bash
-git add -A .
-git commit -m "modificaciones en Heroku"
+git add .
+# git reset push.sh
+git commit -m "modificaciones en casa"
 git push heroku master
 
 # heroku run python manage.py migrate --settings=config.settings_heroku

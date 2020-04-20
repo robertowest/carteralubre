@@ -4077,7 +4077,7 @@
   pk: 792
   fields:
     nombre: Gerardo
-    apellido: Pizarro₍hijo)
+    apellido: Pizarro (hijo)
 - model: persona.persona
   pk: 793
   fields:
@@ -7328,7 +7328,7 @@
   pk: 1419
   fields:
     nombre: Julio
-    apellido: Valla₍h)
+    apellido: Valla (h)
 - model: persona.persona
   pk: 1420
   fields:

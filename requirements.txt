@@ -1,14 +1,25 @@
-Django
+django
+wheel
+python-decouple
+pyyaml
+
+# django-heroku
+gunicorn
+psycopg2
+dj-database-url
+whitenoise
+
 django-adminlte3
 django-crispy-forms
 django-debug-toolbar
 
-python-decouple
-# decouple
-dj-database-url
 
-django-heroku
-gunicorn
-psycopg2
-python-decouple
-whitenoise
+
+
+########################
+### Instalación de MySQL
+##
+#
+# sudo apt-get install python3-dev python3-mysqldb libmariadbclient-dev
+# sudo apt-get install mariadb-client
+# pip install mysqlclient

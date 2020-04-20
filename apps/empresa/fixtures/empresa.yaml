@@ -17888,7 +17888,7 @@
   pk: 5209
   fields:
     nombre: Corralon Del Pero
-    razon_social: Corralon Del Pero
+    razon_social: '*Corralon Del Pero'
     comercial: 8
     observacion: Corralon De Materiales
     origen: 1
@@ -25533,8 +25533,8 @@
 - model: empresa.empresa
   pk: 6061
   fields:
-    nombre: La Estacion Famailla Srl
-    razon_social: La Estacion Famailla Srl
+    nombre: La Estación Famaillá Srl
+    razon_social: '*La Estación Famaillá Srl'
     comercial: 10
     origen: 2
     planilla: 330
@@ -26653,7 +26653,7 @@
   pk: 6178
   fields:
     nombre: Sucesion De Ortega Juan A. Eladio
-    razon_social: Sucesion De Ortega Juan A. Eladio
+    razon_social: '*Sucesion De Ortega Juan A. Eladio'
     origen: 1
     planilla: 84
     actividad: 3

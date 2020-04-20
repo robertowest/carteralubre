@@ -1082,7 +1082,7 @@
   pk: 121
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Lote 18
     barrio: CC La Loma
     provincia_texto: Tucumán
@@ -4411,7 +4411,7 @@
   pk: 504
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: Parque
     provincia_texto: Tucumán
     departamento_texto: Río Chico
@@ -5635,7 +5635,7 @@
   pk: 654
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Barriuo Aeropuerto
     barrio: Aeropuerto
     provincia_texto: Tucumán
@@ -5769,7 +5769,7 @@
   pk: 672
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Comerc 0 Dpto 7
     barrio: Libertad
     provincia_texto: Tucumán
@@ -7201,7 +7201,7 @@
   pk: 845
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manz S Lote 8
     barrio: SEOC
     provincia_texto: Tucumán
@@ -7940,7 +7940,7 @@
   pk: 932
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: 1º Pasaje 737
     barrio: ATEP
     provincia_texto: Tucumán
@@ -8266,7 +8266,7 @@
   pk: 968
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mza R Casa 9
     barrio: Congreso
     provincia_texto: Tucumán
@@ -9176,7 +9176,7 @@
   pk: 1081
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: Profesional
     provincia_texto: Tucumán
     departamento_texto: Chicligasta
@@ -11571,7 +11571,7 @@
   pk: 1372
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: CGT
     provincia_texto: Tucumán
     departamento_texto: Cruz Alta
@@ -11858,7 +11858,7 @@
   pk: 1409
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Villa Carmela
     barrio: 240 Viviendas
     provincia_texto: Tucumán
@@ -12993,7 +12993,7 @@
   pk: 1544
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manz H Casa 8
     barrio: FEPUT
     provincia_texto: Tucumán
@@ -16916,7 +16916,7 @@
   pk: 2011
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: 18 Viviendas
     provincia_texto: Tucumán
     departamento_texto: Tafí Viejo
@@ -17420,7 +17420,7 @@
   pk: 2072
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: El Carmen
     provincia_texto: Tucumán
     departamento_texto: La Cocha
@@ -17780,7 +17780,7 @@
   pk: 2116
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 10
     barrio: Las Marías
     provincia_texto: Tucumán
@@ -18140,7 +18140,7 @@
   pk: 2158
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Jujuy 4445-
     barrio: San Felipe
     provincia_texto: Tucumán
@@ -18969,7 +18969,7 @@
   pk: 2259
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Lamadrid Sin Nro.
     barrio: Matienzo
     provincia_texto: Tucumán
@@ -19195,7 +19195,7 @@
   pk: 2291
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: 40 Viviendas
     provincia_texto: Tucumán
     departamento_texto: La Cocha
@@ -19420,7 +19420,7 @@
   pk: 2320
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Godoy Cruz 320. Dto. 7-
     barrio: El Cortijo
     provincia_texto: Tucumán
@@ -19475,7 +19475,7 @@
   pk: 2327
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Lote 11 Mza A
     barrio: 12 de Octubre
     provincia_texto: Tucumán
@@ -19693,7 +19693,7 @@
   pk: 2355
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 9, Piso 0-
     barrio: Congreso
     provincia_texto: Tucumán
@@ -20198,7 +20198,7 @@
   pk: 2420
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Jujuy 3114.
     barrio: Miguel Lillo
     provincia_texto: Tucumán
@@ -20235,7 +20235,7 @@
   pk: 2429
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: manz. K, Piso 3- Barrio Oeste
     barrio: Oeste
     provincia_texto: Tucumán
@@ -20308,7 +20308,7 @@
   pk: 2437
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Diagonal 7.
     barrio: Padilla
     provincia_texto: Tucumán
@@ -20489,7 +20489,7 @@
   pk: 2462
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: 20 De Junio 693.
     barrio: Belgrano
     provincia_texto: Tucumán
@@ -20580,7 +20580,7 @@
   pk: 2473
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: Alvear
     provincia_texto: Tucumán
     departamento_texto: Concepción
@@ -20661,7 +20661,7 @@
   pk: 2483
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: 2.
     barrio: Estación Aráoz
     provincia_texto: Tucumán
@@ -20941,7 +20941,7 @@
   pk: 2520
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: San Martín 237.
     barrio: Centro
     provincia_texto: Tucumán
@@ -21122,7 +21122,7 @@
   pk: 2546
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Bernardo De Monteagudo S/n.
     barrio: Osores
     provincia_texto: Tucumán
@@ -21474,7 +21474,7 @@
   pk: 2593
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: El Paraiso
     provincia_texto: Tucumán
     departamento_texto: Cruz Alta
@@ -21528,7 +21528,7 @@
   pk: 2599
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Los Vallistos
     barrio: 60 Viviendas
     provincia_texto: Tucumán
@@ -21619,7 +21619,7 @@
   pk: 2610
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Alsina 4685.
     barrio: San Martín
     provincia_texto: Tucumán
@@ -21629,7 +21629,7 @@
   pk: 2611
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 14
     barrio: N. Lazarte
     provincia_texto: Tucumán
@@ -22173,7 +22173,7 @@
   pk: 2682
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: Ibarreche
     provincia_texto: Tucumán
     departamento_texto: Leales
@@ -22227,7 +22227,7 @@
   pk: 2688
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 7. Manza Na J
     barrio: 240 Viviendas
     provincia_texto: Tucumán
@@ -22237,7 +22237,7 @@
   pk: 2689
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Sin Calle. 0.
     barrio: Finca Michal
     provincia_texto: Tucumán
@@ -22373,7 +22373,7 @@
   pk: 2705
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 19. El Sauzal 1327.
     barrio: 24 de Septiembre
     provincia_texto: Tucumán
@@ -22383,7 +22383,7 @@
   pk: 2706
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Doctor Rojas 705.
     barrio: Santa Rita
     provincia_texto: Tucumán
@@ -22492,7 +22492,7 @@
   pk: 2719
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: lote 27
     barrio: Islas Malvinas
     provincia_texto: Tucumán
@@ -22529,7 +22529,7 @@
   pk: 2723
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Islas Malvinas 0.
     barrio: Palermo
     provincia_texto: Tucumán
@@ -22575,7 +22575,7 @@
   pk: 2729
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 12
     barrio: Belgrano
     provincia_texto: Tucumán
@@ -22738,7 +22738,7 @@
   pk: 2749
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Salta 0.
     barrio: El Carmen
     provincia_texto: Tucumán
@@ -22784,7 +22784,7 @@
   pk: 2754
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Tupac Amaru 436.
     barrio: El Ceibo
     provincia_texto: Tucumán
@@ -23046,7 +23046,7 @@
   pk: 2786
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mz B. Casa 21
     barrio: San Nicolás
     provincia_texto: Tucumán
@@ -23066,7 +23066,7 @@
   pk: 2788
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Ayacucho Esquina Mitre.
     barrio: El Progreso
     provincia_texto: Tucumán
@@ -23121,7 +23121,7 @@
   pk: 2794
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Julio Argentino Roca 66.
     barrio: San José
     provincia_texto: Tucumán
@@ -23348,7 +23348,7 @@
   pk: 2822
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: 40 Viviendas
     provincia_texto: Tucumán
     departamento_texto: Leales
@@ -23602,7 +23602,7 @@
   pk: 2850
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: La Florida
     provincia_texto: Tucumán
     departamento_texto: Cruz Alta
@@ -23656,7 +23656,7 @@
   pk: 2856
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Corrientes 665. 1º Piso.
     barrio: Centro
     provincia_texto: Tucumán
@@ -23720,7 +23720,7 @@
   pk: 2863
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: La Banda
     barrio: San Nicolás
     provincia_texto: Tucumán
@@ -24075,7 +24075,7 @@
   pk: 2907
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Alfredo Palacios 1276. 2º Piso
     barrio: Copiaat
     provincia_texto: Tucumán
@@ -24220,7 +24220,7 @@
   pk: 2927
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 20 .manzana C
     barrio: CGT 100 Viviendas
     provincia_texto: Tucumán
@@ -24464,7 +24464,7 @@
   pk: 2955
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Lote Nro.8.
     barrio: La Escondida
     provincia_texto: Tucumán
@@ -24492,7 +24492,7 @@
   pk: 2961
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: La Cooperativa
     provincia_texto: Tucumán
     departamento_texto: Burruyacú
@@ -24835,7 +24835,7 @@
   pk: 3007
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Diego De Rojas 85.
     barrio: Nstra. Sra. del Valle
     provincia_texto: Tucumán
@@ -24962,7 +24962,7 @@
   pk: 3022
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: 4 Nro. 70.
     barrio: Villa Mariano Moreno
     provincia_texto: Tucumán
@@ -24981,7 +24981,7 @@
   pk: 3024
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Gral. Guemes Sin Nro,
     barrio: Villa Rescate
     provincia_texto: Tucumán
@@ -25009,7 +25009,7 @@
   pk: 3027
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 12. M. D
     barrio: Belgrano
     provincia_texto: Tucumán
@@ -25063,7 +25063,7 @@
   pk: 3033
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Cerviño Sin Nro.
     barrio: El Corte
     provincia_texto: Tucumán
@@ -25109,7 +25109,7 @@
   pk: 3038
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Libertador 270.
     barrio: El Mirador
     provincia_texto: Tucumán
@@ -25128,7 +25128,7 @@
   pk: 3040
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Lote 12. Manzana 47
     barrio: Jardín
     provincia_texto: Tucumán
@@ -25147,7 +25147,7 @@
   pk: 3042
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana G. Casa 16.
     barrio: Belgrano
     provincia_texto: Tucumán
@@ -25175,7 +25175,7 @@
   pk: 3045
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mza I. Casa 24
     barrio: 470 Viviendas
     provincia_texto: Tucumán
@@ -25257,7 +25257,7 @@
   pk: 3054
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Charcas 1133-
     barrio: San Miguel
     provincia_texto: Tucumán
@@ -25267,7 +25267,7 @@
   pk: 3055
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Lote 17. Manzana L
     barrio: Aeropuerto
     provincia_texto: Tucumán
@@ -25277,7 +25277,7 @@
   pk: 3056
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 3. Manzana B
     barrio: Belgrano
     provincia_texto: Tucumán
@@ -25314,7 +25314,7 @@
   pk: 3060
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: manzana H. Casa 8
     barrio: Gráfico II
     provincia_texto: Tucumán
@@ -25324,7 +25324,7 @@
   pk: 3061
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Virgen De Fatima 600
     barrio: Los Gutierrez
     provincia_texto: Tucumán
@@ -25361,7 +25361,7 @@
   pk: 3065
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana F, Lote 11.
     barrio: Eva Perón
     provincia_texto: Tucumán
@@ -25371,7 +25371,7 @@
   pk: 3066
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 3. Manzana B
     barrio: Belgrano
     provincia_texto: Tucumán
@@ -25462,7 +25462,7 @@
   pk: 3078
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Independencia 300.
     barrio: Belgrano II
     provincia_texto: Tucumán
@@ -25725,7 +25725,7 @@
   pk: 3114
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     barrio: San Alberto
     provincia_texto: Tucumán
     departamento_texto: Alderetes
@@ -25824,7 +25824,7 @@
   pk: 3127
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Torre 26
     barrio: AGET
     provincia_texto: Tucumán
@@ -26015,7 +26015,7 @@
   pk: 3149
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Ricardo Rojas Esq. Morandini-
     barrio: Martín Fierro
     provincia_texto: Tucumán
@@ -26106,7 +26106,7 @@
   pk: 3160
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Ingenio Santa Ana
     barrio: 40 Viviendas
     provincia_texto: Tucumán
@@ -26125,7 +26125,7 @@
   pk: 3162
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 28
     barrio: Policial
     provincia_texto: Tucumán
@@ -26153,7 +26153,7 @@
   pk: 3165
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 22. Manzana 1 A
     barrio: 60 Viviendas
     provincia_texto: Tucumán
@@ -26172,7 +26172,7 @@
   pk: 3167
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Maipu Y Mitre
     barrio: El Progreso
     provincia_texto: Tucumán
@@ -26182,7 +26182,7 @@
   pk: 3168
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 16. Manzana C
     barrio: Municipal
     provincia_texto: Tucumán
@@ -26560,7 +26560,7 @@
   pk: 3221
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana 35. Lote 10
     barrio: Islas Malvinas
     provincia_texto: Tucumán
@@ -26615,7 +26615,7 @@
   pk: 3228
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana F, Lote 2
     barrio: CGT
     provincia_texto: Tucumán
@@ -26796,7 +26796,7 @@
   pk: 3251
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Napoleon Marañon 143.
     barrio: San Martín
     provincia_texto: Tucumán
@@ -26806,7 +26806,7 @@
   pk: 3252
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mz. C. 11.0
     barrio: Sagrado Corazón
     provincia_texto: Tucumán
@@ -26852,7 +26852,7 @@
   pk: 3259
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 15, Mz. C .
     barrio: Las Américas
     provincia_texto: Tucumán
@@ -26970,7 +26970,7 @@
   pk: 3273
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Hipolito Irigoyen 247
     barrio: 25 de Mayo
     provincia_texto: Tucumán
@@ -27088,7 +27088,7 @@
   pk: 3288
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Las Lanzas Y Calle 109
     barrio: Cerro Azul
     provincia_texto: Tucumán
@@ -27206,7 +27206,7 @@
   pk: 3301
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: La Rioja 830 -
     barrio: Próspero Mena
     provincia_texto: Tucumán
@@ -27243,7 +27243,7 @@
   pk: 3307
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Dpto 1 Mza D
     barrio: 100 Viviendas
     provincia_texto: Tucumán
@@ -27289,7 +27289,7 @@
   pk: 3312
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 5 Mzna.j
     barrio: APEM
     provincia_texto: Tucumán
@@ -27461,7 +27461,7 @@
   pk: 3332
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana E. Casa 6 .
     barrio: Vial II
     provincia_texto: Tucumán
@@ -27855,7 +27855,7 @@
   pk: 3382
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Sectro 14 ,manz.74, Lote 1
     barrio: Lomas de Tafí
     provincia_texto: Tucumán
@@ -28046,7 +28046,7 @@
   pk: 3409
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 19
     barrio: 250 Viviendas
     provincia_texto: Tucumán
@@ -28236,7 +28236,7 @@
   pk: 3434
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 1, M. J
     barrio: Jardín
     provincia_texto: Tucumán
@@ -28768,7 +28768,7 @@
   pk: 3496
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mz. F, Casa 31
     barrio: Farmacéutico
     provincia_texto: Tucumán
@@ -28850,7 +28850,7 @@
   pk: 3509
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mz C. Dto. 9
     barrio: Hipotecario
     provincia_texto: Tucumán
@@ -28951,7 +28951,7 @@
   pk: 3520
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: La Rioja 784-.
     barrio: Próspero Mena
     provincia_texto: Tucumán
@@ -28988,7 +28988,7 @@
   pk: 3527
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana "a"- Casa 3.
     barrio: Hipotecario
     provincia_texto: Tucumán
@@ -29097,7 +29097,7 @@
   pk: 3543
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana C- Lote 6-
     barrio: Telefónico
     provincia_texto: Tucumán
@@ -29125,7 +29125,7 @@
   pk: 3546
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Dto.5 Piso Planta Baja
     barrio: AGEP
     provincia_texto: Tucumán
@@ -29198,7 +29198,7 @@
   pk: 3558
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana F, Casa 14
     barrio: 188 Viviendas
     provincia_texto: Tucumán
@@ -29253,7 +29253,7 @@
   pk: 3565
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana M, Lote 22.
     barrio: Los Lapachos
     provincia_texto: Tucumán
@@ -29398,7 +29398,7 @@
   pk: 3582
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana L, Casa 19,
     barrio: 240 Viviendas
     provincia_texto: Tucumán
@@ -29543,7 +29543,7 @@
   pk: 3600
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 5
     barrio: Ampliación Islas Malvinas
     provincia_texto: Tucumán
@@ -29562,7 +29562,7 @@
   pk: 3602
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mitre Y Ayacucho.
     barrio: El Progreso
     provincia_texto: Tucumán
@@ -29581,7 +29581,7 @@
   pk: 3604
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Saenz Peña 714-
     barrio: Mercantil
     provincia_texto: Tucumán
@@ -29636,7 +29636,7 @@
   pk: 3611
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Chubut 2.900-
     barrio: Las Victorias
     provincia_texto: Tucumán
@@ -30132,7 +30132,7 @@
   pk: 3673
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Irigoyen 905.
     barrio: Almirante Brown
     provincia_texto: Tucumán
@@ -30305,7 +30305,7 @@
   pk: 3694
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana B
     barrio: El Portal 5
     provincia_texto: Tucumán
@@ -30486,7 +30486,7 @@
   pk: 3715
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Casa 5, Manzana J
     barrio: APEM
     provincia_texto: Tucumán
@@ -30577,7 +30577,7 @@
   pk: 3726
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Marcos Paz 1.696
     barrio: El Bosque
     provincia_texto: Tucumán
@@ -30830,7 +30830,7 @@
   pk: 3759
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Sin Nro. Manzana F-
     barrio: CGT
     provincia_texto: Tucumán
@@ -31350,7 +31350,7 @@
   pk: 3755
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: 25 De Mayo 0-
     barrio: El Recreo
     provincia_texto: Catamarca
@@ -31576,7 +31576,7 @@
   pk: 2451
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Pedro Inchauspe 37.
     barrio: San Fernando
     provincia_texto: Córdoba
@@ -31676,7 +31676,7 @@
   pk: 2981
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Cartago 1.660. América
     barrio: Residencial
     provincia_texto: Córdoba
@@ -32012,7 +32012,7 @@
   pk: 3610
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Alfonsina Storni Lote 9- Manz. 18-
     barrio: La Posta
     provincia_texto: Jujuy
@@ -32040,7 +32040,7 @@
   pk: 2548
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Baltazar Jaramillo 357.
     barrio: Centro
     provincia_texto: La Rioja
@@ -32068,7 +32068,7 @@
   pk: 3615
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Higinio Albini 480-
     barrio: Centro
     provincia_texto: La Rioja
@@ -32204,7 +32204,7 @@
   pk: 2104
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: mz "a" Casa 4-el Tala
     barrio: Milagro
     provincia_texto: Salta
@@ -32356,7 +32356,7 @@
   pk: 2577
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Los Ceibos 222.
     barrio: Tres Cerritos
     provincia_texto: Salta
@@ -32373,7 +32373,7 @@
   pk: 2650
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana 3, Casa 55
     barrio: San Nicolás
     provincia_texto: Salta
@@ -32410,7 +32410,7 @@
   pk: 2886
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Mza 38 Casa 2
     barrio: 126 Viviendas
     provincia_texto: Salta
@@ -32474,7 +32474,7 @@
   pk: 3342
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: 20 De Febrero 826.
     barrio: El Obrero
     provincia_texto: Salta
@@ -32537,7 +32537,7 @@
   pk: 3722
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: S/nombre 53-piso 0-
     barrio: Parque Aybal
     provincia_texto: Salta
@@ -33075,7 +33075,7 @@
   pk: 3747
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Olessio 356-
     barrio: Almafuerte
     provincia_texto: Santa Fe
@@ -33193,7 +33193,7 @@
   pk: 2022
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Manzana 13 Lote 8,
     barrio: Las Flores
     provincia_texto: Santiago del Estero
@@ -33257,7 +33257,7 @@
   pk: 2573
   fields:
     tipo: 1
-    tipo_calle: barrio
+    tipo_calle: calle
     nombre: Gregorio Iramain 753-
     barrio: Huaico Hondo
     provincia_texto: Santiago del Estero

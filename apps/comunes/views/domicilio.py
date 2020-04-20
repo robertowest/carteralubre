@@ -18,7 +18,6 @@ class DomicilioTemplateView(TemplateView):
 class DomicilioListView(ListView):
     model = DomicilioModel
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)

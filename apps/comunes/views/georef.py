@@ -5,7 +5,6 @@ from apps.comunes.models import georef
 class PaisListView(ListView):
     model = georef
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -16,7 +15,6 @@ class PaisListView(ListView):
 class ProvinciaListView(ListView):
     model = georef
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -27,7 +25,6 @@ class ProvinciaListView(ListView):
 class DepartamentoListView(ListView):
     model = georef
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -38,7 +35,6 @@ class DepartamentoListView(ListView):
 class MunicipioListView(ListView):
     model = georef
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -49,7 +45,6 @@ class MunicipioListView(ListView):
 class LocalidadListView(ListView):
     model = georef
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def get_queryset(self):
         qs = super().get_queryset()

@@ -7,14 +7,14 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 """
 
-import os
-import sys
+import os, sys
 
 from django.core.wsgi import get_wsgi_application
 
+# determinamos el entorno de trabajo
 if 'runserver' in sys.argv:
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings_debug')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.development')
 else:
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings_heroku') 
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.production') 
 
 application = get_wsgi_application()

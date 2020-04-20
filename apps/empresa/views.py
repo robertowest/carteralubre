@@ -36,14 +36,22 @@ class EmpresaTemplateView(generic.TemplateView):
 
 class EmpresaListView(generic.ListView):
     model = models.Empresa
-    template_name = 'comunes/tabla.html'    # .format(app=__package__.split('.')[1])
-    paginate_by = 15
+    # template_name = 'comunes/tabla.html'    # .format(app=__package__.split('.')[1])
+    template_name = 'empresa/tabla_filtro.html'
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data()
         context['app_name'] = __package__.split('.')[1]
         # context['object_list'] = models.Empresa.objects.filter(active=True)
         return context
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        search = self.request.GET.get('search1') 
+        if search:
+            return qs.filter(nombre__icontains=search)
+        else: 
+            return qs.filter(id=0)
 
 
 class EmpresaCreateView(generic.CreateView):    # LoginRequiredMixin
@@ -122,7 +130,6 @@ class FilterListView(generic.ListView):
     model = models.Empresa
     # template_name = '{app}/list.html'.format(app=model._meta.verbose_name.lower())
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def url_name(self):
         attrib = resolve(self.request.path)
@@ -271,7 +278,6 @@ class ActividadTemplateView(generic.TemplateView):
 class ActividadListView(generic.ListView):
     model = models.Actividad
     template_name = 'comunes/tabla.html'
-    paginate_by = 15
 
     def get_queryset(self):
         # queryset = super().get_queryset()

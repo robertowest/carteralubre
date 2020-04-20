@@ -1,12 +1,12 @@
 python data/convert2yaml.py -i ~/Escritorio/exportado.csv -o /home/roberto/Programacion/django/Lubre/clientes/apps/comunes/fixtures/georef.yaml
-./manage.py loaddata georef --app comunes --settings=config.settings-debug
+./manage.py loaddata georef --app comunes --settings=config.settings.development
 
 
 python data/convert2yaml.py -i data/csv/empresa.01.comercial.csv -o data/yaml/empresa.01.comercial.yaml
 python data/convert2yaml.py -i data/csv/empresa.02.empresa.csv -o data/yaml/empresa.02.empresa.yaml
 
-./manage.py loaddata comercial --app empresa --settings=config.settings-debug
-./manage.py loaddata empresa --app empresa --settings=config.settings-debug
+./manage.py loaddata comercial --app empresa --settings=config.settings.development
+./manage.py loaddata empresa --app empresa --settings=config.settings.development
 
 ./manage.py dumpdata --format yaml -o apps/comunes/fixtures/diccionario.yaml  comunes.diccionario
 
@@ -18,12 +18,12 @@ python data/convert2yaml.py -i data/csv/empresa.02.empresa.csv -o data/yaml/empr
 #
 # carga de datos
 #
-./manage.py loaddata diccionario --app comunes --settings=config.settings-debug
-./manage.py loaddata domicilio --app comunes --settings=config.settings-debug
-./manage.py loaddata comunicacion --app comunes --settings=config.settings-debug
+./manage.py loaddata diccionario --app comunes --settings=config.settings.development
+./manage.py loaddata domicilio --app comunes --settings=config.settings.development
+./manage.py loaddata comunicacion --app comunes --settings=config.settings.development
 
-./manage.py loaddata persona --app persona --settings=config.settings-debug
+./manage.py loaddata persona --app persona --settings=config.settings.development
 
-./manage.py loaddata comercial --app empresa --settings=config.settings-debug
-./manage.py loaddata actividad --app empresa --settings=config.settings-debug
-./manage.py loaddata empresa --app empresa --settings=config.settings-debug
+./manage.py loaddata comercial --app empresa --settings=config.settings.development
+./manage.py loaddata actividad --app empresa --settings=config.settings.development
+./manage.py loaddata empresa --app empresa --settings=config.settings.development

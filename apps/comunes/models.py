@@ -182,7 +182,7 @@ class Domicilio(CommonStruct):
                              null=True, blank=True, default=1,
                              limit_choices_to = {'tabla': 'domicilio', 'active': True})
     tipo_calle = models.CharField(max_length=5, choices=TIPO, default='calle')
-    nombre = models.CharField(max_length=40, null=True, blank=True)
+    nombre = models.CharField(max_length=80, null=True, blank=True)
     numero = models.IntegerField('Número', null=True, blank=True)
     piso = models.CharField(max_length=2, null=True, blank=True)
     puerta = models.CharField(max_length=2, null=True, blank=True)

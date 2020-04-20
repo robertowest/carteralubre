@@ -99,3 +99,16 @@ class Empresa(CommonStruct):
 
     def get_related_url_with_actividad(self):
         return reverse('%s:associate_with_actividad' % self._meta.model_name, args=(self.pk,))
+
+
+class Seguimiento(CommonStruct):
+    TIPO = ((1, 'Visita'), (2, 'Llamada'), (3, 'Mensaje'))
+    
+    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE, 
+                null=True, blank=True, limit_choices_to = {'active': True})
+    comercial = models.ForeignKey(Comercial, on_delete=models.CASCADE, 
+                    null=True, blank=True, limit_choices_to = {'active': True})
+    fecha = models.DateField()
+    tipo_calle = models.SmallIntegerField(choices=TIPO, default=1)
+    mensaje = models.TextField(null=True, blank=True)
+    respuesta = models.TextField(null=True, blank=True)

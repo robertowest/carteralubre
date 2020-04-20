@@ -30,12 +30,29 @@
             </div>
         </div>
         <div class="card-body">
-            {# https://datatables.net #}
+            <div class="card-body">
+                <form method="GET" action="" id="searchform">
+                    <!-- input class="searchfield" id="searchbox" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search..."/ -->
+
+                    <div id="div_search1" class="form-group">
+                        <label for="search1">
+                            Razón Social
+                        </label>
+                        <div class="">
+                            <input type="text" id="search1" name="search1" value="{{ request.GET.search1 }}" maxlength="40" class="textinput textInput form-control">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50"><i class="fas fa-search"></i></span>
+                        <span class="text">Filtrar</span>
+                    </button>
+                </form>
+            </div>
 
             <!-- tabla de contenido -->
             <div class="card-body">
-                
                 <div class="table-responsive">
+                    {# https://datatables.net #}
                     <table id="dataTable" class="display compact" style="width:100%">
                         {% include object_list|verbose_name|lower|add:'/includes/_tabla.html' %}
                     </table>
