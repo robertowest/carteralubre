@@ -111,8 +111,8 @@
                             {% for registro in domicilios %}
                             <tr>
                                 <td><a href="{{registro.get_update_url}}">{{registro}}</a></td>
-                                <td>{{registro.localidad}}</td>
-                                <td>{{registro.ciudad}}</td>
+                                <td>{{registro.provincia_texto}}</td>
+                                <td>{{registro.localidad_texto}}</td>
                             </tr>
                             {% endfor %}
                         </tbody>

@@ -26,9 +26,9 @@ class EmpresaTemplateView(generic.TemplateView):
     model = models.Empresa
     template_name = '{app}/index.html'.format(app=__package__.split('.')[1])
 
-    def get_context_data(self, *args, **kwargs):
+    def get_context_data(self, **kwargs):
         model = self.model
-        context = super().get_context_data()
+        context = super().get_context_data(**kwargs)
         context['actividades'] = model.objects.values('actividad', 'actividad__nombre').annotate(contador=Count('id'))
         context['comerciales'] = model.objects.values('comercial', 'comercial__persona__apellido').annotate(contador=Count('id'))
         return context
@@ -39,8 +39,8 @@ class EmpresaListView(generic.ListView):
     # template_name = 'comunes/tabla.html'    # .format(app=__package__.split('.')[1])
     template_name = 'empresa/tabla_filtro.html'
 
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['app_name'] = __package__.split('.')[1]
         # context['object_list'] = models.Empresa.objects.filter(active=True)
         return context
@@ -59,8 +59,8 @@ class EmpresaCreateView(generic.CreateView):    # LoginRequiredMixin
     form_class = forms.EmpresaForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         # context['app_name'] = __package__.split('.')[1]
         context['form_title'] = 'Nueva Empresa'
         return context
@@ -81,8 +81,8 @@ class EmpresaDetailView(generic.DetailView):
     model = models.Empresa
     template_name = 'empresa/detalle.html'
 
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['domicilios'] = context['empresa'].domicilios.filter(active=True)
         context['comunicaciones'] = context['empresa'].comunicaciones.filter(active=True)
         context['contactos'] = context['empresa'].contactos.filter(active=True)
@@ -99,8 +99,8 @@ class EmpresaUpdateView(generic.UpdateView):
     form_class = forms.EmpresaForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['form_title'] = 'Modificación de Empresa'
         return context
 
@@ -147,8 +147,8 @@ class FilterListView(generic.ListView):
             return self.model.objects.filter(comercial=self.kwargs['filtro'])
         return self.model.objects.all()
 
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         name = self.url_name()
         if name == 'filtro_actividad':
             context['filtro'] = 'filtrado por Actividad'
@@ -167,8 +167,8 @@ class CreateComunicationView(generic.CreateView):
     form_class = ComunicacionForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['form_title'] = 'Nuevo Tipo de Comunicación'
         return context
 
@@ -193,8 +193,8 @@ class CreateAddressView(generic.CreateView):
     form_class = DomicilioForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['form_title'] = 'Nuevo Domicilio'
         return context
 
@@ -219,8 +219,8 @@ class CreateContactView(generic.CreateView):
     form_class = ContactoForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(kwargs)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['form_title'] = 'Nuevo Contacto'
         return context
 
@@ -245,8 +245,8 @@ class CreateActividadView(generic.CreateView):
     form_class = forms.Actividad
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super(CreateActividadView, self).get_context_data()
         context['form_title'] = 'Nueva Subactividad'
         return context
 
@@ -294,8 +294,8 @@ class ActividadCreateView(generic.CreateView):
     form_class = forms.ActividadForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['form_title'] = 'Nueva Actividad'
         return context
 
@@ -317,8 +317,8 @@ class ActividadUpdateView(generic.UpdateView):
     form_class = forms.ActividadForm
     template_name = 'comunes/formulario.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['form_title'] = 'Modificación de Actividad'
         return context
 
