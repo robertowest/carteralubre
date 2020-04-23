@@ -7,7 +7,7 @@ from .models import Actividad, Comercial, Empresa
 class ActividadForm(forms.ModelForm):
     class Meta:
         model = Actividad
-        fields = ['nombre', 'parent', 'active']
+        fields = ['nombre', 'parent', 'active'] 
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

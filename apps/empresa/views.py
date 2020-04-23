@@ -245,8 +245,10 @@ class CreateActividadView(generic.CreateView):
     form_class = forms.Actividad
     template_name = 'comunes/formulario.html'
 
+    # def get_context_data(self, *, object_list=None, **kwargs):
+    #     context = super().get_context_data()
     def get_context_data(self, **kwargs):
-        context = super(CreateActividadView, self).get_context_data()
+        context = super(CreateActividadView, self).get_context_data(**kwargs)        
         context['form_title'] = 'Nueva Subactividad'
         return context
 
