@@ -58,11 +58,12 @@ class EmpresaCreateView(generic.CreateView):    # LoginRequiredMixin
     model = models.Empresa
     form_class = forms.EmpresaForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nueva Empresa'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # context['app_name'] = __package__.split('.')[1]
-        context['form_title'] = 'Nueva Empresa'
+        context['form_title'] = self.form_title
         return context
 
     # def get_success_url(self):
@@ -98,10 +99,11 @@ class EmpresaUpdateView(generic.UpdateView):
     model = models.Empresa
     form_class = forms.EmpresaForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Modificación de Empresa'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Modificación de Empresa'
+        context['form_title'] = self.form_title
         return context
 
     # def get_success_url(self):
@@ -166,10 +168,11 @@ class CreateComunicationView(generic.CreateView):
     model = ComunicacionModel
     form_class = ComunicacionForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nuevo Tipo de Comunicación'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Nuevo Tipo de Comunicación'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
@@ -192,10 +195,11 @@ class CreateAddressView(generic.CreateView):
     model = DomicilioModel
     form_class = DomicilioForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nuevo Domicilio'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Nuevo Domicilio'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
@@ -218,10 +222,11 @@ class CreateContactView(generic.CreateView):
     model = ContactoModel
     form_class = ContactoForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nuevo Contacto'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Nuevo Contacto'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
@@ -242,14 +247,13 @@ class CreateContactView(generic.CreateView):
 
 class CreateActividadView(generic.CreateView):
     model = models.Actividad
-    form_class = forms.Actividad
+    form_class = forms.ActividadForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nueva Subactividad'
 
-    # def get_context_data(self, *, object_list=None, **kwargs):
-    #     context = super().get_context_data()
     def get_context_data(self, **kwargs):
         context = super(CreateActividadView, self).get_context_data(**kwargs)        
-        context['form_title'] = 'Nueva Subactividad'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
@@ -295,10 +299,11 @@ class ActividadCreateView(generic.CreateView):
     model = models.Actividad
     form_class = forms.ActividadForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nueva Actividad'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Nueva Actividad'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
@@ -318,10 +323,11 @@ class ActividadUpdateView(generic.UpdateView):
     model = models.Actividad
     form_class = forms.ActividadForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Modificación de Actividad'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Modificación de Actividad'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):

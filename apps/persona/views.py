@@ -39,10 +39,11 @@ class PersonaCreateView(generic.CreateView):  # LoginRequiredMixin
     model = models.Persona
     form_class = forms.PersonaForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nueva Persona'
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Nueva Persona'
+        context['form_title'] = self.form_title
         return context
         
     def form_valid(self, form):
@@ -68,10 +69,11 @@ class PersonaUpdateView(generic.UpdateView):
     model = models.Persona
     form_class = forms.PersonaForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Modificación de Persona'
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Modificación de Persona'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
@@ -90,10 +92,11 @@ class CreateContactView(generic.CreateView):
     model = ComunicacionModel
     form_class = ComunicacionForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nueva Comunicación'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Nueva Comunicación'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
@@ -116,10 +119,11 @@ class CreateAddressView(generic.CreateView):
     model = DomicilioModel
     form_class = DomicilioForm
     template_name = 'comunes/formulario.html'
+    form_title = 'Nuevo Domicilio'
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['form_title'] = 'Nuevo Domicilio'
+        context['form_title'] = self.form_title
         return context
 
     def form_valid(self, form):
