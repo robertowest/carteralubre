@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load mis_tags %}
+
+
+{% block style %}
+    <!-- dataTables.bootstrap4.min.css -->
+    <link href="{% static 'vendor/datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/datatables/jquery.dataTables.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/floating-button-action.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/datatable.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+{% block content %}
+<div class="col-lg-6">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de {{object_list|verbose_name_plural}}</h6>
+        </div>
+        <!-- tabla de contenido -->
+        <div class="card-body">
+            
+            <div class="table-responsive">
+                <table id="dataTable" class="display compact" style="width:100%">
+
+                    <!-- creamos el formulario con controles asociados -->
+                    <form id="multiForm" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="previous_url" value="{{request.META.HTTP_REFERER}}">
+                    </form>
+
+                    {% for obj in object_list %}
+                    <tr>
+                        {% if obj.parent %}
+                        <td style="padding-left: 40px; width: 20px;">
+                            <input type="checkbox" form="multiForm" value="{{obj.id}}" name="checkboxname">
+                        </td>
+                        <td>{{obj.nombre}}</td>
+                        {% else %}
+                        <td colspan="2">
+                            <b>{{obj.nombre}}</b>
+                        </td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <!--
+            with object_list|verbose_name|lower|add:':create' as button_add
+                url button_add
+            endwith
+            -->
+            <button type="submit" form="multiForm" class="btn btn-primary btn-icon-split">
+                <span class="icon text-white-50"><i class="fas fa-save"></i></span>
+                <span class="text">Grabar</span>
+            </button>            
+        </div>        
+    </div>
+</div>
+{% endblock %}
+
+
+{% block js %}
+    <!-- Page level custom scripts -->
+    <script src="{% static 'js/demo/datatables-demo.js' %}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{% static 'vendor/datatables/jquery.dataTables.min.js' %}"></script>
+{% endblock %}

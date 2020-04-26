@@ -33,16 +33,42 @@ class Comercial(CommonStruct):
         return reverse('comercial:delete', args=(self.pk,))
 
 
+class ComercialComunicaciones(models.Model):
+    comercial = models.ForeignKey(Comercial, models.DO_NOTHING)
+    comunicacion = models.ForeignKey(Comunicacion, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'empresa_comercial_comunicaciones'
+        unique_together = (('comercial', 'comunicacion'),)
+
+
+class ComercialDomicilios(models.Model):
+    comercial = models.ForeignKey(Comercial, models.DO_NOTHING)
+    domicilio = models.ForeignKey(Domicilio, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'empresa_comercial_domicilios'
+        unique_together = (('comercial', 'domicilio'),)
+
+
 class Actividad(CommonStruct):
     nombre = models.CharField('Actividad', max_length=50)
     parent = models.ForeignKey('self', on_delete=models.CASCADE, 
                                null=True, blank=True, verbose_name='Padre')
+
+    # configuración para admin
+    list_display = ['parent', 'nombre']
+    list_display_links = ['nombre']
 
     class Meta:
         verbose_name = 'Actividad'
         verbose_name_plural = 'Actividades'
 
     def __str__(self):
+        if self.parent:
+            return '{0} ({1})'.format(self.nombre, self.parent.nombre)
         return self.nombre
 
 
@@ -59,7 +85,8 @@ class Empresa(CommonStruct):
     # actividad = models.ForeignKey(Diccionario, on_delete=models.CASCADE, null=True, blank=True, 
     #                               limit_choices_to = {'tabla': 'actividad', 'active': True})
     actividad = models.ForeignKey(Actividad, on_delete=models.CASCADE, null=True, blank=True, 
-                                 limit_choices_to = {'active': True})
+                                 limit_choices_to = {'active': True},
+                                 verbose_name='Actividad principal')
     actividades = models.ManyToManyField(Actividad, related_name='empresa_actividades', blank=True, 
                                           limit_choices_to = {'parent__isnull': False, 'active': True})
     domicilios = models.ManyToManyField(Domicilio, related_name='empresa_domicilios',
@@ -99,6 +126,46 @@ class Empresa(CommonStruct):
 
     def get_related_url_with_actividad(self):
         return reverse('%s:associate_with_actividad' % self._meta.model_name, args=(self.pk,))
+
+
+class EmpresaActividades(models.Model):
+    empresa = models.ForeignKey(Empresa, models.DO_NOTHING)
+    actividad = models.ForeignKey(Actividad, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'empresa_empresa_actividades'
+        unique_together = (('empresa', 'actividad'),)
+
+
+class EmpresaComunicaciones(models.Model):
+    empresa = models.ForeignKey(Empresa, models.DO_NOTHING)
+    comunicacion = models.ForeignKey(Comunicacion, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'empresa_empresa_comunicaciones'
+        unique_together = (('empresa', 'comunicacion'),)
+
+
+class EmpresaContactos(models.Model):
+    empresa = models.ForeignKey(Empresa, models.DO_NOTHING)
+    persona = models.ForeignKey(Persona, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'empresa_empresa_contactos'
+        unique_together = (('empresa', 'persona'),)
+
+
+class EmpresaDomicilios(models.Model):
+    empresa = models.ForeignKey(Empresa, models.DO_NOTHING)
+    domicilio = models.ForeignKey(Domicilio, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'empresa_empresa_domicilios'
+        unique_together = (('empresa', 'domicilio'),)
 
 
 class Seguimiento(CommonStruct):

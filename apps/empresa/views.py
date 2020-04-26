@@ -1,6 +1,6 @@
 # from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import resolve
 from django.views import generic
 
@@ -246,30 +246,66 @@ class CreateContactView(generic.CreateView):
 
 
 class CreateActividadView(generic.CreateView):
+    # model = models.Actividad
+    # form_class = forms.ActividadForm
+    # template_name = 'comunes/formulario.html'
+    # form_title = 'Nueva Subactividad'
+
+    # def get_context_data(self, **kwargs):
+    #     context = super(CreateActividadView, self).get_context_data(**kwargs)        
+    #     context['form_title'] = self.form_title
+    #     return context
+
+    # def form_valid(self, form):
+    #     response = super().form_valid(form)
+
+    #     # grabamos el objeto para obtener identificador
+    #     self.object = form.save()
+    #     # obtenemos el objeto primario
+    #     empresa = models.Empresa.objects.get(id=self.kwargs['fk'])
+    #     # creamos la asociación
+    #     empresa.actividades.add(self.object)
+
+    #     # terminamos, ¿hacia dónde vamos?
+    #     if 'previous_url' in self.request._post:
+    #         return HttpResponseRedirect(self.request._post['previous_url'])
+    #     return response
+    pass
+
+
+class ActividadMultiListView(generic.ListView):
+    # , generic.edit.ModelFormMixin
     model = models.Actividad
-    form_class = forms.ActividadForm
-    template_name = 'comunes/formulario.html'
-    form_title = 'Nueva Subactividad'
+    form_title = 'Asociar Subactividad'
+    template_name = 'actividad/tabla.html'
 
-    def get_context_data(self, **kwargs):
-        context = super(CreateActividadView, self).get_context_data(**kwargs)        
-        context['form_title'] = self.form_title
-        return context
+    def get_queryset(self):
+        ordering = 'CASE WHEN parent_id IS Null THEN id ELSE parent_id END * 1000 + id'
+        qs = models.Actividad.objects.filter(active=True).extra(select={'criterio': ordering}, order_by=('criterio',))
+        return qs
 
-    def form_valid(self, form):
-        response = super().form_valid(form)
+    def post(self, request, *args, **kwargs):
+        # listado de id seleccionados
+        id_list = request.POST.getlist('checkboxname')
 
-        # grabamos el objeto para obtener identificador
-        self.object = form.save()
-        # obtenemos el objeto primario
-        empresa = models.Empresa.objects.get(id=self.kwargs['fk'])
-        # creamos la asociación
-        empresa.actividades.add(self.object)
+        # recuperamos el registro de la empresa
+        empresa = models.Empresa.objects.get(id=kwargs['fk'])
+        for actividad_id in id_list:
+            actividad = models.Actividad.objects.get(id=actividad_id)
+            empresa.actividades.add(actividad)
+        empresa.save()
 
-        # terminamos, ¿hacia dónde vamos?
+        # return HttpResponseRedirect('/jobs/')
+        # context = {}  #  set your context
+        # return super(TemplateView, self).render_to_response(context)
+        # return HttpResponse('Datos grabados correctamente.')
+
+        # return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
+
         if 'previous_url' in self.request._post:
             return HttpResponseRedirect(self.request._post['previous_url'])
-        return response
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
 
 
 # -----------------------------------------------------------------------------
@@ -292,6 +328,7 @@ class ActividadListView(generic.ListView):
         # return queryset
         ordering = 'CASE WHEN parent_id IS Null THEN id ELSE parent_id END * 1000 + id'
         qs = models.Actividad.objects.all().extra(select={'criterio': ordering}, order_by=('criterio',))
+        import pdb; pdb.set_trace()
         return qs
 
 

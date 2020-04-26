@@ -21,7 +21,7 @@ class PersonaForm(forms.ModelForm):
         self.helper.form_id = "myform"
 
         # creamos layouts
-        self.helper.layout = layout.Layout()        
+        self.helper.layout = layout.Layout()
 
         # agregamos todos los campos
         for fld in self.Meta.fields:

@@ -11,7 +11,7 @@
     {% for object in object_list %}
     <tr>
         <td><a href="{{object.get_detail_url}}">{{object.pk}}</a></td>
-        <td>{{object.nombre_completo}}</td>
+        <td>{{object.nombre_apellido}}</td>
         <td>{{object.documento}}</td>
         <td>{{object.fecha_nacimiento}}</td>
         <td>{{object.edad}}</td>

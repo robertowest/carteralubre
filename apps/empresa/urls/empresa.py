@@ -17,5 +17,5 @@ urlpatterns = [
     path('<int:fk>/comunicacion/', views.CreateComunicationView.as_view(), name='associate_with_comunication'),
     path('<int:fk>/domicilio/', views.CreateAddressView.as_view(), name='associate_with_address'),
     path('<int:fk>/contacto/', views.CreateContactView.as_view(), name='associate_with_contact'),
-    path('<int:fk>/actividad/', views.CreateActividadView.as_view(), name='associate_with_actividad'),
+    path('<int:fk>/actividad/', views.ActividadMultiListView.as_view(), name='associate_with_actividad'),
 ]

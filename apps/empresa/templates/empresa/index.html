@@ -18,32 +18,7 @@
     </div>        
 
     <div class="row">
-        <div class="col-md-12">Actividad</div>
-        {% for obj in actividades %}
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                {{obj.actividad__nombre|default_if_none:'No definido'}}
-                            </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{obj.contador}}</div>
-                        </div>
-                        <div class="col-auto">
-                            <a href="{% url 'empresa:filtro_actividad' obj.actividad|default_if_none:0 %}">
-                                <i class="fas fa-angle-right fa-2x text-gray-500"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    
-    <div class="row">
-        <div class="col-md-12">Comercial</div>
+        <div class="col-md-12"><b>Comerciales</b></div>
         {% for obj in comerciales %}
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card border-left-success shadow h-100 py-2">
@@ -67,6 +42,31 @@
         {% endfor %}
     </div>
 
+    <div class="row">
+        <div class="col-md-12"><b>Actividades</b></div>
+        {% for obj in actividades %}
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                {{obj.actividad__nombre|default_if_none:'No definido'}}
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{obj.contador}}</div>
+                        </div>
+                        <div class="col-auto">
+                            <a href="{% url 'empresa:filtro_actividad' obj.actividad|default_if_none:0 %}">
+                                <i class="fas fa-angle-right fa-2x text-gray-500"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
 {% endblock %}
 
 

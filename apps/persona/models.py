@@ -19,7 +19,8 @@ class Persona(CommonStruct):
     persona_similar = models.IntegerField('Persona Similar', null=True, blank=True)
 
     # configuración para admin
-    list_display = ['apellido', 'nombre', 'documento', 'active']
+    list_display = ['apellido_nombre', 'documento', 'active']
+    list_display_links = ['apellido_nombre']
     search_fields = ['nombre', 'apellido']
     list_filter = ['ciudad', 'localidad']
 
@@ -41,8 +42,12 @@ class Persona(CommonStruct):
             return age
 
     @property
-    def nombre_completo(self):
+    def nombre_apellido(self):
         return "%s %s" % (self.nombre, self.apellido)
+
+    @property
+    def apellido_nombre(self):
+        return "%s, %s" % (self.apellido, self.nombre)
 
     def get_related_url_with_address(self):
         return reverse('%s:associate_with_address' % self._meta.model_name, args=(self.pk,))

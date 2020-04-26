@@ -65,3 +65,27 @@
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
+
+.fixed-button-save {
+    background-color: rgb(39, 139, 197);
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 3px 5px #888888;
+}
+
+.fixed-button-save:hover {
+    background: rgb(30, 126, 182);
+    box-shadow: 0px 5px 20px 5px #888888;
+}
+
+.fixed-button-save a {
+    color: #FFFFFF;
+}
