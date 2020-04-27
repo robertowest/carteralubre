@@ -14,12 +14,23 @@ ALLOWED_HOSTS = ['*']
 # base de datos
 # -------------------------
 DATABASES = {
+    # # casa
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'carteralubre',
+    #     'USER': 'root',
+    #     'PASSWORD': 'roberto',
+    #     'HOST': '172.17.0.2',
+    #     'PORT': '3306',
+    # },
+
+    # lubre
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'carteralubre',
-        'USER': 'root',
+        'USER': 'roberto',
         'PASSWORD': 'roberto',
-        'HOST': '172.17.0.2',
+        'HOST': '192.168.1.2',
         'PORT': '3306',
     },
 }

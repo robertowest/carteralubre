@@ -213,6 +213,7 @@
                     </table>
                     {% endif  %}
                 </div>
+                {% comment %}
                 <div class="card-footer">
                     <!-- agregar nuevo contacto y asociarlo a la empresa -->
                     <a href="{{object.get_related_url_with_actividad}}" class="btn btn-primary btn-icon-split">
@@ -222,6 +223,7 @@
                         <span class="text">Asignar actividades</span>
                     </a>
                 </div>
+                {% endcomment %}
             </div>
         </div>
 

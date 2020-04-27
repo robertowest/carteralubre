@@ -36062,3 +36062,9 @@
   fields:
     tipo: 6
     texto: 387-7493901
+- model: comunes.comunicacion
+  pk: 7213
+  fields:
+    tipo: 6
+    texto: silvioss@hotmail.com
+

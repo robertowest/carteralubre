@@ -25,14 +25,27 @@ class PersonaTemplateView(generic.TemplateView):
 
 class PersonasListView(generic.ListView):
     model = models.Persona
-    template_name = 'comunes/tabla.html'.format(app=__package__.split('.')[1])
+    template_name = 'persona/tabla_filtro.html'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
+    # def get_context_data(self, *, object_list=None, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['app_name'] = __package__.split('.')[1]
+    #     context['model_name'] = models.Persona._meta.verbose_name_plural.title()
+    #     context['object_list'] = models.Persona.objects.filter(active=True)
+    #     return context
+
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['app_name'] = __package__.split('.')[1]
-        context['model_name'] = models.Persona._meta.verbose_name_plural.title()
-        context['object_list'] = models.Persona.objects.filter(active=True)
         return context
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        search = self.request.GET.get('search1') 
+        if search:
+            return qs.filter(nombre__icontains=search).filter(active=True)
+        else: 
+            return qs.filter(id=0)
 
 
 class PersonaCreateView(generic.CreateView):  # LoginRequiredMixin

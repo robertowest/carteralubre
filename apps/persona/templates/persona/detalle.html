@@ -53,7 +53,6 @@
                             {% for registro in comunicaciones %}
                             <tr>
                                 <td>{{registro.tipo}}</td>
-                                <td>{{registro.texto}}</td>
                                 <td>
                                     <a href="{{registro.get_update_url}}">{{registro.texto}}</a>                                    
                                 </td>

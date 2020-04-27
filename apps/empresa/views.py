@@ -49,7 +49,7 @@ class EmpresaListView(generic.ListView):
         qs = super().get_queryset()
         search = self.request.GET.get('search1') 
         if search:
-            return qs.filter(nombre__icontains=search)
+            return qs.filter(nombre__icontains=search).filter(active=True)
         else: 
             return qs.filter(id=0)
 
@@ -321,14 +321,24 @@ class ActividadListView(generic.ListView):
     model = models.Actividad
     template_name = 'comunes/tabla.html'
 
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['tableID'] = 'dataTableOrder'
+    #     return context
+
     def get_queryset(self):
         # queryset = super().get_queryset()
         # sql = "SELECT id, nombre, parent_id FROM empresa_actividad ORDER BY case when parent_id is null then id else parent_id end * 1000 + id ASC"
         # queryset = models.Actividad.objects.raw(sql).all()
         # return queryset
-        ordering = 'CASE WHEN parent_id IS Null THEN id ELSE parent_id END * 1000 + id'
-        qs = models.Actividad.objects.all().extra(select={'criterio': ordering}, order_by=('criterio',))
-        import pdb; pdb.set_trace()
+
+        # ordering = 'CASE WHEN parent_id IS Null THEN id ELSE parent_id END * 1000 + id'
+        # qs = models.Actividad.objects.all().extra(select={'criterio': ordering}, order_by=('criterio',))
+
+        ordering = 'IFNULL(parent_id, id)'
+        # qs = models.Actividad.objects.all().values('nombre', 'parent_id', 'id').filter(active=True).extra(select={'grupo': ordering}, order_by=('grupo','parent_id','nombre'))
+        qs = models.Actividad.objects.all().filter(active=True).extra(select={'grupo': ordering}, order_by=('grupo','parent_id','nombre'))
+
         return qs
 
 

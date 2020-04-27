@@ -88,3 +88,59 @@
     modified_by: null
     texto: LinkedIn
     tabla: comunicacion
+
+- model: comunes.diccionario
+  pk: 10
+  fields:
+    texto: Citricola
+    tabla: industria
+- model: comunes.diccionario
+  pk: 11
+  fields:
+    texto: Azucarera
+    tabla: industria
+- model: comunes.diccionario
+  pk: 12
+  fields:
+    texto: Alimenticia
+    tabla: industria
+- model: comunes.diccionario
+  pk: 13
+  fields:
+    texto: Farmaceutica
+    tabla: industria
+- model: comunes.diccionario
+  pk: 14
+  fields:
+    texto: Metalurgica
+    tabla: industria
+- model: comunes.diccionario
+  pk: 15
+  fields:
+    texto: Siderurgica
+    tabla: industria
+- model: comunes.diccionario
+  pk: 16
+  fields:
+    texto: Quimica
+    tabla: industria
+- model: comunes.diccionario
+  pk: 17
+  fields:
+    texto: Petroquimica
+    tabla: industria
+- model: comunes.diccionario
+  pk: 18
+  fields:
+    texto: Textil
+    tabla: industria
+- model: comunes.diccionario
+  pk: 19
+  fields:
+    texto: Automotriz
+    tabla: industria
+- model: comunes.diccionario
+  pk: 20
+  fields:
+    texto: Inmobiliaria
+    tabla: industria

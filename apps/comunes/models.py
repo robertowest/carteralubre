@@ -55,7 +55,6 @@ class CommonStruct(models.Model):
         return reverse('%s:detail' % self._meta.model_name, args=(self.pk,))
 
     def get_update_url(self):
-        # import pdb; pdb.set_trace()
         # return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
         # return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
         return reverse('%s:update' % self._meta.model_name, args=(self.pk,))
@@ -168,7 +167,8 @@ class Diccionario(CommonStruct):
         verbose_name_plural = 'Diccionarios'
 
     def __str__(self):
-        return "%s (%s)" % (self.texto, self.get_tabla_display())
+        # return "%s (%s)" % (self.texto, self.get_tabla_display())
+        return self.texto
 
     def get_texto(self):
         return str(self.texto).capitalize()

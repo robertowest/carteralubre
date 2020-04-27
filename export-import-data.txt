@@ -4,11 +4,11 @@
 
 # comunes
 ./manage.py dumpdata --format yaml -o apps/comunes/fixtures/diccionario.yaml  comunes.diccionario
+./manage.py dumpdata --format yaml -o apps/comunes/fixtures/domicilio.yaml    comunes.domicilio
 ./manage.py dumpdata --format yaml -o apps/comunes/fixtures/comunicacion.yaml comunes.comunicacion
 ./manage.py dumpdata --format yaml -o apps/comunes/fixtures/pais.yaml         comunes.pais
 ./manage.py dumpdata --format yaml -o apps/comunes/fixtures/ciudad.yaml       comunes.ciudad
 ./manage.py dumpdata --format yaml -o apps/comunes/fixtures/localidad.yaml    comunes.localidad
-./manage.py dumpdata --format yaml -o apps/comunes/fixtures/domicilio.yaml    comunes.domicilio
 
 # personas
 ./manage.py dumpdata --format yaml -o apps/persona/fixtures/persona.yaml      persona.persona
@@ -23,16 +23,16 @@
 #
 
 # comunes
-./manage.py loaddata pais --settings=config.settings.production
-./manage.py loaddata provincia --settings=config.settings.production
+./manage.py loaddata diccionario --settings=config.settings.development
+./manage.py loaddata domicilio --settings=config.settings.development
+./manage.py loaddata comunicacion --settings=config.settings.development
 
-./manage.py loaddata diccionario
-./manage.py loaddata comunicacion
-./manage.py loaddata localidad
-./manage.py loaddata domicilio
-./manage.py loaddata persona
-./manage.py loaddata comercial
-./manage.py loaddata empresa
+./manage.py loaddata persona --settings=config.settings.development
+
+./manage.py loaddata actividad --settings=config.settings.development
+./manage.py loaddata comercial --settings=config.settings.development
+./manage.py loaddata empresa --settings=config.settings.development
+
 
 
 # local
